@@ -1,0 +1,517 @@
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+      name:  cleaning
+       log:  /Users/billy/Desktop/kyLegislation/logs/dataCleaning.txt
+  log type:  text
+ opened on:  14 Jul 2018, 18:39:27
+
+. 
+. // Set macro with file names
+. loc files : dir `"$raw"' files "*.csv", respect
+
+. 
+. // Loop over the files
+. foreach f of loc files {
+  2. 
+.         // Remove the file suffix from the file name
+.         loc file : subinstr loc f ".csv" "", all
+  3.         
+.         // Read in the file
+.         import delimited using `"$raw/`file'.csv"', varn(1) case(l) clear
+  4.         
+.         // Logic for bills file
+.         if `"`file'"' == "bills" {
+  5.         
+.                 // Create an indicator for education bills by searching for :
+.                 // educ
+.                 // school
+.                 // schools
+.                 // epsb
+.                 // kde
+.                 g byte ised = ustrregexm(title, "(educ)|(schools?)|(epsb)|(kde)", 1)
+  6.         
+.                 // Create a year indicator
+.                 g int year = 2018
+  7.                 
+.                 // Keep only the necessary subset of the data
+.                 keep bill_number ised bill_id year
+  8. 
+.                 // Create an indicator for the house chamber bills
+.                 g byte house = substr(bill_number, 1, 1) == "H"
+  9. 
+.                 // Create an indicator for the senate chamber bills
+.                 g byte senate = substr(bill_number, 1, 1) == "S"
+ 10.                 
+.                 // Drop all records that are not bills (e.g., resolutions, chamber rules)
+.                 drop if !ustrregexm(bill_number, "[SH]B[0-9]+")
+ 11. 
+.                 // Sorts the data
+.                 sort year house senate bill_id
+ 12. 
+.         } // End Logic for Bills file
+ 13.         
+.         // Logic for the people file
+.         else if `"`file'"' == "people" {
+ 14.         
+.                 // Make sponsor id variable a string
+.                 tostring sponsor_id, replace
+ 15.         
+.                 // Create a person ID
+.                 g peopleid = sponsor_id
+ 16.                 
+.                 // Create indicator for the house
+.                 g byte house = role == "Rep"
+ 17.                 
+.                 // Create indicator for the senate
+.                 g byte senate = role == "Sen"
+ 18.                 
+.                 // Set the year value
+.                 g int year = 2018
+ 19.                 
+.                 // Keep smallest subset of variables possible
+.                 keep name party role district house senate sponsor_id peopleid year
+ 20. 
+.                 // Make role numeric
+.                 replace role = cond(role == "Rep", "0", "1")
+ 21. 
+.                 // Defines value labels
+.                 la def role 0 "Representative" 1 "Senator", modify
+ 22. 
+.                 // Make the party variable numeric
+.                 replace party = cond(party == "D", "1", cond(party == "I", "-1", "0"))
+ 23. 
+.                 // Define value labels
+.                 la def party 1 "Democrat" 0 "Republican" -1 "Independent", modify
+ 24. 
+.                 // Strip house/senate designation from districts
+.                 replace district = ustrregexra(district, "(HD-)|(SD-)|(NA)", "")
+ 25. 
+.                 // Create variable used to join the data later
+.                 g _nodelab = "_" + sponsor_id
+ 26.                 
+.                 // Loop over variables that need to get cast as numeric
+.                 destring role party district, replace 
+ 27.                 
+.                 // Create node positions for later
+.                 g byte nodepos = cond(party == 1, 2, 7)
+ 28. 
+.                 // Apply value labels
+.                 la val party party
+ 29.                 la val role role
+ 30. 
+.                 // Drop any duplicate records
+.                 duplicates drop
+ 31.                 
+.                 // Test the primary key assumption
+.                 isid sponsor_id year
+ 32.                 
+.                 // Sort the data
+.                 sort sponsor_id year
+ 33. 
+.         } // End Logic for the People files
+ 34.         
+.         // Logic for sponsorship dataset
+.         else if `"`file'"' == "sponsors" {
+ 35.         
+.                 // Add a year indicator to the data
+.                 g int year = 2018
+ 36.                 
+.                 // Add indicator for sponsorship to the dataset
+.                 g byte didsponsor = 1
+ 37.                 
+.                 // Make sure sponsor id field is string
+.                 tostring sponsor_id, replace
+ 38.         
+.         } // End ELSE block for sponsors dataset
+ 39.         
+.         // Optimize the storage of the data
+.         compress
+ 40.         
+.         // Save these data
+.         save `"$clean/`file'.dta"', replace
+ 41.         
+. } // End Loop over the files
+(16 vars, 138 obs)
+sponsor_id was int now str5
+(138 real changes made)
+(138 real changes made)
+(138 real changes made)
+role: all characters numeric; replaced as byte
+party: all characters numeric; replaced as byte
+district: all characters numeric; replaced as byte
+
+Duplicates in terms of all variables
+
+(0 observations are duplicates)
+  (0 bytes saved)
+file ~/Desktop/kyLegislation/data/clean/2018/people.dta saved
+(3 vars, 9,357 obs)
+  (0 bytes saved)
+file ~/Desktop/kyLegislation/data/clean/2018/history.dta saved
+(7 vars, 799 obs)
+  (0 bytes saved)
+file ~/Desktop/kyLegislation/data/clean/2018/rollcalls.dta saved
+(3 vars, 55,744 obs)
+  (0 bytes saved)
+file ~/Desktop/kyLegislation/data/clean/2018/votes.dta saved
+(2 vars, 9,215 obs)
+sponsor_id was int now str5
+  (0 bytes saved)
+file ~/Desktop/kyLegislation/data/clean/2018/sponsors.dta saved
+(4 vars, 1,574 obs)
+(701 observations deleted)
+  variable bill_number was str6 now str5
+  (873 bytes saved)
+file ~/Desktop/kyLegislation/data/clean/2018/bills.dta saved
+
+. 
+. // Load the people data set to construct the person bill data set
+. use `"$clean/people.dta"', clear
+
+. 
+. // Preserve the state of the people data set
+. preserve
+
+. 
+.         // Keep only the house members
+.         keep if house == 1
+(38 observations deleted)
+
+.         
+.         // Save a version of the file for only the house members
+.         save `"$clean/houseMembers.dta"', replace
+file ~/Desktop/kyLegislation/data/clean/2018/houseMembers.dta saved
+
+.         
+. // Restore the data set and preserve again
+. restore, preserve
+
+. 
+.         // Keep only the senate members
+.         keep if house != 1
+(100 observations deleted)
+
+.         
+.         // Save a version of the file for only the senate members
+.         save `"$clean/senateMembers.dta"', replace
+file ~/Desktop/kyLegislation/data/clean/2018/senateMembers.dta saved
+
+.         
+. // Restore the data to original state
+. restore
+
+. 
+. // Don't retain the _nodelab variable for this part of the process
+. drop _nodelab
+
+. 
+. // Preserve these data in memory
+. preserve
+
+. 
+.         // Join all bill data to all individuals in each chamber
+.         joinby year house senate using `"$clean/bills.dta"'
+
+.         
+.         // Add note to data set
+.         note : `"people file joined with bills using joinby year house senate using `"$clean/bills.dta"'"'
+
+.         
+.         // Make sure sponsor ID is still string
+.         tostring sponsor_id, replace
+sponsor_id already string; no replace
+
+.         
+.         // Join the sponsorship data to this file
+.         merge 1:1 sponsor_id year bill_id using `"$clean/sponsors.dta"', keep(1 3) nogen
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                        67,775
+        from master                    67,775  
+        from using                          0  
+
+    matched                             2,909  
+    -----------------------------------------
+
+. 
+.         // Save the file
+.         save `"$clean/sponsorBills.dta"', replace
+file ~/Desktop/kyLegislation/data/clean/2018/sponsorBills.dta saved
+
+.         
+.         // Loop over sponsor data
+.         foreach d in name party role district {
+  2.         
+.                 // Rename the data
+.                 rename `d' cospons`d'
+  3.                 
+.         } // End Loop over sponsor data
+
+.         
+.         // Add variable labels
+.         la var cosponsname "Cosponsoring Legislator Name"
+
+.         la var cosponsparty "Cosponsoring Legislator Party" 
+
+.         la var cosponsrole "Cosponsoring Legislator Chamber"
+
+.         la var cosponsdistrict "Cosponsoring Legislator District"
+
+. 
+.         // Add another note
+.         note : "This version of the file is modified to indicate cosponsors"
+
+.                 
+.         // Renames some of the variables
+.         rename (sponsor_id didsponsor)(cosponsid didcosponsor)
+
+.         
+.         // Drops variables that are not needed in the cosponsorship file
+.         drop bill_number ised peopleid
+
+.         
+.         // Save the data in a new file
+.         save `"$clean/cosponsorsBills.dta"', replace
+file ~/Desktop/kyLegislation/data/clean/2018/cosponsorsBills.dta saved
+
+.         
+. // Restore the data
+. restore
+
+. 
+. // Load the file with the sponsors and bill indicators
+. use `"$clean/sponsorBills.dta"', clear
+
+. 
+. // Drops the people ID
+. drop peopleid
+
+. 
+. // Joins the data with the cosponsors 
+. joinby bill_id year house senate using `"$clean/cosponsorsBills.dta"'
+
+. 
+. // Drops all duplicate records
+. duplicates drop
+
+Duplicates in terms of all variables
+
+(0 observations are duplicates)
+
+. 
+. // Sets the cosponsorship indicators to use non-missing values
+. foreach v in didcosponsor didsponsor {
+  2. 
+.         // Sets the values to 0 if they are missing
+.         replace `v' = 0 if mi(`v')
+  3.         
+. } // End Loop over the cosponsorship indicators
+(6,182,734 real changes made)
+(6,182,734 real changes made)
+
+. 
+. // Label the variables in the data set
+. la var sponsor_id "Legiscan Person ID"
+
+. la var name "Legislator Name"
+
+. la var party "Legislator Party"
+
+. la var role "Legislator Chamber"
+
+. la var district "Legislator District"
+
+. la var house "Indicator for House Bills/Resolutions"
+
+. la var senate "Indicator for Senate Bills/Resolutions"
+
+. la var year "Legislative Session Year"
+
+. la var bill_number "KY Legislation Identifier"
+
+. la var bill_id "Legiscan Unique ID for KY Legislation"
+
+. la var ised "Indicator of whether or not the bill is education related"
+
+. la var didsponsor "Indicator of whether or not the legislator sponsored the bill"
+
+. la var cosponsid "Legiscan Person ID for Bill Cosponsors"
+
+. la var didcosponsor "Indicator of whether or not the cosponsor cosponsored the bill"
+
+. 
+. /*
+> 
+> Check things from this point down to make sure the adjacency matrix gets 
+> constructed correctly.  Make sure that nwcommands are installed and available
+> in the Stata instance.
+> 
+> */
+. 
+. // Drops cases where the individual is listed as sponsor and cosponsor
+. drop if name == cosponsname
+(70,684 observations deleted)
+
+. 
+. // Creates a dyad indicator.  These can be used to create weights
+. // Value should be 1 if name and cosponsname both sponsored the bill
+. // Value should be -1 if name sponsored the bill and cosponsname did not sponsor
+. // Value should be 0 if neither name nor cosponsname sponsored the bill
+. // Attempting to only map positive ties
+. bys sponsor_id bill_id (cosponsid): g byte dyad =                                                        ///   
+> cond(sponsor_id == cosponsid, ., cond(didsponsor + didcosponsor == 2, 1, 0))   
+
+. // cond(didsponsor + didcosponsor == 1, -1, 0)))
+. 
+. // Sort once for the next two operations
+. sort sponsor_id cosponsid year
+
+. 
+. // Creates a within year weight for each pair of legislators
+. by sponsor_id cosponsid year: egen nwwiyrwgt = total(dyad)
+
+. 
+. // Creates a within year weight for each pair of legislators for education bills
+. by sponsor_id cosponsid year: egen nwwiyrwgted = total(dyad) if ised == 1
+(5885658 missing values generated)
+
+. 
+. // Sort once for the next two operations
+. sort sponsor_id cosponsid
+
+. 
+. // Creates a between year weight for each pair of legislators
+. by sponsor_id cosponsid: egen nwbeyrwgt = total(dyad)
+
+. 
+. // Creates a between year weight for each pair of legislators for education bills
+. by sponsor_id cosponsid: egen nwbeyrwgted = total(dyad) if ised == 1
+(5885658 missing values generated)
+
+. 
+. // Subtract education legislation from the total legislation measures
+. replace nwwiyrwgt = nwwiyrwgt - nwwiyrwgted
+(5,923,718 real changes made, 5,885,658 to missing)
+
+. replace nwbeyrwgt = nwbeyrwgt - nwbeyrwgted
+(5,923,718 real changes made, 5,885,658 to missing)
+
+. 
+. // Generate binary indicator for unweighted network for non-education legislation
+. g byte nonedpair = nwwiyrwgt > 0
+
+. 
+. // Generate binary indicator for unweighted network for education legislation
+. g byte isedpair = nwwiyrwgted > 0
+
+. 
+. // Add variable labels to the variables just created
+. la var dyad "Cosponsorship Dyad Indicator"
+
+. la var nwwiyrwgt "Within year network weight"
+
+. la var nwwiyrwgted "Within year network weight for education legislation"
+
+. la var nwbeyrwgt "Between year network weight"
+
+. la var nwbeyrwgted "Between year network weight for education legislation"
+
+. la var nonedpair "Binary Indicator for Non-Education Legislative Ties"
+
+. la var isedpair "Binary Indicator for Education Legislative Ties"
+
+. 
+. // Compress the data set
+. compress
+  variable nwwiyrwgt was float now byte
+  variable nwwiyrwgted was float now byte
+  variable nwbeyrwgt was float now byte
+  variable nwbeyrwgted was float now byte
+  (76,395,696 bytes saved)
+
+. 
+. // Keeps a subset of the data
+. keep sponsor_id name party district house year bill_number bill_id ised          ///   
+> didsponsor cosponsname cosponsparty cosponsdistrict didcosponsor dyad            ///   
+> nwwiyrwgt nwbeyrwgt nwwiyrwgted nwbeyrwgted cosponsid nonedpair isedpair         ///   
+> nodepos
+
+. 
+. // Saves the full 
+. save `"$clean/sponsorBillPeople.dta"', replace
+file ~/Desktop/kyLegislation/data/clean/2018/sponsorBillPeople.dta saved
+
+. 
+. // Only keeps the records needed to construct the adjacency matrix
+. keep if ised == 1
+(5,885,658 observations deleted)
+
+. 
+. // Drops other variables that are unnecessary
+. drop ised bill_number bill_id didsponsor dyad didcosponsor 
+
+. 
+. // Drop duplicated records from 70,103,624 records to 201,280 records 
+. duplicates drop
+
+Duplicates in terms of all variables
+
+(469,344 observations deleted)
+
+. 
+. // Test primary key assumption
+. isid sponsor_id cosponsid year
+
+. 
+. // Sorts the data to make it faster to subset later
+. sort year house sponsor_id cosponsid
+
+. 
+. // Preserve the current state of the data
+. preserve
+
+. 
+.         // Keep only records for the house
+.         keep if house == 1
+(1,406 observations deleted)
+
+. 
+.         // Saves the file used for the analysis
+.         save `"$analysis/kyHouseData.dta"', replace
+file ~/Desktop/kyLegislation/data/clean/analysis/kyHouseData.dta saved
+
+. 
+. // Restore the dataset and preserve again
+. restore, preserve
+
+.         
+.         // Keep only records for the house
+.         keep if house == 0
+(9,900 observations deleted)
+
+. 
+.         // Saves the file used for the analysis
+.         save `"$analysis/kySenateData.dta"', replace
+file ~/Desktop/kyLegislation/data/clean/analysis/kySenateData.dta saved
+
+. 
+. // Restore the dataset and preserve again
+. restore, preserve
+
+. 
+.         // Saves the file used for the analysis
+.         save `"$analysis/kyLegislationData.dta"', replace
+file ~/Desktop/kyLegislation/data/clean/analysis/kyLegislationData.dta saved
+
+. 
+. // Restore the dataset to original state
+. restore
+
+.                 
+. // Close the log file
+. log c cleaning          
+      name:  cleaning
+       log:  /Users/billy/Desktop/kyLegislation/logs/dataCleaning.txt
+  log type:  text
+ closed on:  14 Jul 2018, 18:41:42
+-------------------------------------------------------------------------------------------------------------------------------------------------------

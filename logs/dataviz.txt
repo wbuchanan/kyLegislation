@@ -1,0 +1,547 @@
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+      name:  visualize
+       log:  /Users/billy/Desktop/kyLegislation/logs/dataviz.txt
+  log type:  text
+ opened on:  15 Jul 2018, 10:35:44
+
+. 
+. // Defines local macro to add note to graphs
+. loc note "2018 Kentucky Legislative Data from LegiScan (http://www.legiscan.com)."
+
+. 
+. // Loads networks into Mata and also adds Stata variables in not useful format
+. nwuse `"$analysis/senateAnalyzedNetworks"', nwclear
+
+Loading successful
+(13 networks)
+--------------------
+      geodesic_2
+      geodesic_1
+      geodesic
+      geodesic_3
+      senatenonedwgt_reach
+      senatenonedwgt
+      senateedwgt_reach
+      senatenonedunwgt_reach
+      senatenonedunwgt
+      senateedunwgt_reach
+      senateedwgt
+      senateedunwgt
+      same_party
+
+. 
+. // Sets some of the options for exporting the graphs as Encapsulated PostScript
+. graph set eps orientation p
+
+. graph set eps fontface Times
+
+. graph set eps preview on
+
+. graph set eps logo off
+
+. graph set eps cmyk on
+
+. 
+. // Set note to display for the caption
+. loc capnote "Names shown for top 25% of Eigenvector Centrality Distribution."
+
+. 
+. loc note `"`capnote'  `note'"'
+
+. 
+. loc senatenonedwgt "Senate Weighted Network of Non-Education Legislation"
+
+. loc senateedwgt "Senate Weighted Network of Education Legislation"
+
+. loc senatenonedunwgt "Senate Unweighted Network of Non-Education Legislation"
+
+. loc senateedunwgt "Senate Unweighted Network of Education Legislation"
+
+. 
+. // Loops over the senate networks
+. foreach network in $senatewgt $senateunwgt {
+  2. 
+.         // Clear Stata variables from memory
+.         clear
+  3.         
+.         // Load the network
+.         nwload `network'
+  4. 
+.         // Keep only valid records
+.         keep if !mi(_nodeid) & !mi(_nodelab)
+  5.         
+.         // Join the political party data
+.         $mrgsenate
+  6. 
+.         // Keep only valid records
+.         keep if !mi(_nodeid) & !mi(_nodelab)
+  7.         
+.         // Estimates the eigenvector centrality
+.         nwevcent `network', generate(`network'_eigencent)
+  8. 
+.         // Summary of Eigenvector centrality values
+.         su `network'_eigencent, de
+  9.         
+.         // Removes names for everyone outside of the top 25% 
+.         replace name = "" if `network'_eigencent < `r(p75)'
+ 10.         
+.         // Change the end of line delimiter to a semicolon
+.         #d ;
+delimiter now ;
+.                 // Creates graph of the senate networks
+>         nwplot `network', xsize(11) ysize(8) name(`network', replace)
+>         label(name) labelopt(mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12))  
+>         color(party, colorpalette(red%50 blue%50) nodeclash(0.75)) 
+>         size(`network'_eigencent, sizebin(10) legendoff) edgefactor(0.75) 
+>         arcstyle(curved) arcsplines(50) arcbend(0.35) 
+>         layout(mds, iterations(5000))   nodefactor(1.5) 
+>         edgecolor(, edgecolorpalette(orange%15)) 
+>         ti(`"``network''"', span c(black) size(large) pos(12) ring(7)) 
+>         note(`"`note'"', c(black) size(vsmall) pos(7) ring(7)) 
+>         plotr(margin(zero) ic(ltbluishgray)) 
+>         graphr(margin(zero) ic(ltbluishgray) lc(black) lw(vthin)) 
+>         legendopt(pos(12) ring(6) size(small) 
+>         region(lc(ltbluishgray) fc(ltbluishgray))) ;
+ 11.         // Change end of line delimiter back to carriage return
+>         #d cr
+delimiter now cr
+. 
+.         // Saves the network graph
+.         gr save `"$results/graphs/stata/`network'-graph.gph"', replace
+ 12.         
+.         // Exports the graph as a PDF document
+.         gr export `"$results/graphs/pub/`network'-graph.pdf"', as(pdf) replace
+ 13.                 
+. } // End Loop over senate networks
+(0 observations deleted)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             0
+    matched                                38  
+    -----------------------------------------
+(0 observations deleted)
+----------------------------------------
+  Network name: senatenonedwgt
+----------------------------------------
+    Eigenvector centrality
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+senatenone~t |         38    .1540153    .0516258   .0083573   .1995542
+
+                  senatenonedwgt_eigencent
+-------------------------------------------------------------
+      Percentiles      Smallest
+ 1%     .0083573       .0083573
+ 5%     .0248665       .0248665
+10%     .0746048       .0382018       Obs                  38
+25%     .1338073       .0746048       Sum of Wgt.          38
+
+50%     .1717331                      Mean           .1540153
+                        Largest       Std. Dev.      .0516258
+75%     .1914408        .196979
+90%      .196979       .1995542       Variance       .0026652
+95%     .1995542       .1995542       Skewness      -1.412337
+99%     .1995542       .1995542       Kurtosis       4.048871
+(27 real changes made)
+
+
+Calculating node coordinates...
+Generating splines...
+Plotting network...
+(file ~/Desktop/kyLegislation/results/graphs/stata/senatenonedwgt-graph.gph saved)
+(file ~/Desktop/kyLegislation/results/graphs/pub/senatenonedwgt-graph.pdf written in PDF format)
+(0 observations deleted)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            17
+        from master                         0  
+        from using                         17  
+
+    matched                                21  
+    -----------------------------------------
+(17 observations deleted)
+number of observations (_N) was 21, now 38
+----------------------------------------
+  Network name: senateedwgt
+----------------------------------------
+    Eigenvector centrality
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+senateedwg~t |         21    .1843403    .1196645   .0108352   .4115078
+
+                    senateedwgt_eigencent
+-------------------------------------------------------------
+      Percentiles      Smallest
+ 1%     .0108352       .0108352
+ 5%     .0443001       .0443001
+10%     .0698105       .0698105       Obs                  21
+25%      .084322       .0698105       Sum of Wgt.          21
+
+50%     .1662687                      Mean           .1843403
+                        Largest       Std. Dev.      .1196645
+75%     .2951163       .3207801
+90%     .3260594       .3260594       Variance       .0143196
+95%     .3497331       .3497331       Skewness       .2705571
+99%     .4115078       .4115078       Kurtosis       1.735822
+(15 real changes made)
+(17 missing values generated)
+(17 missing values generated)
+
+
+Calculating node coordinates...
+Generating splines...
+Plotting network...
+(file ~/Desktop/kyLegislation/results/graphs/stata/senateedwgt-graph.gph saved)
+(file ~/Desktop/kyLegislation/results/graphs/pub/senateedwgt-graph.pdf written in PDF format)
+(0 observations deleted)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             0
+    matched                                38  
+    -----------------------------------------
+(0 observations deleted)
+----------------------------------------
+  Network name: senatenonedunwgt
+----------------------------------------
+    Eigenvector centrality
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+senatenone~t |         38    .1540153    .0516258   .0083573   .1995542
+
+                 senatenonedunwgt_eigencent
+-------------------------------------------------------------
+      Percentiles      Smallest
+ 1%     .0083573       .0083573
+ 5%     .0248665       .0248665
+10%     .0746048       .0382018       Obs                  38
+25%     .1338073       .0746048       Sum of Wgt.          38
+
+50%     .1717331                      Mean           .1540153
+                        Largest       Std. Dev.      .0516258
+75%     .1914408        .196979
+90%      .196979       .1995542       Variance       .0026652
+95%     .1995542       .1995542       Skewness      -1.412337
+99%     .1995542       .1995542       Kurtosis       4.048871
+(27 real changes made)
+
+
+Calculating node coordinates...
+Generating splines...
+Plotting network...
+(file ~/Desktop/kyLegislation/results/graphs/stata/senatenonedunwgt-graph.gph saved)
+(file ~/Desktop/kyLegislation/results/graphs/pub/senatenonedunwgt-graph.pdf written in PDF format)
+(0 observations deleted)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            17
+        from master                         0  
+        from using                         17  
+
+    matched                                21  
+    -----------------------------------------
+(17 observations deleted)
+number of observations (_N) was 21, now 38
+----------------------------------------
+  Network name: senateedunwgt
+----------------------------------------
+    Eigenvector centrality
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+senateedun~t |         21    .1843403    .1196645   .0108352   .4115078
+
+                   senateedunwgt_eigencent
+-------------------------------------------------------------
+      Percentiles      Smallest
+ 1%     .0108352       .0108352
+ 5%     .0443001       .0443001
+10%     .0698105       .0698105       Obs                  21
+25%      .084322       .0698105       Sum of Wgt.          21
+
+50%     .1662687                      Mean           .1843403
+                        Largest       Std. Dev.      .1196645
+75%     .2951163       .3207801
+90%     .3260594       .3260594       Variance       .0143196
+95%     .3497331       .3497331       Skewness       .2705571
+99%     .4115078       .4115078       Kurtosis       1.735822
+(15 real changes made)
+(17 missing values generated)
+(17 missing values generated)
+
+
+Calculating node coordinates...
+Generating splines...
+Plotting network...
+(file ~/Desktop/kyLegislation/results/graphs/stata/senateedunwgt-graph.gph saved)
+(file ~/Desktop/kyLegislation/results/graphs/pub/senateedunwgt-graph.pdf written in PDF format)
+
+. 
+. // Loads the house networks
+. nwuse `"$analysis/houseAnalyzedNetworks"', nwclear
+
+Loading successful
+(13 networks)
+--------------------
+      geodesic_2
+      geodesic_1
+      geodesic
+      geodesic_3
+      housenonedwgt_reach
+      housenonedwgt
+      houseedwgt_reach
+      housenonedunwgt_reach
+      housenonedunwgt
+      houseedunwgt_reach
+      houseedwgt
+      houseedunwgt
+      same_party
+
+. 
+. loc housenonedwgt "House Weighted Network of Non-Education Legislation"
+
+. loc houseedwgt "House Weighted Network of Education Legislation"
+
+. loc housenonedunwgt "House Unweighted Network of Non-Education Legislation"
+
+. loc houseedunwgt "House Unweighted Network of Education Legislation"
+
+. 
+. // Loops over house networks
+. foreach network in $housewgt $houseunwgt {
+  2.         
+.         // Clear Stata variables from memory
+.         clear
+  3.         
+.         // Load the network
+.         nwload `network'
+  4. 
+.         // Keep only valid records
+.         keep if !mi(_nodeid) & !mi(_nodelab)
+  5.         
+.         // Join the political party data
+.         $mrghouse
+  6. 
+.         // Estimates the eigenvector centrality
+.         nwevcent `network', generate(`network'_eigencent)
+  7.         
+.         su `network'_eigencent, de
+  8.         
+.         replace name = "" if `network'_eigencent < `r(p75)'
+  9.         
+.         // Keep only valid records
+.         keep if !mi(_nodeid) & !mi(_nodelab)
+ 10.         
+.         if ustrregexm(`"`network'"', "noned") == 1 {
+ 11.                 loc edgef 0.25
+ 12.                 loc nodef 0.5
+ 13.         }
+ 14.         else {
+ 15.                 loc edgef 1.15
+ 16.                 loc nodef 1
+ 17.         }
+ 18.         
+.         #d ;
+delimiter now ;
+.                 // Creates graph of the senate networks
+>         nwplot `network', xsize(11) ysize(8) name(`network', replace)
+>         label(name) labelopt(mlabs(tiny) mlabc(black) mlabgap(*1.25) mlabp(12)) 
+>         color(party, colorpalette(red%50 blue%50) nodeclash(1000000))   
+>         size(`network'_eigencent, sizebin(10) nodeclash(1000000) legendoff) 
+>         edgefactor(`edgef')      
+>         arcstyle(curved) arcsplines(15) arcbend(0.35)                                   
+>         layout(mds, iterations(5000)) nodefactor(`nodef')       
+>         edgecolor(, edgecolorpalette(orange%15)) 
+>         ti(`"``network''"', span c(black) size(large) pos(12) ring(7)) 
+>         note(`"`note'"', c(black) size(vsmall) span pos(7) ring(7)) 
+>         plotr(margin(zero) ic(ltbluishgray)) 
+>         graphr(margin(zero) ic(ltbluishgray) lc(black) lw(vthin)) 
+>         legendopt(pos(12) ring(6) size(small) 
+>         region(lc(ltbluishgray) fc(ltbluishgray))) ;
+ 19.                         #d cr
+delimiter now cr
+.         
+.         // Saves the network graph
+.         gr save `"$results/graphs/stata/`network'-graph.gph"', replace
+ 20.         
+.         // Exports the graph as a PDF document
+.         gr export `"$results/graphs/pub/`network'-graph.pdf"', as(pdf) replace
+ 21.         
+. } // End Loop over house networks
+(0 observations deleted)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             0
+    matched                               100  
+    -----------------------------------------
+----------------------------------------
+  Network name: housenonedwgt
+----------------------------------------
+    Eigenvector centrality
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+housenoned~t |        100    .0977956    .0209865   .0208974    .120216
+
+                   housenonedwgt_eigencent
+-------------------------------------------------------------
+      Percentiles      Smallest
+ 1%     .0302459       .0208974
+ 5%     .0479794       .0395943
+10%     .0637798       .0401191       Obs                 100
+25%     .0924121       .0455271       Sum of Wgt.         100
+
+50%     .1038444                      Mean           .0977956
+                        Largest       Std. Dev.      .0209865
+75%     .1122822       .1183526
+90%     .1147228       .1191005       Variance       .0004404
+95%     .1180911       .1195892       Skewness      -1.660775
+99%     .1199026        .120216       Kurtosis        5.19637
+(75 real changes made)
+(0 observations deleted)
+
+
+Calculating node coordinates...
+Generating splines...
+Plotting network...
+(file ~/Desktop/kyLegislation/results/graphs/stata/housenonedwgt-graph.gph saved)
+(file ~/Desktop/kyLegislation/results/graphs/pub/housenonedwgt-graph.pdf written in PDF format)
+(0 observations deleted)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            43
+        from master                         0  
+        from using                         43  
+
+    matched                                57  
+    -----------------------------------------
+----------------------------------------
+  Network name: houseedwgt
+----------------------------------------
+    Eigenvector centrality
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+houseedwgt~t |         57    .1118915    .0715113   .0030895   .2864549
+
+                    houseedwgt_eigencent
+-------------------------------------------------------------
+      Percentiles      Smallest
+ 1%     .0030895       .0030895
+ 5%     .0079053       .0030895
+10%     .0120543       .0079053       Obs                  57
+25%     .0562747       .0080042       Sum of Wgt.          57
+
+50%     .1142837                      Mean           .1118915
+                        Largest       Std. Dev.      .0715113
+75%     .1488466       .2349757
+90%     .2028353       .2579998       Variance       .0051139
+95%     .2579998       .2584825       Skewness       .3754815
+99%     .2864549       .2864549       Kurtosis       2.401158
+(43 real changes made)
+(43 observations deleted)
+
+
+Calculating node coordinates...
+Generating splines...
+Plotting network...
+(file ~/Desktop/kyLegislation/results/graphs/stata/houseedwgt-graph.gph saved)
+(file ~/Desktop/kyLegislation/results/graphs/pub/houseedwgt-graph.pdf written in PDF format)
+(0 observations deleted)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             0
+    matched                               100  
+    -----------------------------------------
+----------------------------------------
+  Network name: housenonedunwgt
+----------------------------------------
+    Eigenvector centrality
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+housenoned~t |        100    .0977956    .0209865   .0208974    .120216
+
+                  housenonedunwgt_eigencent
+-------------------------------------------------------------
+      Percentiles      Smallest
+ 1%     .0302459       .0208974
+ 5%     .0479794       .0395943
+10%     .0637798       .0401191       Obs                 100
+25%     .0924121       .0455271       Sum of Wgt.         100
+
+50%     .1038444                      Mean           .0977956
+                        Largest       Std. Dev.      .0209865
+75%     .1122822       .1183526
+90%     .1147228       .1191005       Variance       .0004404
+95%     .1180911       .1195892       Skewness      -1.660775
+99%     .1199026        .120216       Kurtosis        5.19637
+(75 real changes made)
+(0 observations deleted)
+
+
+Calculating node coordinates...
+Generating splines...
+Plotting network...
+(file ~/Desktop/kyLegislation/results/graphs/stata/housenonedunwgt-graph.gph saved)
+(file ~/Desktop/kyLegislation/results/graphs/pub/housenonedunwgt-graph.pdf written in PDF format)
+(0 observations deleted)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                            43
+        from master                         0  
+        from using                         43  
+
+    matched                                57  
+    -----------------------------------------
+----------------------------------------
+  Network name: houseedunwgt
+----------------------------------------
+    Eigenvector centrality
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+houseedunw~t |         57    .1118915    .0715113   .0030895   .2864549
+
+                   houseedunwgt_eigencent
+-------------------------------------------------------------
+      Percentiles      Smallest
+ 1%     .0030895       .0030895
+ 5%     .0079053       .0030895
+10%     .0120543       .0079053       Obs                  57
+25%     .0562747       .0080042       Sum of Wgt.          57
+
+50%     .1142837                      Mean           .1118915
+                        Largest       Std. Dev.      .0715113
+75%     .1488466       .2349757
+90%     .2028353       .2579998       Variance       .0051139
+95%     .2579998       .2584825       Skewness       .3754815
+99%     .2864549       .2864549       Kurtosis       2.401158
+(43 real changes made)
+(43 observations deleted)
+
+
+Calculating node coordinates...
+Generating splines...
+Plotting network...
+(file ~/Desktop/kyLegislation/results/graphs/stata/houseedunwgt-graph.gph saved)
+(file ~/Desktop/kyLegislation/results/graphs/pub/houseedunwgt-graph.pdf written in PDF format)
+
+. 
+. // Close the log file
+. log c visualize
+      name:  visualize
+       log:  /Users/billy/Desktop/kyLegislation/logs/dataviz.txt
+  log type:  text
+ closed on:  15 Jul 2018, 10:38:32
+-------------------------------------------------------------------------------------------------------------------------------------------------------

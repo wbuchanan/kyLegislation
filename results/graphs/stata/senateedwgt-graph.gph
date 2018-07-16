@@ -1,0 +1,1359 @@
+StataFileTM:00001:01000:LiveGPH:                       :
+00005:00004:
+*! classname: twowaygraph_g
+*! family: twoway
+*! command: twoway || (scatter __000005 __000006 if __000005 !=.,  msymbol("scheme p0")  mfcolor("red%50") mlwidth("vthin") mlcolor("red%50")   msize(2)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12))  || (scatter __000005 __000006 if __000005 !=.,  msymbol("scheme p0")  mfcolor("blue%50") mlwidth("vthin") mlcolor("blue%50")   msize(2)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12))  || (pcspike sy sx ey ex if value != 0 & edgesize == 1 & edgecolor == 1, lpattern(scheme p1linepattern) lwidth(.1875) lcolor("orange%15") mfcolor("orange%15") mcolor("orange%15") msize(2) barbsize(1.4) ) || (pcspike sy sx ey ex if value != 0 & edgesize == 1  & edgecolor == 1 & arrow == 1,  lpattern(scheme p1linepattern) lwidth(.1875) lcolor("orange%15") mfcolor("orange%15") mcolor("orange%15") msize(2) barbsize(1.4) ) ||  (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 1080,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(1.62) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 1080,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(1.62) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 1330,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(1.995) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 1330,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(1.995) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 1510,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(2.265) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 1510,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(2.265) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 1620,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(2.43) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 1620,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(2.43) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 1630,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(2.445) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 1630,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(2.445) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 2140,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(3.21) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 2140,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(3.21) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 2220,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(3.33) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 2220,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(3.33) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 2470,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(3.705) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 2470,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(3.705) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 2690,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(4.035) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 2690,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(4.035) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 2800,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(4.2) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 2800,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(4.2) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 2890,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(4.335) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 2890,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(4.335) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 3160,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(4.74) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 3160,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(4.74) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 3230,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(4.845) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 3230,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(4.845) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 3340,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(5.01) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 3340,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(5.01) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 3380,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(5.07) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 3380,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(5.07) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 3550,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(5.325) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 3550,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(5.325) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 4000,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(6) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 4000,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(6) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) ||   , ylabel(, nogrid) yscale(off range(0 100)) xscale(off range(0 150)) graphregion(color("scheme plotregion")) plotregion(color("scheme plotregion") margin(.00225 .00225 .00225 .00225)) aspectratio(.67) legend(order( 1 2 -  -         )  label(1 "Republican") label(2 "Democrat")     pos(12) ring(6) size(small) region(lc(ltbluishgray) fc(ltbluishgray)) cols(2))  xsize(11) ysize(8) name(senateedwgt, replace) ti(`"Senate Weighted Network of Education Legislation"', span c(black) size(large) pos(12) ring(7)) note(`"Names shown for top 25% of Eigenvector Centrality Distribution.  2018 Kentucky Legislative Data from LegiScan (http://www.legiscan.com)."', c(black) size(vsmall) pos(7) ring(7)) plotr(margin(zero) ic(ltbluishgray)) graphr(margin(zero) ic(ltbluishgray) lc(black) lw(vthin))
+*! command_date: 15 Jul 2018
+*! command_time: 10:36:06
+*! datafile: 
+*! datafile_date: 
+*! scheme: s2color
+*! naturallywhite: 1
+*! xsize: 11
+*! ysize: 8
+*! end
+<BeginItem> serset K60800107f340 
+<BeginSerset>
+<BeginSeries>
+.name = `"__000005"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min = (.)
+.max = (.)
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"__000006"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min = (.)
+.max = (.)
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"ny"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min = (.)
+.max = (.)
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nx"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min = (.)
+.max = (.)
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nlabel"'
+.label = `""'
+.format = `"%20s"'
+.type.set string
+.min = (.)
+.max = (.)
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+.weight_id = (.)
+<BeginSersetData>
+sersetreadwrite        şşşş__000005                                                                                                                                              __000006                                                                                                                                              ny bel                                                                                                                                                nx                                                                                                                                                    nlabel                                                                                                                                                %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %20s                                                           à      à      à      à      à      à      à      à      à      à
+<EndSersetData>
+<EndSerset>
+<EndItem>
+<BeginItem> serset K608001473140 
+<BeginSerset>
+<BeginSeries>
+.name = `"sy"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  4.999998569488525
+.max =  95.59781646728516
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"sx"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  27.80192375183105
+.max =  117.5000076293945
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"ey"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  4.999998569488525
+.max =  95.59781646728516
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"ex"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  27.5
+.max =  117.5
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+.weight_id = (.)
+<BeginSersetData>
+sersetreadwrite    Z  şşşşsy 00005                                                                                                                                              sx 00006                                                                                                                                              ey bel                                                                                                                                                ex                                                                                                                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                        ÿÿ@   àJÍ;@    ÿÿ@     €;@    BæW@     `]@    BæW@     `]@!jaBÚ7ÀB	¹bBb©ÀB	¹bBb©ÀB–dB¥ÁB–dB¥ÁBgeBÁBgeBÁBºÆfBäÁBºÆfBäÁBà*hBDÂBà*hBDÂBÆ“iB’ŸÂBÆ“iB’ŸÂB/kBvöÂB/kBvöÂBàrlB²HÃBàrlB²HÃBèmB;–ÃBèmB;–ÃB(boBßÃB(boBßÃBCßpBú"ÄBCßpBú"ÄB°_rBbÄB°_rBbÄB0ãsBZœÄB0ãsBZœÄBƒiuB«ÑÄBƒiuB«ÑÄBhòvBÅBhòvBÅB¡}xBh-ÅB¡}xBh-ÅBë
+zBÄSÅBë
+zBÄSÅBš{BuÅBš{BuÅB¯*}BV‘ÅB¯*}BV‘ÅB§¼~Bƒ¨ÅB§¼~Bƒ¨ÅBÔ'€B—ºÅBÔ'€B—ºÅBºñ€B‘ÇÅBºñ€B‘ÇÅBä»BlÏÅBä»BlÏÅB/†‚B)ÒÅB/†‚B)ÒÅB|PƒBÇÏÅB|PƒBÇÏÅB©„BGÈÅB©„BGÈÅB•ä„B¨»ÅB•ä„B¨»ÅB®…Bî©ÅB®…Bî©ÅB$w†B“ÅB$w†B“ÅB…?‡B5wÅB…?‡B5wÅB!ˆB=VÅB!ˆB=VÅBØÍˆB;0ÅBØÍˆB;0ÅB‡“‰B4ÅB‡“‰B4ÅBXŠB/ÕÄBXŠB/ÕÄBQ‹B5 ÄBQ‹B5 ÄB+İ‹BNfÄB+İ‹BNfÄB~ŒB„'ÄB~ŒB„'ÄB*\BàãÃB*\BàãÃBBo›ÃBBo›ÃBÔB;NÃBÔB;NÃBBQüÂBBQüÂBëCBÀ¥ÂBëCBÀ¥ÂB†øB”JÂB†øB”JÂBÄª‘BŞêÁBÄª‘BŞêÁB‡Z’B­†ÁB‡Z’B­†ÁB³“BÁB³“BÁB*²“B±ÀB*²“B±ÀBÑY”Bİ?ÀBÑY”Bİ?ÀBş”BjÊ¿B@Bu„ÀBÃj?Bğ¼ÀB@Bu„ÀB/@BìMÀB/@BìMÀB<AB^ÀB<AB^ÀBrÜABÓæ¿BrÜABÓæ¿BdBBU¶¿BdBBU¶¿B½$CBê‡¿B½$CBê‡¿BbÌCB›[¿BbÌCB›[¿B7vDBo1¿B7vDBo1¿B!"EBm	¿B!"EBm	¿BĞEBšã¾BĞEBšã¾BÂFBÿ¿¾BÂFBÿ¿¾B?1GB ¾B?1GB ¾B_äGB‚¾B_äGB‚¾B™HB¬b¾B™HB¬b¾BOIB!H¾BOIB!H¾BbJBæ/¾BbJBæ/¾Bá¾JBÿ¾Bá¾JBÿ¾BmxKBp¾BmxKBp¾Bç2LB<õ½Bç2LB<õ½B1îLBeæ½B1îLBeæ½B+ªMBîÙ½B+ªMBîÙ½B¸fNBÚÏ½B¸fNBÚÏ½B¸#OB)È½B¸#OB)È½BáOBİÂ½BáOBİÂ½B•PB÷¿½B•PB÷¿½B4\QBx¿½B4\QBx¿½BËRB^Á½BËRB^Á½B9×RB«Å½B9×RB«Å½B_”SB^Ì½B_”SB^Ì½B QTBuÕ½B QTBuÕ½B[UBîà½B[UBîà½BòÈUBÉî½BòÈUBÉî½BÅƒVBÿ½BÅƒVBÿ½B¸=WB—¾B¸=WB—¾BªöWB…&¾BªöWB…&¾B~®XBÉ=¾B~®XBÉ=¾BeYB^W¾BeYB^W¾BRZBAs¾BRZBAs¾BÎZBm‘¾BÎZBm‘¾BE€[Bİ±¾BE€[Bİ±¾BÁ0\BŒÔ¾BÁ0\BŒÔ¾Blß\Bsù¾Blß\Bsù¾B+Œ]B ¿B+Œ]B ¿Bá6^BÕI¿Bá6^BÕI¿Brß^BBu¿Brß^BBu¿BÃ…_BÍ¢¿BÃ…_BÍ¢¿B·)`BoÒ¿B·)`BoÒ¿B5Ë`B!ÀB5Ë`B!ÀB!jaBÚ7ÀB!jaBÚ7ÀBı(bBæYÀBı(bBæYÀB„ébB…yÀB„ébB…yÀB”«cB²–ÀB”«cB²–ÀBodBh±ÀBodBh±ÀBÓ3eB¢ÉÀBÓ3eB¢ÉÀBÂùeB\ßÀBÂùeB\ßÀBºÀfB”òÀBºÀfB”òÀBšˆgBEÁBšˆgBEÁBCQhBmÁBCQhBmÁB“iB
+ÁB“iB
+ÁBhäiB&ÁBhäiB&ÁB£®jBš,ÁB£®jBš,ÁB!ykB‹0ÁB!ykB‹0ÁBÂClBì1ÁBÂClBì1ÁBdmB¼0ÁBdmB¼0ÁBæØmBü,ÁBæØmBü,ÁB&£nB«&ÁB&£nB«&ÁBmoBÌÁBmoBÌÁB_6pB`ÁB_6pB`ÁBÿpBhÁBÿpBhÁBÇqBçóÀBÇqBçóÀBrBßàÀBrBßàÀBTsBTËÀBTsBTËÀBğtBI³ÀBğtBI³ÀB„ÜtBÃ˜ÀB„ÜtBÃ˜ÀB°uBÄ{ÀB°uBÄ{ÀBU_vBS\ÀBU_vBS\ÀBRwBu:ÀBRwBu:ÀBˆÛwB.ÀBˆÛwB.ÀBÚ–xB…ï¿BÚ–xB…ï¿B&PyBÆ¿B&PyBÆ¿BPzB'›¿BPzB'›¿B9¼zB€m¿B9¼zB€m¿BÃn{B’=¿BÃn{B’=¿BÒ|Bf¿BÒ|Bf¿BGÌ|B×¾BGÌ|B×¾Bw}Br ¾Bw}Br ¾Bø~B½g¾Bø~B½g¾BúÃ~Bì,¾BúÃ~Bì,¾BõeB
+ğ½BõeB
+ğ½Bg€B±½Bg€B±½B5P€B7p½B5P€B7p½BXœ€B\-½BXœ€B\-½BÄæ€Bšè¼BÄæ€Bšè¼Bk/Bú¡¼Bk/Bú¡¼BDvBŠY¼BDvBŠY¼B@»BT¼B@»BT¼BWşBfÃ»BWşBfÃ»B|?‚BËu»B"jaBÚ7ÀBñ_BÂ—¿Bñ_BÂ—¿BT€^Bñò¾BT€^Bñò¾B ]BƒI¾B ]BƒI¾B^¸[B”›½B^¸[B”›½B§aZB?é¼B§aZB?é¼BYB£2¼BYB£2¼BÙÏWBÜw»BÙÏWBÜw»B/•VB¹ºB/•VB¹ºBGdUBMö¹BGdUBMö¹BU=TBÄ/¹BU=TBÄ/¹Bˆ SBe¸Bˆ SBe¸BRBÑ—·BRBÑ—·BQB©Æ¶BQB©Æ¶BËPB;òµBËPB;òµBVOB«µBVOB«µBİ.NB@´Bİ.NB@´B‰RMB­b³B‰RMB­b³B}LBˆ‚²B}LBˆ‚²BÛ»KBÑŸ±BÛ»KBÑŸ±BÄKB¬º°BÄKB¬º°BUSJB>Ó¯BUSJB>Ó¯B¬°IB®é®B¬°IB®é®BäIB#ş­BäIB#ş­BHBÂ­BHBÂ­BVHB³!¬BVHB³!¬B»GB1«B»GB1«BY7GB'?ªBY7GB'?ªB>İFBúK©B>İFBúK©B{FB¼W¨B{FB¼W¨BNFB—b§BNFB—b§B*FB±l¦B*FB±l¦B°ğEB5v¥B°ğEB5v¥BµÔEBI¤BµÔEBI¤B;ÅEBˆ£B;ÅEBˆ£BGÂEBÈ¢BGÂEBÈ¢BÙËEB‚™¡BÙËEB‚™¡BîáEBq¢ BîáEBq¢ B„FB»«ŸB„FB»«ŸB”3FB‰µB”3FB‰µBoFBÀBoFBÀB·FBTËœB·FBTËœBNGB¡×›BNGB¡×›BçkGBåšBçkGBåšBÁØGBÒó™BÁØGBÒó™BÈQHB™BÈQHB™BéÖHBÕ˜BéÖHBÕ˜BhIBh)—BhIBh)—BJBä>–BJBä>–B®JBpV•BT£AÊ²¦BŞšA!¤¦BŞšA!¤¦BŠ•AÔ“¦BŠ•AÔ“¦B®“
+Aä¦B®“
+Aä¦B•AVn¦B•AVn¦B®›A-Y¦B®›A-Y¦B/¦AkB¦B/¦AkB¦BvµA*¦BvµA*¦BÔÉ A/¦BÔÉ A/¦B.Çı@¼ô¥B.Çı@¼ô¥B%ú@Â×¥B%ú@Â×¥B'Qö@E¹¥B'Qö@E¹¥BĞ¨ò@K™¥BĞ¨ò@K™¥B¸ï@×w¥B¸ï@×w¥By€ë@ñT¥By€ë@ñT¥B¨è@0¥B¨è@0¥BÕ‘ä@á
+¥BÕ‘ä@á
+¥B•1á@Åã¤B•1á@Åã¤Bráİ@M»¤Bráİ@M»¤Bù¡Ú@‚‘¤Bù¡Ú@‚‘¤B°s×@if¤B°s×@if¤B WÔ@	:¤B WÔ@	:¤BÊLÑ@k¤BÊLÑ@k¤B,UÎ@•İ£B,UÎ@•İ£BÆpË@­£BÆpË@­£B È@b|£B È@b|£B€ãÅ@J£B€ãÅ@J£B‡;Ã@°£B‡;Ã@°£B˜¨À@<â¢B˜¨À@<â¢B+¾@Á¬¢B+¾@Á¬¢BÃ»@Iv¢BÃ»@Iv¢B&r¹@Û>¢B&r¹@Û>¢Bp7·@‚¢Bp7·@‚¢Bºµ@GÍ¡Bºµ@GÍ¡B_³@2“¡B_³@2“¡B¶±@MX¡B¶±@MX¡B6¯@£¡B6¯@£¡B»q­@<à B»q­@<à BÆ«@$£ BÆ«@$£ B*3ª@ce B*3ª@ce Bw¹¨@' Bw¹¨@' B&Y§@èŸB&Y§@èŸBp¦@”¨ŸBp¦@”¨ŸBŒå¤@˜hŸBŒå¤@˜hŸB«Ò£@((ŸB«Ò£@((ŸBùÙ¢@NçBùÙ¢@NçB û¡@¦B û¡@¦BÄ7¡@†dBÄ7¡@†dB… @®"B… @®"B   @–àB¤mYAÀ®BÁïYAÖÃ®B¤mYAÀ®B/ŞXA@®B/ŞXA@®B{AXAíş­B{AXAíş­B¡—WAD¾­B¡—WAD¾­B½àVA*~­B½àVA*~­BíVAª>­BíVAª>­BPLUAÍÿ¬BPLUAÍÿ¬B
+oTAŸÁ¬B
+oTAŸÁ¬B>…SA)„¬B>…SA)„¬BRAuG¬BRAuG¬B³ŒQA¬B³ŒQA¬BE~PA}Ğ«BE~PA}Ğ«B÷cOAK–«B÷cOAK–«Bø=NA]«Bø=NA]«BwMA¯$«BwMA¯$«B¦ÏKAVíªB¦ÏKAVíªB»‡JA·ªB»‡JA·ªBê4IA½ªBê4IA½ªBl×GAMªBl×GAMªBxoFAªBxoFAªBKıDA—è©BKıDA—è©B!CAà·©B!CAà·©B8ûAA`ˆ©B8ûAA`ˆ©BÒk@A Z©BÒk@A Z©B/Ó>A'-©B/Ó>A'-©B’1=A}©B’1=A}©B>‡;A)×¨B>‡;A)×¨B|Ô9A2®¨B|Ô9A2®¨B’8A†¨B’8A†¨BÇV6Au`¨BÇV6Au`¨BhŒ4A»;¨BhŒ4A»;¨B¿º2Ax¨B¿º2Ax¨Bâ0A±ö§Bâ0A±ö§B¿/AlÖ§B¿/AlÖ§B-A­·§B-A­·§B;1+A{š§B;1+A{š§B®?)AÙ~§B®?)AÙ~§B±H'AÍd§B±H'AÍd§B˜L%AZL§B˜L%AZL§BµK#A…5§BµK#A…5§B[F!AQ §B[F!AQ §Bâ<AÂ§Bâ<AÂ§B/AÛú¦B/AÛú¦BãAŸê¦BãAŸê¦BAÜ¦BAÜ¦BlôA2Ï¦BlôA2Ï¦B^ÛAÄ¦B^ÛAÄ¦B7ÀAº¦B7ÀAº¦BS£AÊ²¦BR£AÊ²¦B$FARl§B$FARl§Bs,A¿¨Bs,A¿¨Bêö9Aô½¨Bêö9Aô½¨BJ HA×U©BJ HA×U©BE'VANâ©BE'VANâ©B’idADcªB’idADcªBÈÄrA¡ØªBÈÄrA¡ØªBK›€AUB«BK›€AUB«BRŞ‡AL «BRŞ‡AL «B@*Axò«B@*Axò«Bç}–AÊ8¬Bç}–AÊ8¬BØA9s¬BØA9s¬B“7¥A¹¡¬B“7¥A¹¡¬B)›¬ADÄ¬B)›¬ADÄ¬B¤´AÓÚ¬B¤´AÓÚ¬BÑi»Acå¬BÑi»Acå¬BoÒÂAòã¬BoÒÂAòã¬BL:ÊAÖ¬BL:ÊAÖ¬B2 ÑA½¬B2 ÑA½¬BíÙA¨—¬BíÙA¨—¬B?aàAKf¬B?aàAKf¬Bö¹çA)¬Bö¹çA)¬BãïAÖß«BãïAÖß«BÊUöAÔŠ«BÊUöAÔŠ«B{–ıA*«B{–ıA*«BdfBŠ½ªBdfBŠ½ªBÂûBbEªBÂûBbEªB¾Š	B¨Á©B¾Š	B¨Á©BÄBq2©BÄBq2©BB“BÕ—¨BB“BÕ—¨B Bìñ§B Bìñ§BO{BÓ@§BO{BÓ@§B¾áB¦„¦B¾áB¦„¦Bb>B„½¥Bb>B„½¥B¨!Bë¤B¨!Bë¤BØ$Bæ¤BØ$Bæ¤B÷(B°'£B÷(B°'£BìC+B6¢BìC+B6¢Bcg.B6:¡Bcg.B6:¡BØ}1BB4 BØ}1BB4 BÌ†4Bb$ŸBÌ†4Bb$ŸB¹7BÄ
+B¹7BÄ
+B'n:B”çœB'n:B”çœBšK=B»›BšK=B»›B™@BB…šB™@BB…šB®×BB…F™B®×BB…F™Bf…EBÿş—Bf…EBÿş—BR"HBå®–BR"HBå®–B®JBpV•B¡ÇŞAQí[B¹MÛA•]B¡ÇŞAQí[B·VâAèPZB·VâAèPZB`úåA*ÀXB`úåA*ÀXB²éAW;WB²éAW;WB}íA°ÂUB}íA°ÂUBÜZñAqVTBÜZñAqVTBÆJõAØöRBÆJõAØöRB*LùA¤QB*LùA¤QBc^ıAy^PBc^ıAy^PB`À B &OB`À B &OBKÙBGûMBKÙBGûMB›ùBŞLB›ùBŞLBø BÑÎKBø BÑÎKBO	B‘ÍJBO	B‘ÍJBeƒB†ÚIBeƒB†ÚIBÀ½BÙõHBÀ½BÙõHBµıB®HBµıB®HBçBB*XGBçBB*XGBõŒBlŸFBõŒBlŸFBƒÛB“õEBƒÛB“õEB+.B»ZEB+.B»ZEB„BıÎDB„BıÎDBKŞBpRDBKŞBpRDBü: B)åCBü: B)åCB?š"B9‡CB?š"B9‡CB²û$B±8CB²û$B±8CBñ^'BœùBBñ^'BœùBB•Ã)BÊBB•Ã)BÊBB;),Bõ©BB;),Bõ©BB€.Bp™BB€.Bp™BBüõ0Bx˜BBüõ0Bx˜BBM\3B§BBM\3B§BBÂ5B2ÅBBÂ5B2ÅBB×&8BÛòBB×&8BÛòBBFŠ:B0CBFŠ:B0CB÷ë<B¢|CB÷ë<B¢|CB‡K?B¨ØCB‡K?B¨ØCB¨AB	DDB¨AB	DDB®DB±¾DB®DB±¾DBYFBHEBYFBHEB¦¬HB†áEB¦¬HB†áEBºûJBƒ‰FBºûJBƒ‰FB]FMBi@GB]FMBi@GB0ŒOBHB0ŒOBHBÑÌQBuÚHBÑÌQBuÚHBâTBW½IBâTBW½IB=VB›®JB=VB›®JBâkXB®KBâkXB®KB”ZB©»LBv”Bf7B®×”B…‘€Bv”Bf7B0”BİP}B0”BİP}B9 “B¾o{B9 “B¾o{B4,“BW”yB4,“BW”yB3²’B÷¾wB3²’B÷¾wBL2’BêïuBL2’BêïuB”¬‘B~'tB”¬‘B~'tB!‘BüerB!‘BüerBB­«pBB­«pB^ùBİønB^ùBİønBC]BĞMmBC]BĞMmBÌ»BÎªkBÌ»BÎªkBBjBBjB:iBù}hB:iBù}hBU¸ŒB­ôfBU¸ŒB­ôfB„ŒBtteB„ŒBtteBæG‹BıcBæG‹BıcB˜ˆŠB>bB˜ˆŠB>bBºÄ‰B¹,aBºÄ‰B¹,aBlüˆB<Ó_BlüˆB<Ó_BÏ/ˆBÿƒ^BÏ/ˆBÿƒ^B_‡B9?]B_‡B9?]B0Š†B \B0Š†B \Br±…BèÕZBr±…BèÕZBğÔ„BÁ±YBğÔ„BÁ±YBÍôƒBÜ˜XBÍôƒBÜ˜XB.ƒBg‹WB.ƒBg‹WB9*‚B‰VB9*‚B‰VB@B}“UB@B}“UBäR€BY©TBäR€BY©TB¢Å~BKËSB¢Å~BKËSBà|BwùRBà|BwùRB@õzBÿ3RB@õzBÿ3RB£yB{QB£yB{QB€wB¢ÎPB€wB¢ÎPB*uBù.PB*uBù.PBñsB œOBñsB œOB,qB1OB,qB1OB,oBBNB,oBBNBGmBf1NBGmBf1NBĞkB¯ÒMBĞkB¯ÒMB iB,MB iB,MBŠôfBë<MBŠôfBë<MBdædB÷MBdædB÷MB×bBZÜLB×bBZÜLBÅÆ`BÀLBÅÆ`BÀLBùµ^B:±LBùµ^B:±LB÷¤\B¾¯LB÷¤\B¾¯LB”ZB§»LBæğ!B(GZBı!B’@[Bæğ!B(GZBĞ"BPSYBĞ"BPSYBOµ#B2eXBOµ#B2eXB„ $Bõ|WB„ $Bõ|WB‡‘%B¿šVB‡‘%B¿šVB1ˆ&B¶¾UB1ˆ&B¶¾UBX„'BıèTBX„'BıèTBÓ…(B¸TBÓ…(B¸TBxŒ)BQSBxŒ)BQSB˜*BRB˜*BRB“¨+BìÓQB“¨+BìÓQB±½,B¾QB±½,B¾QBH×-B£rPBH×-B£rPB)õ.B¶ÌOB)õ.B¶ÌOB&0B.OB&0B.OB=1BÖ–NB=1BÖ–NB´f2BNB´f2BNBä“3Bé~MBä“3Bé~MBnÄ4BhşLBnÄ4BhşLB!ø5B¦…LB!ø5B¦…LBÇ.7B¹LBÇ.7B¹LB1h8B²«KB1h8B²«KB)¤9B¢JKB)¤9B¢JKB}â:BšñJB}â:BšñJB÷"<B© JB÷"<B© JBce=BÚWJBce=BÚWJB©>B;JB©>B;JB?ï?BÖŞIB?ï?BÖŞIBC6AB´®IBC6AB´®IBf~BBŞ†IBf~BBŞ†IBnÇCBYgIBnÇCBYgIB)EB+PIB)EB+PIB^[FBWAIB^[FBWAIBÙ¥GBà:IBÙ¥GBà:IBbğHBÈ<IBbğHBÈ<IBÃ:JBGIBÃ:JBGIBÈ„KB¯YIBÈ„KB¯YIB8ÎLBªtIB8ÎLBªtIBŞNBù—IBŞNBù—IB…^OB—ÃIB…^OB—ÃIBö¤PB}÷IBö¤PB}÷IBüéQB¢3JBüéQB¢3JBb-SBüwJBb-SBüwJBònTBÄJBònTBÄJBx®UB#KBx®UB#KB¿ëVBÔuKB¿ëVBÔuKB”&XB†ÚKB”&XB†ÚKBÂ^YB(GLBÂ^YB(GLB”ZB¨»LB™•„B·GYB~ì„B`ZB™•„B·GYB<„B…xXB<„B…xXBèßƒBî­WBèßƒBî­WB:ƒBèVB:ƒBèVB ƒB'VB ƒB'VBƒ¼‚B	kUBƒ¼‚B	kUBšV‚B´TBšV‚B´TBiîBhTBiîBhTB „BVSB „BVSBrB¯RBrB¯RBÏ¨€B·RBÏ¨€B·RB+8€BıqQB+8€BıqQB.‹BÜPB.‹BÜPBN¢~BáKPBN¢~BáKPBÚµ}B±ÁOBÚµ}B±ÁOBûÅ|B‰=OBûÅ|B‰=OB×Ò{B~¿NB×Ò{B~¿NB–ÜzB¥GNB–ÜzB¥GNB`ãyBÖMB`ãyBÖMB_çxBÖjMB_çxBÖjMB¼èwBMB¼èwBMB çvB®§LB çvB®§LB6äuBáOLB6äuBáOLB¨ŞtB¬şKB¨ŞtB¬şKB"×sB´KB"×sB´KBÎÍrB?pKBÎÍrB?pKBØÂqB3KBØÂqB3KBl¶pBÅüJBl¶pBÅüJB¶¨oB<ÍJB¶¨oB<ÍJBá™nBŠ¤JBá™nBŠ¤JBŠmB·‚JBŠmB·‚JB‘ylBÇgJB‘ylBÇgJBnhkBÀSJBnhkBÀSJBßVjB¥FJBßVjB¥FJBEiBw@JBEiBw@JB43hB8AJB43hB8AJBq!gBèHJBq!gBèHJBöfB…WJBöfB…WJBñşdBmJBñşdBmJBîcB}‰JBîcB}‰JBøŞbBĞ¬JBøŞbBĞ¬JB^ĞaB ×JB^ĞaB ×JBìÂ`BKBìÂ`BKBÍ¶_BÙ?KBÍ¶_BÙ?KB.¬^Br~KB.¬^Br~KB;£]BÅÃKB;£]BÅÃKBœ\BÈLBœ\BÈLB—[BmbLB—[BmbLB”ZB¨»LB”ZB¨»LBÍ]B¶”MBÍ]B¶”MB@aBÍXNB@aBÍXNB¤OdBÌOB¤OdBÌOB1—gB˜¡OB1—gB˜¡OB^âjB&PB^âjB&PB¢0nB2•PB¢0nB2•PBoqBØîPBoqBØîPB;ÔtBû2QB;ÔtBû2QB}(xBaQB}(xBaQB¥}{B‹zQB¥}{B‹zQB)Ó~Bí}QB)Ó~Bí}QB>B´kQB>B´kQB‹¾‚BãCQB‹¾‚BãCQB3h„BQB3h„BQBñ†B”³PBñ†B”³PB€¸‡B/KPB€¸‡B/KPBš^‰BaÍOBš^‰BaÍOBù‹B?:OBù‹B?:OBY¥ŒBà‘NBY¥ŒBà‘NBvEBaÔMBvEBaÔMB
+ãBàMB
+ãBàMBÒ}‘BLBÒ}‘BLBŒ“BhKBŒ“BhKBò©”BÀJBò©”BÀJBÄ:–BµèHBÄ:–BµèHB¿Ç—Bw¯GB¿Ç—Bw¯GB¤P™B9bFB¤P™B9bFB0ÕšB3EB0ÕšB3EB$UœBŒCB$UœBŒCBCĞB·BBCĞB·BBKFŸB¿i@BKFŸB¿i@B· Bù»>B· Bù»>B)"¢B¬û<B)"¢B¬û<B‡‡£B );B‡‡£B );Bßæ¤B£D9Bßæ¤B£D9Bù?¦B…N7Bù?¦B…N7Bœ’§BG5Bœ’§BG5BŞ¨B­.3BŞ¨B­.3B#ªB£1B#ªB£1B‘a«BQÌ.B‘a«BQÌ.B7˜¬Bƒ,B7˜¬Bƒ,BZÇ­BM**BZÇ­BM**BÊî®B_Â'BÊî®B_Â'BV°B®K%BV°B®K%BÏ%±B¢Æ"BÏ%±B¢Æ"B5²B¦3 B5²B¦3 BÑ;³B$“BÑ;³B$“B:´BŠåB:´BŠåBr/µBL+B¡ß¶B
+,tBqò·BºÇvB¡ß¶B
+,tBsÄµByqBsÄµByqB¡´BvoB¡´BvoB¿u³Bg¯lB¿u³Bg¯lB—B²B³NjB—B²B³NjBÔ±B¼ıgBÔ±B¼ıgB«Å¯Bç¼eB«Å¯Bç¼eBN|®B‘ŒcBN|®B‘ŒcBõ+­BmaBõ+­BmaB×Ô«BÌ^_B×Ô«BÌ^_B+wªBb]B+wªBb]B,©B.w[B,©B.w[B©§B{YB©§B{YB9¦BEØWB9¦BEØWB…Ã¤BÕ$VB…Ã¤BÕ$VBˆH£Br„TBˆH£Br„TBfÈ¡Ba÷RBfÈ¡Ba÷RB]C Bä}QB]C Bä}QB­¹B8PB­¹B8PB•+B—ÆNB•+B—ÆNBY™›B:‰MBY™›B:‰MB:šBT`LB:šBT`LBxi˜BLKBxi˜BLKB[Ì–B­LJB[Ì–B­LJB$,•BDbIB$,•BDbIB‰“B HB‰“B HByã‘BÍGByã‘BÍGB;Bq"GB;Bq"GB¡‘BbFB¡‘BbFBòåŒBïFBòåŒBïFBÉ8‹B.¤EBÉ8‹B.¤EBmŠ‰B0PEBmŠ‰B0PEB$Û‡BEB$Û‡BEB4+†B¯éDB4+†B¯éDBæz„B>×DBæz„B>×DB€Ê‚B±ÚDB€Ê‚B±ÚDBGBôDBGBôDB	Õ~B>#EB	Õ~B>#EBşv{BMhEBşv{BMhEBøxB(ÃEBøxB(ÃEB„ÁtBÁ3FB„ÁtBÁ3FB2kqBºFB2kqBºFBŒnBßUGBŒnBßUGBÊjB4HBÊjB4HBp€gBèÍHBp€gBèÍHB<dBÙ©IB<dBÙ©IBˆı`BåšJBˆı`BåšJB[Å]Bã KB[Å]Bã KB”ZB¨»LB ¦BrógBÙ¦BZçiB ¦BrógBÇ ¥B¯
+fBÇ ¥B¯
+fB^;¤Bc-dB^;¤Bc-dBıO£BÛ[bBıO£BÛ[bBÌ^¢Be–`BÌ^¢Be–`Bğg¡BHİ^Bğg¡BHİ^B”k BĞ0]B”k BĞ0]BàiŸBB‘[BàiŸBB‘[BşbBáşYBşbBáşYBWBñyXBWBñyXBaFœB±WBaFœB±WBş0›B^™UBş0›B^™UBšB4>TBšB4>TBòø˜BlñRBòø˜BlñRB§Ö—B<³QB§Ö—B<³QBk°–BØƒPBk°–BØƒPBr†•BrcOBr†•BrcOBêX”B;RNBêX”B;RNB(“B^PMB(“B^PMB÷ó‘B^LB÷ó‘B^LBğ¼BY{KBğ¼BY{KB%ƒB~¨JB%ƒB~¨JBÇFB˜åIBÇFB˜åIBBÆ2IBBÆ2IB)Ç‹B&HB)Ç‹B&HBP„ŠBÒıGBP„ŠBÒıGB¸?‰Bâ{GB¸?‰Bâ{GB•ù‡Bl
+GB•ù‡Bl
+GB²†B‚©FB²†B‚©FB‡i…B4YFB‡i…B4YFB „BFB „BFBÔÕ‚BêEBÔÕ‚BêEB$‹BiÌEB$‹BiÌEB-@€Bó¾EB-@€Bó¾EBLê}BAÂEBLê}BAÂEBŠT{BPÖEBŠT{BPÖEB~¿xBûEB~¿xBûEB™+vB¦0FB™+vB¦0FBD™sBÜvFBD™sBÜvFBíqB¸ÍFBíqB¸ÍFBıznB)5GBıznB)5GBâïkB ­GBâïkB ­GBhiBˆ5HBhiBˆ5HBÒãfBKÎHBÒãfBKÎHB²cdBQwIB²cdBQwIBèaB|0JBèaB|0JBNq_B°ùJBNq_B°ùJBØÿ\BËÒKBØÿ\BËÒKB”ZB©»LB”ZB§»LB³XB}†KB³XB}†KBÛVBAEJBÛVBAEJBå
+UB*øHBå
+UB*øHBBCSBoŸGBBCSBoŸGB„QBG;FB„QBG;FBãÎOBíËDBãÎOBíËDB¹"NBQCB¹"NBQCBE€LB–ÌABE€LB–ÌABÍçJB=@BÍçJB=@B’YIBb£>B’YIBb£>BØÕGBºÿ<BØÕGBºÿ<Bİ\FBdR;Bİ\FBdR;BŞîDB¥›9BŞîDB¥›9BŒCBÇÛ7BŒCBÇÛ7BÉ4BB6BÉ4BB6B#é@BÔA4B#é@BÔA4B_©?BUh2B_©?BUh2B³u>Bå†0B³u>Bå†0BON=BÓ.BON=BÓ.Bd3<Bn­,Bd3<Bn­,B"%;B
+¶*B"%;B
+¶*B´#:B÷·(B´#:B÷·(BE/9BŠ³&BE/9BŠ³&BüG8B©$BüG8B©$B n7Bô˜"B n7Bô˜"Bt¡6Bxƒ Bt¡6Bxƒ Bzâ5BúhBzâ5BúhB115BÓIB115BÓIB·4B[&B·4B[&B%ø3BíşB%ø3BíşB–p3BãÓB–p3BãÓB÷2B˜¥B÷2B˜¥BÓ‹2BhtBÓ‹2BhtBÄ.2B®@BÄ.2B®@Bà1BÈ
+Bà1BÈ
+B›Ÿ1BÓ
+B›Ÿ1BÓ
+B—m1Bè™B—m1Bè™B J1B©_B J1B©_BÛ41B³$BÛ41B³$B,.1BbéB,.1BbéBó51B*\ÿAó51B*\ÿA0L1BSæúA0L1BSæúAßp1BùqöAßp1BùqöAú£1BÙÿñAú£1BÙÿñAyå1B«íAyå1B«íAP52B-%éAP52B-%éAs“2B¾äAs“2B¾äAÒÿ2B\àAÒÿ2B\àA[z3B  ÜAÉËIB$f”B®JBpV•BÉËIB$f”BÎõHBs“BÎõHBs“B2,HBX}’B2,HBX}’BoGB(…‘BoGB(…‘B¾FB¨ŠB¾FB¨ŠBáFB BáFB BıƒEB[BıƒEB[BúDBáBúDBáB}DB¾ŒŒB}DB¾ŒŒBKDB‰‹BKDB‰‹B¨ªCB#„ŠB¨ªCB#„ŠBDUCB~‰BDUCB~‰B,CBàvˆB,CBàvˆBlÒBBën‡BlÒBBën‡B¥BBMf†B¥BBMf†B…BB2]…B…BB2]…B”rBBÄS„B”rBBÄS„B€mBB1JƒB€mBB1JƒBŞuBB£@‚BŞuBB£@‚B­‹BBF7B­‹BBF7Bê®BBE.€Bê®BBE.€BßBB™K~BßBB™K~B’CB<|B’CB<|BëhCBA.zBëhCBA.zBÁCB†"xBÁCB†"xBk'DB5vBk'DB5vBsšDB£tBsšDB£tB‘EB%rB‘EB%rB±§EBpB±§EBpB½AFB¶nB½AFB¶nB™èFBmlB™èFBmlB-œGB‡&jB-œGB‡&jBX\HBU7hBX\HBU7hBı(IB)MfBı(IB)MfBúJBThdBúJBThdB+çJB%‰bB+çJB%‰bBjØKBê¯`BjØKBê¯`BÕLBğÜ^BÕLBğÜ^BtŞMB‡]BtŞMB‡]BéòNB÷J[BéòNB÷J[BÃPB‹ŒYBÃPB‹ŒYBÒ=QBÕWBÒ=QBÕWBåsRBH&VBåsRBH&VBÊ´SBı~TBÊ´SBı~TBL UBõßRBL UBõßRB3VVBtIQB3VVBtIQBI¶WB¼»OBI¶WB¼»OBT YB7NBT YB7NB”ZB¨»LB‘j„A§gBS9AjB‘j„A§gBÕW‰AÔCeBÕW‰AÔCeB¡cA»ğbB¡cA»ğbB$“A-®`B$“A-®`B„Ó˜Aˆ|^B„Ó˜Aˆ|^Bé5A'\\Bé5A'\\Bh³£AfMZBh³£AfMZB K©A›PXB K©A›PXB'ü®AfVB'ü®AfVB‰Å´A-TB‰Å´A-TBU¦ºA*ÉRBU¦ºA*ÉRB–ÀAXQB–ÀAXQBSªÆAıxOBSªÆAıxOBˆËÌA_îMBˆËÌA_îMB6 ÓA¾wLB6 ÓA¾wLB^GÙAWKB^GÙAWKBïŸßAdÇIBïŸßAdÇIBãæAHBãæAHB,ìAµiGB,ìAµiGBÀóAZZFBÀóAZZFBƒ›ùA;`EBƒ›ùA;`EB³ B{DB³ B{DB+sBO¬CB+sBO¬CBšÍBÊòBBšÍBÊòBBu,
+BOBBu,
+BOBB-B8ÁAB-B8ÁAB8õB^IAB8õB^IAB^B”ç@B^B”ç@BÿÈBê›@BÿÈBê›@B 5Blf@B 5Blf@BQ£B#G@BQ£B#G@B…"B>@B…"B>@B¬%BBK@B¬%BBK@B8í(B©n@B8í(B©n@B”Y,BC¨@B”Y,BC¨@B3Ä/Bø@B3Ä/Bø@B‡,3Bë]AB‡,3Bë]ABş‘6BÚÙABş‘6BÚÙAB
+ô9BÁkBB
+ô9BÁkBBR=BˆCBR=BˆCB­«@BÑCB­«@BÑCB' DBF¤DB' DBF¤DBOGBûŒEBOGBûŒEB¹—JB‹FB¹—JB‹FB¸ÙMBQGB¸ÙMBQGB{QBœÆHB{QBœÆHBzGTB¼JBzGTB¼JB1rWB~UKB1rWB~UKB”ZB©»LB_FBÜkrB~FBš\sB_FBÜkrB%FFBjzqB%FFBjzqB\3FBiˆpB\3FBiˆpB¶&FB–oB¶&FB–oB3 FB_£nB3 FB_£nBÖFB¥°mBÖFB¥°mB%FBü½lB%FBü½lBˆ1FBŒËkBˆ1FBŒËkB–CFB~ÙjB–CFB~ÙjBÂ[FBøçiBÂ[FBøçiB
+zFB#÷hB
+zFB#÷hBhFB&hBhFB&hBÖÈFB(gBÖÈFB(gBMùFBQ*fBMùFBQ*fBÆ/GBÇ=eBÆ/GBÇ=eB7lGB²RdB7lGB²RdB–®GB7icB–®GB7icBÙöGBbBÙöGBbBôDHB­›aBôDHB­›aBÙ˜HBè·`BÙ˜HBè·`B|òHBVÖ_B|òHBVÖ_BÍQIB÷^BÍQIB÷^B½¶IB[^B½¶IB[^B;!JB=@]B;!JB=@]B6‘JBâh\B6‘JBâh\B›KBo”[B›KBo”[BXKBÃZBXKBÃZBWLBÈôYBWLBÈôYB„†LBÚ)YB„†LBÚ)YBÊMB[bXBÊMB[bXB MBmWB MBmWBA4NB/ŞVBA4NB/ŞVBCÍNBÁ!VBCÍNBÁ!VBÿjOBBiUBÿjOBBiUBXPBÑ´TBXPBÑ´TB6´PB‹TB6´PB‹TB|_QBŒXSB|_QBŒXSBRBñ°RBRBñ°RBÑÂRBÖRBÑÂRBÖRB¦zSBUoQB¦zSBUoQBo6TBˆÕPBo6TBˆÕPBöTB‰@PBöTB‰@PB`¹UBp°OB`¹UBp°OBJ€VBT%OBJ€VBT%OB©JWBMŸNB©JWBMŸNB[XBpNB[XBpNB@éXBÓ¢MB@éXBÓ¢MB5½YBŠ,MB5½YBŠ,MB”ZB¨»LB»MÛA•]B%ßA®¢^B%ßA®¢^BÜûãA-¢_BÜûãA-¢_B$fèAq“`B$fèAq“`BGÜìASvaBGÜìASvaBˆ]ñA®JbBˆ]ñA®JbB.éõA_cB.éõA_cBt~úAEÇcBt~úAEÇcB›ÿABodB›ÿABodBsáB;eBsáB;eBF8B’eBF8B’eBe’B¿fBe’B¿fBmïB xfBmïB xfBıNB&ÔfBıNB&ÔfB®°BÄ gB®°BÄ gBBí]gBBí]gBèxB–‹gBèxB–‹gB§ŞB¹©gB§ŞB¹©gBøDBP¸gBøDBP¸gBt«BX·gBt«BX·gB¹BÓ¦gB¹BÓ¦gB_wBÃ†gB_wBÃ†gBÜ B,WgBÜ B,WgBB?#BgBB?#BgBµ %BÉfBµ %BÉfBøÿ'BŸkfBøÿ'BŸkfB©\*BXşeB©\*BXşeBf¶,BËeBf¶,BËeBÉ/BödBÉ/BödBq_1B5[dBq_1B5[dBÿ­3B\±cBÿ­3B\±cBø5BøbBø5BøbB?=8B1bB?=8B1bB4}:BïZaB4}:BïZaB·<BBv`B·<BBv`Bğë>B7ƒ_Bğë>B7ƒ_BüAB÷^BüAB÷^BYACB«r]BYACB«r]B©aEBU\B©aEBU\B”zGB¨*[B”zGB¨*[BÃ‹IBOòYBÃ‹IBOòYBß”KBª¬XBß”KBª¬XB‘•MBğYWB‘•MBğYWB†OBWúUB†OBWúUBl|QBTBl|QBTBğaSBqSBğaSBqSBÄ=UBQBÄ=UBQB™WBàÿOB™WBàÿOB#×XBwcNB#×XBwcNB”ZB©»LB»MÛA•]B|3İA..^B|3İA..^BÖ ßAÁ^BÖ ßAÁ^BuáAM_BuáAM_B
+ãAÍÓ_B
+ãAÍÓ_B@åA†S`B@åA†S`BÄçA²Ì`BÄçA²Ì`B?*éA>?aB?*éA>?aB[>ëA«aB[>ëA«aBÃWíA*bBÃWíA*bBvïAhnbBvïAhnbB™ñAÀÅbB™ñAÀÅbB<ÀóA&cB<ÀóA&cBSëõA‹_cBSëõA‹_cBòøAä¡cBòøAä¡cB¿KúA$İcB¿KúA$İcB_€üADdB_€üADdBs·şA:>dBs·şA:>dBOx BÿcdBOx BÿcdBÃ•B‚dBÃ•B‚dBæ³Bß™dBæ³Bß™dBˆÒBğ©dBˆÒBğ©dBzñB¾²dBzñB¾²dBBI´dBBI´dB•/B®dB•/B®dB^NB‘¡dB^NB‘¡dB¼l	BQdB¼l	BQdB€Š
+BÔqdB€Š
+BÔqdBz§BOdBz§BOdB{ÃB3%dB{ÃB3%dBVŞBôcBVŞBôcBÛ÷BŞ»cBÛ÷BŞ»cBİB†|cBİB†|cB-&B6cB-&B6cB:B­èbB:B­èbBMBD”bBMBD”bB.]Bñ8bB.]Bñ8bBójBÀÖaBójBÀÖaB&vBÄmaB&vBÄmaBš~Bş`Bš~Bş`B$„B®‡`B$„B®‡`B›†B¹
+`B›†B¹
+`BÒ…BD‡_BÒ…BD‡_B Bcı^B Bcı^BİyB.m^BİyB.m^B^nB¼Ö]B^nB¼Ö]Bü^B':]Bü^B':]BKB†—\BKB†—\Bó3 Böî[Bó3 Böî[Bş!B’@[BºMÛA•]B»ùàAWv_B»ùàAWv_B¥½æAEaB¥½æAEaB˜ìAã cB˜ìAã cBV‰òA¢©dBV‰òA¢©dB2øAş>fB2øAş>fB©şAµÀgB©şAµÀgBkBˆ.iBkBˆ.iBxŠB:ˆjBxŠB:ˆjBp²B”ÍkBp²B”ÍkB_âB^şlB_âB^şlBÃBhnBÃBhnBXBƒ!oBXBƒ!oBËœB„pBËœB„pB\çBCğpB\çBCğpB?7B›·qB?7B›·qBê‹BmirBê‹BmirBÍä"B›sBÍä"B›sB^A&BŒsB^A&BŒsB¡)B§üsB¡)B§üsBW-B]WtBW-B]WtB g0BœtB g0BœtB`Í3BŞÊtB`Í3BŞÊtB	47B–ãtB	47B–ãtB	›:BCætB	›:BCætBÓ>BâÒtBÓ>BâÒtBØgABy©tBØgABy©tB‹ÌDBjtB‹ÌDBjtBZ/HB¨tBZ/HB¨tB¸KBY©sB¸KBY©sBíNB2(sBíNB2(sBïFRBG‘rBïFRBG‘rB«œUB²äqB«œUB²äqBÃíXB"qBÃíXB"qB­9\BüJpB­9\BüJpBÛ_B ^oBÛ_B ^oBÅ¿bB\nBÅ¿bB\nBåøeB#EmBåøeB#EmB¯*iB\lB¯*iB\lB TlBúØjB TlBúØjB2voB1„iB2voB1„iBärB:hBärB:hB/uBPfB/uBPfB–£xB±eB–£xB±eBœ{BicBœ{BicB¾~B^²aB¾~B^²aBÃ¹€B8è_BÃ¹€B8è_B;&‚Bx^B;&‚Bx^BŒƒBi\BŒƒBi\B~ì„B`ZB‘ùIB÷”B®JBqV•B‘ùIB÷”BÀ4IBàÏ’BÀ4IBàÏ’B²_HBb‘B²_HBb‘BˆzGB°SBˆzGB°SBh…FBşBh…FBşB{€EBãB{€EBãBëkDBk°ŒBëkDBk°ŒBæGCBî€‹BæGCBî€‹B›BB;UŠB›BB;UŠB>Ò@B…-‰B>Ò@B…-‰B?Bü	ˆB?Bü	ˆB !>BĞê†B !>BĞê†BÏ²<B/Ğ…BÏ²<B/Ğ…BO6;BHº„BO6;BHº„BÜ«9BI©ƒBÜ«9BI©ƒB¶8B^‚B¶8B^‚B#n6B´–B#n6B´–Bf»4Bv•€Bf»4Bv•€BÆû2B›3BÆû2B›3BŒ/1BÆG}BŒ/1BÆG}BW/BÁg{BW/BÁg{B€r-BÚ“yB€r-BÚ“yBI‚+B\ÌwBI‚+B\ÌwB´†)B”vB´†)B”vB€'BÉctB€'BÉctB»n%BCÃrB»n%BCÃrBS#BD0qBS#BD0qBD-!B«oBD-!B«oBØıBè3nBØıBè3nBÅBËlBÅBËlBiƒB¨pkBiƒB¨pkB#9B%jB#9B%jB¨æBWèhB¨æBWèhBXŒBÎºgBXŒBÎºgB™*BœfB™*BœfBÎÁBòeBÎÁBòeBYRBûdBYRBûdB¥Ü	BáŸcB¥Ü	BáŸcBaBËÀbBaBËÀbBàBŞñaBàBŞñaBZB<3aBZB<3aBÑÿA…`BÑÿA…`BúARç_BúARç_BÖ[õAAZ_BÖ[õAAZ_BÚ/ğAèİ^BÚ/ğAèİ^BÿıêA[r^BÿıêA[r^BÇåA¬^BÇåA¬^BŒàAéÍ]BŒàAéÍ]B»MÛA •]B©ğ€AäNiBS9AjB©ğ€AäNiBØN‚A
+ˆhBØN‚A
+ˆhBú¶ƒA°ÅgBú¶ƒA°ÅgBÖ(…AôgBÖ(…AôgB.¤†AöNfB.¤†AöNfBÆ(ˆAÔšeBÆ(ˆAÔšeB\¶‰A­ëdB\¶‰A­ëdB¯L‹A›AdB¯L‹A›AdB}ëŒA¼œcB}ëŒA¼œcB‚’A+ıbB‚’A+ıbBxAAcbBxAAcbBø‘AZÎaBø‘AZÎaB¶“AK?aB¶“AK?aB:{•Aíµ`B:{•Aíµ`B&G—AV2`B&G—AV2`B—™Aœ´_B—™Aœ´_B>òšAÔ<_B>òšAÔ<_BÏĞœAË^BÏĞœAË^Bû´Ag_^Bû´Ag_^Bs Aæù]Bs Aæù]BæŒ¢AŸš]BæŒ¢AŸš]B€¤A¢A]B€¤A¢A]Bzw¦Aıî\Bzw¦Aıî\Bör¨A¿¢\Bör¨A¿¢\B$rªAó\\B$rªAó\\B°t¬A¥\B°t¬A¥\BHz®Aàä[BHz®Aàä[B”‚°A¬²[B”‚°A¬²[BA²A‡[BA²A‡[Bø™´Ab[Bø™´Ab[Bc¨¶AÉC[Bc¨¶AÉC[B+¸¸A#,[B+¸¸A#,[BúÈºA.[BúÈºA.[B{Ú¼Aì[B{Ú¼Aì[BTì¾A^[BTì¾A^[B0şÀA…[B0şÀA…[B¹ÃAa[B¹ÃAa[B• ÅAï*[B• ÅAï*[Bp0ÇA.B[Bp0ÇA.B[Bò>ÉA`[Bò>ÉA`[BÆKËA¬„[BÆKËA¬„[B“VÍAá¯[B“VÍAá¯[B_ÏA¯á[B_ÏA¯á[BÊdÑA\BÊdÑA\BˆgÓAúX\BˆgÓAúX\BìfÕAc\BìfÕAc\B¢b×A?ê\B¢b×A?ê\BYZÙA‚<]BYZÙA‚<]B»MÛA•]Bº,EB*ŞqB~FB›\sBº,EB*ŞqBÔÑCBahpBÔÑCBahpB”mBB€ûnB”mBB€ûnB6 ABÁ—mB6 ABÁ—mBô‰?B`=lBô‰?B`=lB>B“ìjB>B“ìjB»ƒ<B”¥iB»ƒ<B”¥iBEô:B˜hhBEô:B˜hhBé\9BÑ5gBé\9BÑ5gBë½7BtfBë½7BtfB6B±ïdB6B±ïdBj4B¶ÜcBj4B¶ÜcBÏµ2B°ÔbBÏµ2B°ÔbBüú0BÌ×aBüú0BÌ×aBæ9/B2æ`Bæ9/B2æ`BÖr-B
+ `BÖr-B
+ `B¦+Bz%_B¦+Bz%_BúÓ)B¥V^BúÓ)B¥V^BÄü'B®“]BÄü'B®“]BÅ &BµÜ\BÅ &BµÜ\BL@$B×1\BL@$B×1\B§["B1“[B§["B1“[B$s BÜ [B$s BÜ [B‡BñzZB‡BñzZBÎ—B†ZBÎ—B†ZB›¥B®”YB›¥B®”YBÎ°B|4YBÎ°B|4YB½¹BÿàXB½¹BÿàXB·ÀBDšXB·ÀBDšXBÆBY`XBÆBY`XBÊBE3XBÊBE3XB,ÍBXB,ÍBXB—ÏBÁÿWB—ÏBÁÿWB­Ñ
+BYùWB­Ñ
+BYùWBÄÓBÚÿWBÄÓBÚÿWB/ÖBCXB/ÖBCXBAÙB‘3XBAÙB‘3XBOİB½`XBOİB½`XB«â BÂšXB«â BÂšXBSÓıA•áXBSÓıA•áXB5åùA+5YB5åùA+5YB§ûõAv•YB§ûõAv•YBLòAgZBLòAgZBÄ8îAë{ZBÄ8îAë{ZB·`êAî[B·`êAî[BÃæA[”[BÃæA[”[B‰ÆâA3\B‰ÆâA3\B¥ßAŞ\B¥ßAŞ\B»MÛA•]B\A²p¦BT£AÊ²¦B\A²p¦BrAÚ.¦BrAÚ.¦B„¥ALí¥B„¥ALí¥BX6A¬¥BX6A¬¥Bÿ¹A8k¥Bÿ¹A8k¥B0AÈ*¥B0AÈ*¥BšAÌê¤BšAÌê¤BÁöAO«¤BÁöAO«¤B˜FA]l¤B˜FA]l¤B¿‰Aı-¤B¿‰Aı-¤BSÀ
+A<ğ£BSÀ
+A<ğ£Bwê	A$³£Bwê	A$³£BL	A½v£BL	A½v£BùA;£BùA;£B¥A. £B¥A. £BwAÆ¢BwAÆ¢BœAŞŒ¢BœAŞŒ¢BAêA…T¢BAêA…T¢B”ÁA¢B”ÁA¢BÅAŸæ¡BÅAŸæ¡BO A$±¡BO A$±¡B!ş@°|¡B!ş@°|¡B(cû@KI¡B(cû@KI¡B˜¦ø@ş¡B˜¦ø@ş¡BâÕõ@Ğå BâÕõ@Ğå B|ñò@Ëµ B|ñò@Ëµ BŞùï@õ† BŞùï@õ† Bˆïì@WY Bˆïì@WY BøÒé@÷, BøÒé@÷, B¯¤æ@Ş B¯¤æ@Ş B6eã@ØŸB6eã@ØŸBà@›¯ŸBà@›¯ŸBÓ´Ü@ˆŸBÓ´Ü@ˆŸB EÙ@ÃbŸB EÙ@ÃbŸB/ÆÕ@o>ŸB/ÆÕ@o>ŸBğ8Ò@‰ŸBğ8Ò@‰ŸBØÎ@úBØÎ@úBõÊ@ÚBõÊ@ÚBƒ@Ç@»Bƒ@Ç@»BzÃ@¤BzÃ@¤B³¿@1ƒB³¿@1ƒB¼Û»@KiB¼Û»@KiBJú·@õPBJú·@õPBL´@3:BL´@3:Bl°@
+%Bl°@
+%BL¬@|BL¬@|B•¨@ŒÿB•¨@ŒÿBë¤@?ïBë¤@?ïBÿÿŸ@–àBa&YA©?®BÁïYAÖÃ®Ba&YA©?®BMBXA*¼­BMBXA*¼­B«CWAo9­B«CWAo9­B¥*VAŒ·¬B¥*VAŒ·¬Bh÷TA˜6¬Bh÷TA˜6¬B'ªSA¨¶«B'ªSA¨¶«BCRAÏ7«BCRAÏ7«BwÂPA$ºªBwÂPA$ºªBƒ(OA»=ªBƒ(OA»=ªBuMA©Â©BuMA©Â©B²©KA I©B²©KA I©BhÅIA×Ğ¨BhÅIA×Ğ¨BïÈGA?Z¨BïÈGA?Z¨B´EAMå§B´EAMå§BÈˆCAr§BÈˆCAr§BÉEAA¦ §BÉEAA¦ §Bì>A‘¦Bì>A‘¦BØ{<Ax#¦BØ{<Ax#¦B¬õ9AÜ·¥B¬õ9AÜ·¥BéY7ATN¥BéY7ATN¥Bÿ¨4Añæ¤Bÿ¨4Añæ¤B^ã1AÆ¤B^ã1AÆ¤By	/Aá¤By	/Aá¤BË,AT¾£BË,AT¾£BÌ)A.`£BÌ)A.`£Bü&A~£Bü&A~£BÚà"AT«¢BÚà"AT«¢Bí¨A¿T¢Bí¨A¿T¢B»_AÌ ¢B»_AÌ ¢BËA‰¯¡BËA‰¯¡B°›Aa¡B°›Aa¡Bõ!AJ¡Bõ!AJ¡B.™AfÌ B.™AfÌ BìAe† BìAe† BÊ\ASC BÊ\ASC B`ªA: B`ªA: BÖÿ@%ÆŸBÖÿ@%ÆŸB>@ø@ŒŸB>@ø@ŒŸB“ğ@.UŸB“ğ@.UŸB>Ğè@^!ŸB>Ğè@^!ŸBùà@¸ğBùà@¸ğBÚÙ@CÃBÚÙ@CÃBßÑ@™BßÑ@™BlÉ@rBlÉ@rBÛêÀ@PNBÛêÀ@PNB~Á¸@ã-B~Á¸@ã-Bª‹°@ÈBª‹°@ÈB´J¨@÷B´J¨@÷BÿÿŸ@–àBıÿŸ@–àB'Ô»@5ÜB'Ô»@5ÜBØ@zÌŸBØ@zÌŸBÍ¢ô@=± BÍ¢ô@=± BóÉAZŠ¡BóÉAZŠ¡BGmA«W¢BGmA«W¢B9&A£B9&A£B­*5AkÎ£B­*5AkÎ£BÔ?DAšw¤BÔ?DAšw¤BvSA…¥BvSA…¥BÁÊbA¥¥BÁÊbA¥¥Bz;rA#)¦Bz;rA#)¦B×â€Aª ¦B×â€Aª ¦Bm³ˆA‘§Bm³ˆA‘§B-AÆi§B-AÆi§BÒq˜A:»§BÒq˜A:»§B] Aßÿ§B] Aßÿ§B¡N¨Aª7¨B¡N¨Aª7¨B,E°A’b¨B,E°A’b¨Bh?¸A€¨Bh?¸A€¨B
+<ÀAŸ‘¨B
+<ÀAŸ‘¨B»9ÈA¼•¨B»9ÈA¼•¨B.7ĞAæŒ¨B.7ĞAæŒ¨B3ØA w¨B3ØA w¨B#,àAlT¨B#,àAlT¨B!èAĞ$¨B!èAĞ$¨BhğAUè§BhğAUè§Bù÷AŸ§Bù÷AŸ§BšÙÿAçH§BšÙÿAçH§BeØBæ¦BeØBæ¦B¬¾BŒv¦B¬¾BŒv¦BùBoú¥BùBoú¥B¬xBÍq¥B¬xBÍq¥B$KB½Ü¤B$KB½Ü¤BÂBV;¤BÂBV;¤Bá×B´£Bá×B´£BèBòÓ¢BèBòÓ¢B;@"B0¢B;@"B0¢B<å%B<¡B<å%B<¡BS)B._ BS)B._ Bé-B4vŸBé-B4vŸBk0BÆBk0BÆBB4B‚BB4B‚Bİn7B5wœBİn7B5wœB°É:Bea›B°É:Bea›B+>BÎ@šB+>BÎ@šBÄSABŸ™BÄSABŸ™BóDBà—BóDBà—B5 GB< –B5 GB< –B®JBpV•B®×”B…‘€B>Ï“Bz—€B>Ï“Bz—€B½Æ’B¼–€B½Æ’B¼–€BW¾‘BM€BW¾‘BM€B7¶B,€B7¶B,€Bˆ®B]l€Bˆ®B]l€Bt§BãP€Bt§BãP€B*¡BÃ.€B*¡BÃ.€BÑ›ŒB€BÑ›ŒB€B–—‹BL­B–—‹BL­B£”ŠBpAB£”ŠBpAB$“‰BÈ~B$“‰BÈ~BA“ˆB’B~BA“ˆB’B~B%•‡B¹¯}B%•‡B¹¯}Bù˜†B}Bù˜†B}Bè…B¯c|Bè…B¯c|B§„B³ª{B§„B³ª{B·±ƒB;åzB·±ƒB;åzBé¾‚BgzBé¾‚BgzBÖÎBY5yBÖÎBY5yB¦á€B5KxB¦á€B5KxBïB#UwBïB#UwB!~BKSvB!~BKSvBÙY|BÖEuBÙY|BÖEuB“™zBñ,tB“™zBñ,tBàxBÊsBàxBÊsB/wB’ÙqB/wB’ÙqBh…uByŸpBh…uByŸpBÔãsB³ZoBÔãsB³ZoB›JrBvnB›JrBvnBÿ¹pBù±lBÿ¹pBù±lBC2oBtNkBC2oBtNkB§³mB"áiB§³mB"áiBk>lB>jhBk>lB>jhBÉÒjBêfBÉÒjBêfB qiB¹`eB qiB¹`eBHhB˜ÎcBHhB˜ÎcBÚËfBä3bBÚËfBä3bBîˆeBâ`BîˆeBâ`B·PdBÕå^B·PdBÕå^Bi#cB3]Bi#cB3]B5bB¶x[B5bB¶x[BLê`B4·YBLê`B4·YBÚŞ_BÈîWBÚŞ_BÈîWBß^B»VBß^B»VBë]B[JTBë]B[JTB]BônRB]BônRB'\BÕPB'\BÕPBdW[BL§NBdW[BL§NB”ZB¨»LB®×”B…‘€BÊb“B/BÊb“B/Bµê‘B]Bµê‘B]B®oBıüB®oBıüBôñBûb‚BôñBûb‚BÃqBG¿‚BÃqBG¿‚B[ï‹BÒƒB[ï‹BÒƒBıjŠBZƒBıjŠBZƒBçäˆBo™ƒBçäˆBo™ƒBY]‡BkÎƒBY]‡BkÎƒB”Ô…BzùƒB”Ô…BzùƒBÙJ„B“„BÙJ„B“„BhÀ‚B³1„BhÀ‚B³1„B€5BÔ>„B€5BÔ>„BÈTBöA„BÈTBöA„B©>|B;„B©>|B;„B")yB8*„B")yB8*„B¸vB\„B¸vB\„BësBˆêƒBësBˆêƒB<ñoBÂ»ƒB<ñoBÂ»ƒB)ãlBƒƒB)ãlBƒƒB8ØiB~@ƒB8ØiB~@ƒBåĞfBô‚BåĞfBô‚B®ÍcBã‚B®ÍcBã‚BÏ`Bô=‚BÏ`Bô=‚B—Õ]BZÔB—Õ]BZÔB¯áZB%aB¯áZB%aBÙóWBhä€BÙóWBhä€B”UB7^€B”UB7^€BV,RBTBV,RBTB—SOB­k~B—SOB­k~BÓ‚LB­'}BÓ‚LB­'}B}ºIB‰Ñ{B}ºIB‰Ñ{BûFByizBûFByizBîDDB·ïxBîDDB·ïxBœ˜ABƒdwBœ˜ABƒdwBƒö>BÈuBƒö>BÈuB_<BÇtB_<BÇtB´Ò9BÊ\rB´Ò9BÊ\rB×Q7BnpB×Q7BnpBãÜ4Bÿ¯nBãÜ4Bÿ¯nB=t2BËÁlB=t2BËÁlBN0B$ÄjBN0B$ÄjBwÉ-B]·hBwÉ-B]·hBˆ+BÌ›fBˆ+BÌ›fB’T)BÊqdB’T)BÊqdBA/'B²9bBA/'B²9bB~%Báó_B~%Báó_B #Bµ ]B #Bµ ]Bş!B’@[B®×”B…‘€BµP”BÜj€BµP”BÜj€BÁÊ“BÌ@€BÁÊ“BÌ@€BéE“B[€BéE“B[€BBÂ’B"ÅBBÂ’B"ÅBâ?’Bì\Bâ?’Bì\BŞ¾‘B$î~BŞ¾‘B$î~BM?‘Bİx~BM?‘Bİx~BAÁB+ı}BAÁB+ı}BÑDB!{}BÑDB!{}BÊBÕò|BÊBÕò|BQB^d|BQB^d|BíÙBÒÏ{BíÙBÒÏ{B³dBI5{B³dBI5{BwñBß”zBwñBß”zBL€B¬îyBL€B¬îyBDBËByBDBËByBs¤ŒBZ‘xBs¤ŒBZ‘xBê9ŒBuÚwBê9ŒBuÚwBºÑ‹B;wBºÑ‹B;wBõk‹BÉ\vBõk‹BÉ\vBª‹BA–uBª‹BA–uBë§ŠBÁÊtBë§ŠBÁÊtBÈIŠBmúsBÈIŠBmúsBOî‰Be%sBOî‰Be%sB•‰BÎKrB•‰BÎKrB™?‰BÊmqB™?‰BÊmqBxìˆB~‹pBxìˆB~‹pB<œˆB¥oB<œˆB¥oBñNˆB¤ºnBñNˆB¤ºnB¤ˆBbÌmB¤ˆBbÌmB`½‡BpÚlB`½‡BpÚlB3y‡B÷äkB3y‡B÷äkB'8‡BìjB'8‡BìjBFú†BğiBFú†BğiB›¿†BòğhB›¿†BòğhB/ˆ†BòîgB/ˆ†BòîgBT†B9êfBT†B9êfB:#†BñâeB:#†BñâeBÁõ…BFÙdBÁõ…BFÙdB©Ë…BdÍcB©Ë…BdÍcBø¤…Bv¿bBø¤…Bv¿bB´…B©¯aB´…B©¯aBåa…B(`Båa…B(`BE…B#‹_BE…B#‹_B´,…BÄv^B´,…BÄv^B\…B:a]B\…B:a]BŠ…B²J\BŠ…B²J\B?÷„BZ3[B?÷„BZ3[B~ì„B`ZB®×”B…‘€B×ˆ•BŒé€B×ˆ•BŒé€B-<–B=B-<–B=B‘ñ–BŒB‘ñ–BŒBå¨—BVÖBå¨—BVÖBb˜B ‚Bb˜B ‚Bè™Bô\‚Bè™Bô\‚BYÙ™B)™‚BYÙ™B)™‚BA—šB“Ğ‚BA—šB“Ğ‚BV›B*ƒBV›B*ƒBøœBæ0ƒBøœBæ0ƒBˆØœB¿YƒBˆØœB¿YƒB›B­}ƒB›B­}ƒBs^B­œƒBs^B­œƒB"ŸB¸¶ƒB"ŸB¸¶ƒB@çŸBÉËƒB@çŸBÉËƒBl¬ BßÛƒBl¬ BßÛƒBğq¡BõæƒBğq¡BõæƒB«7¢B
+íƒB«7¢B
+íƒB~ı¢BîƒB~ı¢BîƒBGÃ£B0êƒBGÃ£B0êƒBçˆ¤B@áƒBçˆ¤B@áƒB<N¥BPÓƒB<N¥BPÓƒB'¦BcÀƒB'¦BcÀƒB‡×¦B{¨ƒB‡×¦B{¨ƒB=›§Bœ‹ƒB=›§Bœ‹ƒB&^¨BÌiƒB&^¨BÌiƒB& ©BCƒB& ©BCƒBá©BlƒBá©BlƒBã ªBëæ‚Bã ªBëæ‚Bb_«B’±‚Bb_«B’±‚Bx¬Blw‚Bx¬Blw‚BØ¬B8‚BØ¬B8‚Bì‘­BÜôBì‘­BÜôBJ®B‡¬BJ®B‡¬BJ ¯B_BJ ¯B_B†´¯BB†´¯BB¢f°Bê·€B¢f°Bê·€B‚±BW]€B‚±BW]€BÄ±B°üBÄ±B°üBo²Bù5Bo²Bù5B—³B©f~B—³B©f~Bg½³Bâ}Bg½³Bâ}Bp`´BÈ®|Bp`´BÈ®|B” µB~Æ{B” µB~Æ{B»µB-ÖzB»µB-ÖzBË7¶BûİyBË7¶BûİyB©Î¶BŞxB©Î¶BŞxB>b·B—ÖwB>b·B—ÖwBqò·BºÇvB®×”B…‘€BO•B¨•€BO•B¨•€B†Æ•BÄ–€B†Æ•BÄ–€Bø=–BÛ”€Bø=–BÛ”€BSµ–Bë€BSµ–Bë€B…,—B÷‡€B…,—B÷‡€By£—Bş|€By£—Bş|€B˜Bo€B˜Bo€B\˜B
+^€B\˜B
+^€B$™BJ€B$™BJ€B`{™B#3€B`{™B#3€Bşï™B=€Bşï™B=€BëcšBÊøBëcšBÊøB×šB@¹B×šB@¹BdI›BèsBdI›BèsBËº›BË(BËº›BË(B6+œB÷×~B6+œB÷×~B‘šœBx~B‘šœBx~BËB^%~BËB^%~BÑuB¶Ã}BÑuB¶Ã}B’áB‘\}B’áB‘\}BüKB ğ|BüKB ğ|Bı´B~|Bı´B~|B…ŸBã|B…ŸBã|B‚‚ŸB|Š{B‚‚ŸB|Š{BäæŸBö{BäæŸBö{B™I Be‚zB™I Be‚zB“ª BàöyB“ª BàöyBÁ	¡B~fyBÁ	¡B~fyBg¡BUÑxBg¡BUÑxBzÂ¡B€7xBzÂ¡B€7xBç¢B™wBç¢B™wBKs¢B3övBKs¢B3övB˜È¢BñNvB˜È¢BñNvBÁ£Bj£uBÁ£Bj£uB·l£B¼ótB·l£B¼ótBm»£B@tBm»£B@tBÖ¤B\ˆsBÖ¤B\ˆsBæQ¤BæÌrBæQ¤BæÌrB™¤BÀrB™¤BÀrBÊŞ¤B	KqBÊŞ¤B	KqB†!¥Bà„pB†!¥Bà„pB¼a¥Bg»oB¼a¥Bg»oB_Ÿ¥B¾înB_Ÿ¥B¾înBeÚ¥BnBeÚ¥BnBÆ¦BdLmBÆ¦BdLmBxH¦B÷vlBxH¦B÷vlBr{¦BäkBr{¦BäkB¬«¦BOÄjB¬«¦BOÄjBÙ¦BZçiB©ÜKB/`”B®JBoV•B©ÜKB/`”B°MBÖm“B°MBÖm“Bá^NB’Bá^NB’B²OB€•‘B²OB€•‘BëQBÏ¯BëQBÏ¯BU{RB¡ÎBU{RB¡ÎBñSBòBñSBòBÂqUBdBÂqUBdBLıVBœGBLıVBœGB`“XBçyŒB`“XBçyŒB½3ZBg±‹B½3ZBg±‹BŞ[B=îŠBŞ[B=îŠB?’]B‡0ŠB?’]B‡0ŠBÖO_Bgx‰BÖO_Bgx‰BšaBùÅˆBšaBùÅˆBCæbB\ˆBCæbB\ˆB‚¾dB«r‡B‚¾dB«r‡BŸfBÒ†BŸfBÒ†B‡hB{7†B‡hB{7†B½wjB/£…B½wjB/£…BEolB8…BEolB8…BÓmnB¬„BÓmnB¬„BspB „BspB „B´~rB,’ƒB´~rB,’ƒB[tBbƒB[tBbƒB³§vBV±‚B³§vBV±‚BfÄxBK‚BfÄxBK‚BæzB½ëBæzB½ëBr}BQ“Br}BQ“B7BãAB7BãABÙ²€B÷€BÙ²€B÷€BğËB7´€BğËB7´€B¥æ‚Bx€B¥æ‚Bx€BÈ„BC€BÈ„BC€B+ …BR€B+ …BR€BŸ>†B•İBŸ>†B•İBö]‡BŸBö]‡BŸBÿ}ˆBoBÿ}ˆBoBŒ‰BºMBŒ‰BºMBn¿ŠBû:Bn¿ŠBû:Buà‹BŞ6Buà‹BŞ6BqBcABqBcAB3"B‰ZB3"B‰ZBBBK‚BBBK‚BNbB£¸BNbB£¸BG‘BˆıBG‘BˆıBIŸ’Bx(€BIŸ’Bx(€B&¼“BeY€B&¼“BeY€B®×”B„‘€B y½Bï‡B  ¾B´W‘B y½Bï‡BÉì¼B¥»BÉì¼B¥»Bq[¼BùòBq[¼BùòBÅ»B.BÅ»B.BÂ)»BülBÂ)»BülB›‰ºBê¯ŒB›‰ºBê¯ŒB¹ä¹B÷ö‹B¹ä¹B÷ö‹B6;¹B?B‹B6;¹B?B‹B-¸Bà‘ŠB-¸Bà‘ŠB¼Ú·B÷å‰B¼Ú·B÷å‰B $·B¡>‰B $·B¡>‰Bi¶Bù›ˆBi¶Bù›ˆBªµBş‡BªµBş‡B5ç´Be‡B5ç´Be‡B~ ´BÑ†B~ ´BÑ†BV³B.B†BV³B.B†B$ˆ²Bl¸…B$ˆ²Bl¸…BÄ¶±Bë3…BÄ¶±Bë3…Bâ°BÃ´„Bâ°BÃ´„BK
+°B;„BK
+°B;„By/¯BËÆƒBy/¯BËÆƒBÇQ®B#XƒBÇQ®B#XƒBYq­B!ï‚BYq­B!ï‚BV¬BÕ‹‚BV¬BÕ‹‚Bâ¨«BR.‚Bâ¨«BR.‚B#ÁªB¤ÖB#ÁªB¤ÖB?×©BÛ„B?×©BÛ„B\ë¨B9B\ë¨B9B¡ı§B.ó€B¡ı§B.ó€B4§Ba³€B4§Ba³€B>¦B©y€B>¦B©y€Bæ*¥BF€Bæ*¥BF€BS7¤Bœ€BS7¤Bœ€B®B£B­âB®B£B­âBM¢BŒ BM¢BŒ BÌV¡BßjBÌV¡BßjBà_ B¯ABà_ B¯ABƒhŸB%BƒhŸB%BŞpBŞBŞpBŞByBEByBEB\œB7B\œB7BĞ‰›B´/BĞ‰›B´/BŸ’šB¶QBŸ’šB¶QBï›™B:€Bï›™B:€Bì¥˜B8»Bì¥˜B8»B»°—BR€B»°—BR€B†¼–B;+€B†¼–B;+€BtÉ•BN[€BtÉ•BN[€B®×”B…‘€B®×”B…‘€B¿Ş“BØB¿Ş“BØB±â’BÔ‡B±â’BÔ‡B¯ã‘BdùB¯ã‘BdùBâáBwd‚BâáBwd‚BuİBúÈ‚BuİBúÈ‚BÖBŞ&ƒBÖBŞ&ƒBbÍB~ƒBbÍB~ƒBÂŒBˆÎƒBÂŒBˆÎƒBÒ´‹B4„BÒ´‹B4„BÉ¥ŠB	[„BÉ¥ŠB	[„B%•‰Bû–„B%•‰Bû–„BƒˆBÌ„BƒˆBÌ„BÀo‡Bú„BÀo‡Bú„BY[†B,!…BY[†B,!…BF…B@A…BF…B@A…B0„BMZ…B0„BMZ…BsƒBNl…BsƒBNl…Bƒ‚BAw…Bƒ‚BAw…Bcë€B#{…Bcë€B#{…B¨Bów…B¨Bów…B’z}B³m…B’z}B³m…BWM{Be\…BWM{Be\…B)!yB
+D…B)!yB
+D…BeövB§$…BeövB§$…BfÍtBAş„BfÍtBAş„B†¦rBŞĞ„B†¦rBŞĞ„B‚pB†œ„B‚pB†œ„BŠ`nBBa„BŠ`nBBa„B$BlB„B$BlB„BB'jBÖƒBB'jBÖƒB@hBP†ƒB@hBP†ƒBsıeBÆ/ƒBsıeBÆ/ƒB4ïcB‹Ò‚B4ïcB‹Ò‚B×åaB®n‚B×åaB®n‚Bµá_B@‚Bµá_B@‚B ã]BS“B ã]BS“Bkê[BùBkê[BùBì÷YBE€Bì÷YBE€BóXBL€BóXBL€BÑ&VBI BÑ&VBI BÔHTBÇÿ}BÔHTBÇÿ}BLrRBDÓ|BLrRBDÓ|B‡£PBñš{B‡£PBñš{BÏÜNBÿVzBÏÜNBÿVzBpMB§yBpMB§yB³hKB­wB³hKB­wBà»IB›GvBà»IB›GvB;HB[×tB;HB[×tB~FBš\sB™³bBgÂ¿B"jaBÚ7ÀB™³bBgÂ¿BèdB)Q¿BèdB)Q¿B×WeB4ä¾B×WeB4ä¾B-²fB—{¾B-²fB—{¾B³hBf¾B³hBf¾B0viB°·½B0viB°·½BgßjB„\½BgßjB„\½BMlBó½BMlBó½B¿mB	´¼B¿mB	´¼B5oBÕf¼B5oBÕf¼Bè®pBd¼Bè®pBd¼B@,rBÀÚ»B@,rBÀÚ»Bæ¬sBö›»Bæ¬sBö›»Bš0uBb»Bš0uBb»B·vB-»B·vB-»B.@xBıºB.@xBıºBËyB	ÒºBËyB	ÒºBùX{B¬ºBùX{B¬ºB1è|B‹ºB1è|B‹ºBõx~B(oºBõx~B(oºB€€BVXºB€€BVXºB	Ï€BœFºB	Ï€BœFºBõ˜Bı9ºBõ˜Bı9ºB"c‚B}2ºB"c‚B}2ºBo-ƒB0ºBo-ƒB0ºBº÷ƒBØ2ºBº÷ƒBØ2ºBäÁ„B³:ºBäÁ„B³:ºBÊ‹…B­GºBÊ‹…B­GºBKU†BÁYºBKU†BÁYºBG‡BîpºBG‡BîpºB›æ‡B/ºB›æ‡B/ºB(®ˆB€®ºB(®ˆB€®ºBÍt‰BÜÔºBÍt‰BÜÔºBj:ŠB< »Bj:ŠB< »BİşŠB™0»BİşŠB™0»BÂ‹Bêe»BÂ‹Bêe»BÆƒŒB) »BÆƒŒB) »BüCBJß»BüCBJß»BŠBC#¼BŠBC#¼BO¿B	l¼BO¿B	l¼B.zB’¹¼B.zB’¹¼B3BÎ½B3BÎ½B»éB²b½B»éB²b½B.‘B.¾½B.‘B.¾½BAP’B5¾BAP’B5¾B×ÿ’Bµ‚¾B×ÿ’Bµ‚¾BÓ¬“BŸë¾BÓ¬“BŸë¾BW”BâX¿BW”BâX¿Bş”BjÊ¿B‡LABÀBÂj?Bñ¼ÀB‡LABÀBô6CB<g¿Bô6CB<g¿B¶)EB¸Å¾B¶)EB¸Å¾B}$GB‘*¾B}$GB‘*¾Bô&IBâ•½Bô&IBâ•½BÊ0KBÁ½BÊ0KBÁ½B¦AMBF€¼B¦AMBF€¼B2YOB‰ÿ»B2YOB‰ÿ»BwQB…»BwQB…»BıšSB—»BıšSB—»B‡ÄUBŠ¦ºB‡ÄUBŠ¦ºB]óWB‡AºB]óWB‡AºB#'ZBŸã¹B#'ZBŸã¹Bz_\BáŒ¹Bz_\BáŒ¹Bœ^B\=¹Bœ^B\=¹BmÜ`Bõ¸BmÜ`Bõ¸BK cB0´¸BK cB0´¸BCgeBz¸BCgeBz¸Bõ°gBrH¸Bõ°gBrH¸BıiB´¸BıiB´¸B	KlBkú·B	KlBkú·B¨šnBŞ·B¨šnBŞ·B€ëpBMÊ·B€ëpBMÊ·B-=sB½·B-=sB½·BPuB9¸·BPuB9¸·B†áwBvº·B†áwBvº·Bp3zB9Ä·Bp3zB9Ä·B©„|BÕ·B©„|BÕ·BÒÔ~BFî·BÒÔ~BFî·BÅ‘€B‰¸BÅ‘€B‰¸B7¸BD6¸B7¸BD6¸Bİ‚Bpe¸Bİ‚Bpe¸BŸ„Bœ¸BŸ„Bœ¸B5$…BúÙ¸B5$…BúÙ¸B E†BE¹B E†BE¹B4d‡BÚk¹B4d‡BÚk¹B?ˆB®¿¹B?ˆB®¿¹Bœ‰B²ºBœ‰B²ºB„´ŠB×|ºB„´ŠB×|ºB`Ê‹BæºB`Ê‹BæºB}İŒBDV»B}İŒBDV»B«íBhÍ»B«íBhÍ»B¿úBfK¼B¿úBfK¼BB*Ğ¼BB*Ğ¼Bé
+‘B[½Bé
+‘B[½B§’B©í½B§’B©í½B“B5†¾B“B5†¾B£”B*%¿B£”B*%¿Bş”BlÊ¿B¢0±B—àéB(±B  ëB¢0±B—àéBú1±BÁèBú1±BÁèB
+,±B”¡çB
+,±B”¡çBÓ±BX‚æBÓ±BX‚æBY
+±BˆcåBY
+±BˆcåBî°BVEäBî°BVEäB¥Ë°Bî'ãB¥Ë°Bî'ãBv¡°B€âBv¡°B€âBp°B<ğàBp°B<ğàB’7°BNÖßB’7°BNÖßBî÷¯Bå½ŞBî÷¯Bå½ŞB5±¯B0§İB5±¯B0§İBuc¯B]’ÜBuc¯B]’ÜB¹¯B—ÛB¹¯B—ÛB³®BoÚB³®BoÚB‡P®Bí`ÙB‡P®Bí`ÙB0ç­B`UØB0ç­B`UØBw­B”L×Bw­B”L×B^ ­BµFÖB^ ­BµFÖBƒ¬BëCÕBƒ¬BëCÕB/ÿ«BdDÔB/ÿ«BdDÔBêt«BHHÓBêt«BHHÓBMäªBÀOÒBMäªBÀOÒBsMªBöZÑBsMªBöZÑBr°©BjĞBr°©BjĞBe©B;}ÏBe©B;}ÏBgd¨B˜”ÎBgd¨B˜”ÎB“µ§BO°ÍB“µ§BO°ÍB§B†ĞÌB§B†ĞÌBİF¦BaõËBİF¦BaõËB8‡¥BËB8‡¥BËB6Â¤B”MÊB6Â¤B”MÊBö÷£B1ÉBö÷£B1ÉBš(£Bı¹ÈBš(£Bı¹ÈBET¢BøÇBET¢BøÇB{¡B¥;ÇB{¡B¥;ÇB8 BÀ„ÆB8 BÀ„ÆBÉºŸBˆÓÅBÉºŸBˆÓÅBñÓB(ÅBñÓB(ÅBÔèB’‚ÄBÔèB’‚ÄB™ùœBãÃB™ùœBãÃBiœBŸIÃBiœBŸIÃBk›Bh¶ÂBk›Bh¶ÂBÆšB})ÂBÆšB})ÂB¥™B÷¢ÁB¥™B÷¢ÁB2˜Bê"ÁB2˜Bê"ÁB•—Bl©ÀB•—Bl©ÀBú–B‘6ÀBú–B‘6ÀBş”BkÊ¿Bş”BkÊ¿Böš”BBò¿Böš”BBò¿Be6”B‘ÀBe6”B‘ÀBëĞ“BR:ÀBëĞ“BR:ÀB˜j“B}ZÀB˜j“B}ZÀB}“BxÀB}“BxÀBª›’B“ÀBª›’B“ÀB23’BT«ÀB23’BT«ÀB$Ê‘BıÀÀB$Ê‘BıÀÀB’`‘BüÓÀB’`‘BüÓÀBöBMäÀBöBMäÀB*ŒBîñÀB*ŒBîñÀBv!BİüÀBv!BİüÀBƒ¶BÁBƒ¶BÁBdKB›
+ÁBdKB›
+ÁB*àBhÁB*àBhÁBçtBÁBçtBÁB«	BŞ
+ÁB«	BŞ
+ÁBŠB‡ÁBŠB‡ÁB”3BzıÀB”3BzıÀBÛÈŒB¹òÀBÛÈŒB¹òÀBq^ŒBDåÀBq^ŒBDåÀBfô‹B ÕÀBfô‹B ÕÀBÍŠ‹BMÂÀBÍŠ‹BMÂÀB¶!‹BĞ¬ÀB¶!‹BĞ¬ÀB3¹ŠB«”ÀB3¹ŠB«”ÀBVQŠBãyÀBVQŠBãyÀB.ê‰B}\ÀB.ê‰B}\ÀBÍƒ‰B|<ÀBÍƒ‰B|<ÀBD‰BæÀBD‰BæÀB¤¹ˆBÁô¿B¤¹ˆBÁô¿BüUˆBÍ¿BüUˆBÍ¿B^ó‡Bã¢¿B^ó‡Bã¢¿BÚ‘‡B7v¿BÚ‘‡B7v¿B~1‡BG¿B~1‡BG¿B\Ò†BŠ¿B\Ò†BŠ¿Bƒt†B™á¾Bƒt†B™á¾B†BL«¾B†BL«¾Bé¼…B¬r¾Bé¼…B¬r¾BFc…BÂ7¾BFc…BÂ7¾B)…B™ú½B)…B™ú½BŸ´„B9»½BŸ´„B9»½B¶_„B­y½B¶_„B­y½B~„B6½B~„B6½B»ƒB?ğ¼B»ƒB?ğ¼BRkƒBs¨¼BRkƒBs¨¼ByƒB¨^¼ByƒB¨^¼B…Ñ‚Bë¼B…Ñ‚Bë¼B‚‡‚BGÅ»B‚‡‚BGÅ»B|?‚BËu»Bş”BkÊ¿BP“BÆŸ¿BP“BÆŸ¿BC=’B3l¿BC=’B3l¿B¢ŞB»/¿B¢ŞB»/¿B¦Bhê¾B¦Bhê¾B‡&BEœ¾B‡&BEœ¾BÍŒB^E¾BÍŒB^E¾BÆv‹BÃå½BÆv‹BÃå½B–"ŠBƒ}½B–"ŠBƒ}½B$ÑˆB¯½B$ÑˆB¯½Bª‚‡BZ“¼Bª‚‡BZ“¼B]7†B—¼B]7†B—¼Buï„B|‡»Buï„B|‡»B%«ƒBõºB%«ƒBõºB¦j‚B˜ZºB¦j‚B˜ZºB*.B¸¹B*.B¸¹BÊëBu¹BÊëBu¹B„}B[¸B„}B[¸B%{Bí ·B%{Bí ·BÄĞxB-ß¶BÄĞxB-ß¶Bé…vBï¶Bé…vBï¶BoEtBTEµBoEtBTEµB´rB~m´B´rB~m´BåoB‘³BåoB‘³BëÅmB±¨²BëÅmB±¨²B“²kB¼±B“²kB¼±Ba«iB±È°Ba«iB±È°B«°gBßÎ¯B«°gBßÎ¯BÅÂeB¹Î®BÅÂeB¹Î®BÿácBgÈ­BÿácBgÈ­B¨bB¼¬B¨bB¼¬BI`Bí©«BI`Bí©«By‘^B ’ªBy‘^B ’ªB4è\BÙt©B4è\BÙt©B‚M[BGR¨B‚M[BGR¨B¨ÁYBš*§B¨ÁYBš*§BçDXBş¥BçDXBş¥B|×VB³Ì¤B|×VB³Ì¤B¥yUBÜ–£B¥yUBÜ–£Bš+TB²\¢Bš+TB²\¢B’íRBf¡B’íRBf¡BÂ¿QB.ÜŸBÂ¿QB.ÜŸBZ¢PB>–BZ¢PB>–BŠ•OBÍLBŠ•OBÍLB™NB œB™NB œB`®MB=°šB`®MB=°šBUÔLBŒ]™BUÔLBŒ]™BLB4˜BLB4˜BTKBn°–BTKBn°–B®JBqV•BÁïYAÖÃ®BİÒWA¼®BİÒWA¼®B¶·UA›²®B¶·UA›²®B¨SAn§®B¨SAn§®B	ˆQAš®B	ˆQAš®B1tOAŒ®B1tOAŒ®BvcMAÅ{®BvcMAÅ{®B2VKAŞi®B2VKAŞi®B¹LIAOV®B¹LIAOV®B_GGAA®B_GGAA®B|FEAF*®B|FEAF*®BcJCAÓ®BcJCAÓ®BfSAAÇ÷­BfSAAÇ÷­BÙa?A%Ü­BÙa?A%Ü­Bv=Aó¾­Bv=Aó¾­BU;A4 ­BU;A4 ­Bü°9Aï­Bü°9Aï­BUØ7A(^­BUØ7A(^­B¬6Aå:­B¬6Aå:­BM<4A+­BM<4A+­B‚y2Ağ¬B‚y2Ağ¬B˜¾0AnÈ¬B˜¾0AnÈ¬BÖ/AwŸ¬BÖ/AwŸ¬B‚a-A#u¬B‚a-A#u¬Bå¿+AyI¬Bå¿+AyI¬BB'*A€¬BB'*A€¬BÜ—(A@î«BÜ—(A@î«Bó'AÀ¾«Bó'AÀ¾«BÉ•%A	«BÉ•%A	«Bœ#$A!\«Bœ#$A!\«B¨»"A)«B¨»"A)«B*^!AãôªB*^!AãôªBY A¿ªBY A¿ªBnÃAJ‰ªBnÃAJ‰ªB†AñQªB†AñQªBUAœªBUAœªB/AUà©B/AUà©BÏA#¦©BÏA#¦©BaAk©BaAk©B A+/©B A+/©BÖAwò¨BÖAwò¨B
+$Aµ¨B
+$Aµ¨BÄFAÓv¨BÄFAÓv¨B'vAö7¨B'vAö7¨BW²Avø§BW²Avø§BsûA\¸§BsûA\¸§B™QA³w§B™QA³w§Bå´A†6§Bå´A†6§Bp%Aàô¦Bp%Aàô¦BS£AÊ²¦BÁïYAÖÃ®BgÊUAj­®BgÊUAj­®Bë©QA¤“®Bë©QA¤“®BMA‰v®BMA‰v®BSzIAV®BSzIAV®B‹lEAd2®B‹lEAd2®BQfAAg®BQfAAg®BTh=A)á­BTh=A)á­B8s9A´³­B8s9A´³­B¡‡5Aƒ­B¡‡5Aƒ­B:¦1A>O­B:¦1A>O­B¢Ï-AO­B¢Ï-AO­Bz*AGŞ¬Bz*AGŞ¬B`E&A2¡¬B`E&A2¡¬Bö’"Aa¬Bö’"Aa¬BÕíA¬BÕíA¬B“VAØ«B“VAØ«BËÍA"«BËÍA"«BTAhC«BTAhC«BõéAãôªBõéAãôªBA £ªBA £ªBÔF
+A­OªBÔF
+A­OªBçAù©BçAù©BÄèAîŸ©BÄèAîŸ©BôÔ A>D©BôÔ A>D©Bë§û@æ¨Bë§û@æ¨BÌõ@‹…¨BÌõ@‹…¨BÄğ@¦"¨BÄğ@¦"¨Bƒê@{½§Bƒê@{½§B°+å@V§B°+å@V§B)ôß@ì¦B)ôß@ì¦BÒçÚ@ô€¦BÒçÚ@ô€¦BzÖ@V¦BzÖ@V¦BîSÑ@Æ£¥BîSÑ@Æ£¥BñÍÌ@Y2¥BñÍÌ@Y2¥BGvÈ@¿¤BGvÈ@¿¤B£MÄ@-J¤B£MÄ@-J¤B±TÀ@•Ó£B±TÀ@•Ó£BŒ¼@l[£BŒ¼@l[£B„ô¸@Ãá¢B„ô¸@Ãá¢B{µ@±f¢B{µ@±f¢B“Z²@Hê¡B“Z²@Hê¡BQY¯@l¡BQY¯@l¡B4‹¬@Äí B4‹¬@Äí B²ğ©@Ôm B²ğ©@Ôm B8Š§@àìŸB8Š§@àìŸB+X¥@ıjŸB+X¥@ıjŸBçZ£@BèBçZ£@BèB¿’¡@ÃdB¿’¡@ÃdBÿÿŸ@–àB¾ïYAÖÃ®BsgAH;¯BsgAH;¯BMHtA¨¯BMHtA¨¯BˆÊ€A
+°BˆÊ€A
+°BKz‡APa°BKz‡APa°BW2A®­°BW2A®­°B•ñ”A#ï°B•ñ”A#ï°Bâ¶›A¤%±Bâ¶›A¤%±B%¢A)Q±B%¢A)Q±BGO©Aªq±BGO©Aªq±B °A"‡±B °A"‡±B•ò¶A‘±B•ò¶A‘±BŠÅ½Aë±BŠÅ½Aë±Bä—ÄA:…±Bä—ÄA:…±BzhËA}n±BzhËA}n±B56ÒA¸L±B56ÒA¸L±BùÿØAï±BùÿØAï±B¢ÄßA+è°B¢ÄßA+è°BƒæAt¥°BƒæAt¥°B=:íAÖW°B=:íAÖW°BşèóA]ÿ¯BşèóA]ÿ¯B9úAœ¯B9úAœ¯Bn” B.¯Bn” B.¯BêÛBkµ®BêÛBkµ®BB*2®BB*2®B4W
+Bh¤­B4W
+Bh¤­Bó‰B=­Bó‰B=­B¼´BÁi¬B¼´BÁi¬B×B½«B×B½«BSğBF«BSğBF«B BEªB BEªBäBŞz©BäBŞz©B) B¦¨B) B¦¨Boñ"BÈ§Boñ"BÈ§B<Ö%B&á¦B<Ö%B&á¦B¯(Bqğ¥B¯(Bqğ¥B€{+B—ö¤B€{+B—ö¤B;.B¿ó£B;.B¿ó£BCí0Bè¢BCí0Bè¢B´‘3BÆÓ¡B´‘3BÆÓ¡Bğ'6Bı¶ Bğ'6Bı¶ B¯8Bé‘ŸB¯8Bé‘ŸB(;B»dB(;B»dB9‘=B¥/B9‘=B¥/B~ê?B×ò›B~ê?B×ò›B†3BB‰®šB†3BB‰®šBókDBíb™BókDBíb™Bh“FB:˜Bh“FB:˜B‹©HB¨¶–B‹©HB¨¶–B®JBpV•BÃj?Bğ¼ÀB¯	@B©ğÀB¯	@B©ğÀB-«@B["ÁB-«@B["ÁB!OABıQÁB!OABıQÁBrõABˆÁBrõABˆÁBBBõªÁBBBõªÁB¹HCB<ÔÁB¹HCB<ÔÁBxõCBWûÁBxõCBWûÁB#¤DB> ÂB#¤DB> ÂBŸTEBíBÂBŸTEBíBÂBÎFB]cÂBÎFB]cÂB’ºFB‰ÂB’ºFB‰ÂBÎoGBlÂBÎoGBlÂBf&HB·ÂBf&HB·ÂB:ŞHBEÎÂB:ŞHBEÎÂB,—IB3ãÂB,—IB3ãÂBQJBÈõÂBQJBÈõÂBòKBÃBòKBÃB‰ÇKBÜÃB‰ÇKBÜÃBÄƒLBUÃBÄƒLBUÃB…@MBl(ÃB…@MBl(ÃB«ıMB/ÃB«ıMB/ÃB»NBl3ÃB»NBl3ÃB°xOBR5ÃB°xOBR5ÃBO6PBÓ4ÃBO6PBÓ4ÃBØóPBí1ÃBØóPBí1ÃB,±QB¡,ÃB,±QB¡,ÃB,nRBğ$ÃB,nRBğ$ÃB¹*SBÜÃB¹*SBÜÃB³æSBeÃB³æSBeÃBı¡TBÿÂBı¡TBÿÂBw\UBZîÂBw\UBZîÂBVBËÚÂBVBËÚÂB‚ÎVBäÄÂB‚ÎVBäÄÂBÖ…WB©¬ÂBÖ…WB©¬ÂBá;XB’ÂBá;XB’ÂB…ğXBHuÂB…ğXBHuÂB¥£YB*VÂB¥£YB*VÂB"UZBË4ÂB"UZBË4ÂBà[B0ÂBà[B0ÂBÃ²[B]ëÁBÃ²[B]ëÁB­^\B[ÃÁB­^\B[ÃÁB‚]B/™ÁB‚]B/™ÁB'°]BàlÁB'°]BàlÁB€U^Bu>ÁB€U^Bu>ÁBrø^B÷ÁBrø^B÷ÁBâ˜_BlÛÀBâ˜_BlÛÀBµ6`BŞ¦ÀBµ6`BŞ¦ÀBÓÑ`BUpÀBÓÑ`BUpÀB!jaBÚ7ÀBÂj?Bğ¼ÀB—XAB2bÁB—XAB2bÁB¢NCB'ÂB¢NCB'ÂBLEB³™ÂBLEB³™ÂBRGB¿+ÃBRGB¿+ÃBÁ^IB2·ÃBÁ^IB2·ÃB]rKBö;ÄB]rKBö;ÄB…ŒMBô¹ÄB…ŒMBô¹ÄBâ¬OB1ÅBâ¬OB1ÅBÓQBN¡ÅBÓQBN¡ÅBÔşSB…
+ÆBÔşSB…
+ÆB´/VBªlÆB´/VBªlÆB]eXB®ÇÆB]eXB®ÇÆBuŸZB‚ÇBuŸZB‚ÇB›İ\BhÇB›İ\BhÇBs_Bb­ÇBs_Bb­ÇBŸdaBWëÇBŸdaBWëÇB¼¬cBì!ÈB¼¬cBì!ÈBm÷eBQÈBm÷eBQÈBRDhBÓxÈBRDhBÓxÈB
+“jB™ÈB
+“jB™ÈB3ãlBİ±ÈB3ãlBİ±ÈBl4oB#ÃÈBl4oB#ÃÈBV†qBæÌÈBV†qBæÌÈBŒØsB#ÏÈBŒØsB#ÏÈB¯*vBÛÉÈB¯*vBÛÉÈB\|xB½ÈB\|xB½ÈB4ÍzB¿¨ÈB4ÍzB¿¨ÈBÓ}BñŒÈBÓ}BñŒÈBÙjB¨iÈBÙjB¨iÈBsÛ€Bê>ÈBsÛ€Bê>ÈBL ‚B¾ÈBL ‚B¾ÈBÈ#ƒB,ÓÇBÈ#ƒB,ÓÇB·E„B?’ÇB·E„B?’ÇBêe…B JÇBêe…B JÇB1„†B{úÆB1„†B{úÆB] ‡B½£ÆB] ‡B½£ÆB@ºˆBÕEÆB@ºˆBÕEÆBªÑ‰BÒàÅBªÑ‰BÒàÅBpæŠBÅtÅBpæŠBÅtÅBbø‹B¿ÅBbø‹B¿ÅBUBÓ‡ÄBUBÓ‡ÄBBÄBBÄB‰B›ÃB‰B›ÃBt BzñÂBt BzñÂB°!‘BË\ÂB°!‘BË\ÂB’B¤ÁÁB’B¤ÁÁBt“B  ÁBt“B  ÁBª”BYxÀBª”BYxÀBş”BkÊ¿BÄj?Bğ¼ÀBÈ@B¶ÁBÈ@B¶ÁB‘*BBdÁB‘*BBdÁB–CBÖ°ÁB–CBÖ°ÁB`úDBùÁB`úDBùÁB¶gFB¾<ÂB¶gFB¾<ÂB[ØGBÀ{ÂB[ØGBÀ{ÂBLIB¶ÂBLIB¶ÂBÂJBªëÂBÂJBªëÂBÃ;LBÃBÃ;LBÃBA·MBHÃBA·MBHÃBÚ4OBÉoÃBÚ4OBÉoÃBQ´PB-’ÃBQ´PB-’ÃBg5RB³¯ÃBg5RB³¯ÃBÜ·SBXÈÃBÜ·SBXÈÃBp;UBÜÃBp;UBÜÃBå¿VBëêÃBå¿VBëêÃBùDXBÔôÃBùDXBÔôÃBnÊYBÏùÃBnÊYBÏùÃBP[BÜùÃBP[BÜùÃB{Õ\BûôÃB{Õ\BûôÃB’Z^B,ëÃB’Z^B,ëÃB
+ß_BrÜÃB
+ß_BrÜÃB¤baBÍÈÃB¤baBÍÈÃBåbBC°ÃBåbBC°ÃB<fdBÖ’ÃB<fdBÖ’ÃB¼åeBŒpÃB¼åeBŒpÃBacgBkIÃBacgBkIÃBëŞhBwÃBëŞhBwÃBXjBºìÂBXjBºìÂB·ÎkB;·ÂB·ÎkB;·ÂB~BmB}ÂB~BmB}ÂB3³nB>ÂB3³nB>ÂB› pB‹úÁB› pB‹úÁBzŠqBb²ÁBzŠqBb²ÁB“ğrB«eÁB“ğrB«eÁB­RtBrÁB­RtBrÁB°uBÄ¾ÀB°uBÄ¾ÀBú	wB¯dÀBú	wB¯dÀB»^xBCÀB»^xBCÀB˜®yB£¿B˜®yB£¿B[ùzB¡<¿B[ùzB¡<¿BÌ>|BÑ¾BÌ>|BÑ¾B·~}Bcb¾B·~}Bcb¾Bç¸~B6ï½Bç¸~B6ï½B)íBx½B)íBx½B¤€Bı¼B¤€Bı¼B‹!BZ~¼B‹!BZ~¼B1²Bâû»B1²Bâû»B|?‚BËu»BÂj?Bï¼ÀB’²@B5ÀB’²@B5ÀB"ñABbO¿B"ñABbO¿B;&CB—’¾B;&CB—’¾B­QDBòÑ½B­QDBòÑ½BDsEB’½BDsEB’½BÔŠFB˜E¼BÔŠFB˜E¼B,˜GB%z»B,˜GB%z»B"›HBZ«ºB"›HBZ«ºBŠ“IBYÙ¹BŠ“IBYÙ¹B<JBC¹B<JBC¹BdKB=,¸BdKB=,¸Bã;LBkQ·Bã;LBkQ·BMBîs¶BMBîs¶BõÉMBí“µBõÉMBí“µBóNB‹±´BóNB‹±´Bm*OBîÌ³Bm*OBîÌ³BEÉOB<æ²BEÉOB<æ²Bb\PBšı±Bb\PBšı±B¬ãPB/±B¬ãPB/±B_QB '°B_QB '°BpÎQB”9¯BpÎQB”9¯BÄ1RB´J®BÄ1RB´J®B÷ˆRB¥Z­B÷ˆRB¥Z­BüÓRBi¬BüÓRBi¬BÆSBšw«BÆSBšw«BKESBî„ªBKESBî„ªBƒkSB±‘©BƒkSB±‘©Bg…SB¨Bg…SB¨Bó’SB)ª§Bó’SB)ª§B%”SB-¶¦B%”SB-¶¦BıˆSBAÂ¥BıˆSBAÂ¥B}qSBÎ¤B}qSBÎ¤B¨MSB:Û£B¨MSB:Û£B„SBnè¢B„SBnè¢BáRBSö¡BáRBSö¡Br˜RB¡Br˜RB¡B™CRBÊ B™CRBÊ BâQB«%ŸBâQB«%ŸBuQBÛ7BuQBÛ7BüPB€KBüPB€KBwPBÀ`œBwPBÀ`œB­æOBÂw›B­æOBÂw›BJOB­šBJOB­šBİ¡NB¦«™Bİ¡NB¦«™BîMBÓÈ˜BîMBÓÈ˜Bå.MBYè—Bå.MBYè—BedLB]
+—BedLB]
+—B¹KB/–B¹KB/–B®JBpV•Bı!B’@[BRM"Bµ[BRM"Bµ[B€…#B´!\B€…#B´!\BUÀ$Bf†\BUÀ$Bf†\Bœı%Bã\Bœı%Bã\B"='B¹7]B"='B¹7]B²~(B>„]B²~(B>„]BÂ)B˜È]BÂ)B˜È]B+B½^B+B½^BM,B£8^BM,B£8^B6•-BAd^B6•-BAd^BÜİ.B‡^BÜİ.B‡^BL'0B‹¢^BL'0B‹¢^BQq1B,µ^BQq1B,µ^B²»2Br¿^B²»2Br¿^B;4BZÁ^B;4BZÁ^B¶P5Bãº^B¶P5Bãº^Bëš6B¬^Bëš6B¬^B¦ä7Bá”^B¦ä7Bá”^B®-9B\u^B®-9B\u^BÑu:B†M^BÑu:B†M^BÕ¼;Bd^BÕ¼;Bd^B‡=Bÿä]B‡=Bÿä]B±F>B`¤]B±F>B`¤]B‰?B‘[]B‰?B‘[]B—É@B 
+]B—É@B 
+]BëBB˜±\BëBB˜±\BãCCBˆP\BãCCBˆP\BM}DBç[BM}DBç[Bó³EB”v[Bó³EB”v[B¦çFBÒıZB¦çFBÒıZB0HBQ}ZB0HBQ}ZB`EIB%õYB`EIB%õYBoJBdeYBoJBdeYBî”KB&ÎXBî”KB&ÎXBë¶LB„/XBë¶LB„/XBÌÔMB—‰WBÌÔMB—‰WBcîNB|ÜVBcîNB|ÜVBPBN(VBPBN(VBøQB+mUBøQB+mUBœRB2«TBœRB2«TBA&SB‚âSBA&SB‚âSB¼'TB=SB¼'TB=SBã#UB„=RBã#UB„=RBVB{aQBVB{aQBWBEPBWBEPBÅöWB—OBÅöWB—OBÜXBê¨NBÜXBê¨NB.»YBµMB.»YBµMB”ZB¨»LBÒİA»æ\B¼MÛA•]BÒİA»æ\B˜æŞA+>\B˜æŞA+>\BÀ¿àAŠ›[BÀ¿àAŠ›[Bü âAõşZBü âAõşZBÿ‰äAƒhZBÿ‰äAƒhZBxzæANØYBxzæANØYBrèAmNYBrèAmNYB‚pêAøÊXB‚pêAøÊXBouìANXBouìANXB„€îA¤×WB„€îA¤×WBm‘ğAígWBm‘ğAígWBÒ§òAñşVBÒ§òAñşVB\ÃôAÀœVB\ÃôAÀœVB²ãöAmAVB²ãöAmAVB{ùAíUB{ùAíUB^1ûA•ŸUB^1ûA•ŸUBÿ]ıA+YUBÿ]ıA+YUBÿAÓUBÿAÓUB†à B–áTB†à B–áTBaûB~°TBaûB~°TBbB”†TBbB”†TB\4BİcTB\4BİcTB RB`HTB RB`HTB~pB 4TB~pB 4TBGB#'TBGB#'TBN®Bh!TBN®Bh!TBbÍ	Bó"TBbÍ	Bó"TBTì
+BÁ+TBTì
+BÁ+TBö
+BÒ;TBö
+BÒ;TB)B$STB)B$STBFB²qTBFB²qTB#cBw—TB#cBw—TB­~BmÄTB­~BmÄTBı˜BøTBı˜BøTBã±BÍ3UBã±BÍ3UB3ÉB&vUB3ÉB&vUB¾ŞB‹¿UB¾ŞB‹¿UBVòBñVBVòBñVBÏBIgVBÏBIgVBûB‡ÅVBûB‡ÅVB®B›*WB®B›*WB½)Bs–WB½)Bs–WBú0BÿXBú0BÿXB<5B+‚XB<5B+‚XBW6BäYBW6BäYB!4BˆYB!4BˆYBq.B¦ZBq.B¦ZB% Bƒ§ZB% Bƒ§ZBş!B’@[B]Û“BçÂ~B®×”B…‘€B]Û“BçÂ~Bn×’B»o|Bn×’B»o|BÌ‘Bê)zBÌ‘Bê)zBd¹BÒñwBd¹BÒñwB¡ŸBĞÇuB¡ŸBĞÇuBò~B?¬sBò~B?¬sB†WBxŸqB†WBxŸqB)ŒBÑ¡oB)ŒBÑ¡oB<õŠB³mB<õŠB³mBÂº‰B.ÕkBÂº‰B.ÕkBSzˆBÒjBSzˆBÒjB%4‡BÕHhB%4‡BÕHhBkè…B›fBkè…B›fB_—„BÿdB_—„BÿdB6AƒBåscB6AƒBåscB(æB#úaB(æB#úaBn†€B’`Bn†€B’`B‡D~Bï;_B‡D~Bï;_BÃs{Bï÷]BÃs{Bï÷]B›xBHÆ\B›xBHÆ\BÆºuB-§[BÆºuB-§[BÓrBÍšZBÓrBÍšZB«åoBS¡YB«åoBS¡YBÃñlBèºXBÃñlBèºXBEøiB´çWBEøiB´çWB¬ùfB×'WB¬ùfB×'WBuöcBq{VBuöcBq{VB"ï`B âUB"ï`B âUB1ä]B{]UB1ä]B{]UBÖZBìTBÖZBìTBoÅWBŒTBoÅWBŒTB¢²TBäDTB¢²TBäDTB8QB-TB8QB-TB±ˆNBoíSB±ˆNBoíSB’rKB±ßSB’rKB±ßSB[\HBóåSB[\HBóåSB‹FEB6 TB‹FEB6 TB¨1BBu.TB¨1BBu.TB1?B©pTB1?B©pTB¨<BÆÆTB¨<BÆÆTBŒı8B¿0UBŒı8B¿0UB`ñ5B®UB`ñ5B®UB¤è2Bù?VB¤è2Bù?VBÔã/BåVBÔã/BåVBsã,B§WBsã,B§WBıç)B£iXBıç)B£iXBğñ&BáHYBğñ&BáHYBÆ$B?;ZBÆ$B?;ZBş!B’@[Bş!B’@[Bû"B»ˆ\Bû"B»ˆ\Bfæ$BÄ]Bfæ$BÄ]BƒÙ&BØó^BƒÙ&BØó^B%Ô(Bf`B%Ô(Bf`BøÕ*B
+,aBøÕ*B
+,aB©Ş,B•4bB©Ş,B•4bBàí.BÜ/cBàí.BÜ/cBI1B¶dBI1B¶dB3BüıdB3BüıdBP?5BˆĞeBP?5BˆĞeB;e7B9•fB;e7B9•fBô9BïKgBô9BïKgB ¿;B‹ôgB ¿;B‹ôgBbò=BñhBbò=BñhB^)@BiB^)@BiB¹cBBº˜iB¹cBBº˜iB¡DBòjB¡DBòjBáFBhjBáFBhjBK#IB«ºjBK#IB«ºjBogKBşjBogKBşjB­MB¿2kB­MB¿2kBäóOB±XkBäóOB±XkBy;RBßokBy;RBßokBsƒTBFxkBsƒTBFxkBsËVBãqkBsËVBãqkBYB¹\kBYB¹\kB	Z[BÉ8kB	Z[BÉ8kBŞŸ]BkBŞŸ]BkB;ä_B¸ÄjB;ä_B¸ÄjBÂ&bB¨tjBÂ&bB¨tjBgdBújBgdBújBÍ¤fB¾¨iBÍ¤fB¾¨iB”ßhB-iB”ßhB-iBkBá¢hBkBá¢hBÖJmBm
+hBÖJmBm
+hB•zoB¿cgB•zoB¿cgBğ¥qBô®fBğ¥qBô®fBˆÌsB)ìeBˆÌsB)ìeBîuB~eBîuB~eB
+xB=dB
+xB=dBG zBQcBG zBQcB\0|BWbB\0|BWbBõ9~BßPaBõ9~BßPaB_€B=`B_€B=`B/B3_B/B3_BD‚B£î]BD‚B£î]BrƒBƒ´\BrƒBƒ´\B“şƒBn[B“şƒBn[B~ì„B`ZBqìJB}^”B®JBpV•BqìJB}^”BMKBÕe“BMKBÕe“BCKB l’BCKB l’B/\KBs‘B/\KBs‘B*hKB1yB*hKB1yBgKBJBgKBJB-ZKBy…B-ZKBy…B6@KBè‹B6@KBè‹BKBÀ’ŒBKBÀ’ŒBmæJB)š‹BmæJB)š‹Bª¦JBL¢ŠBª¦JBL¢ŠB`ZJBS«‰B`ZJBS«‰B›JBeµˆB›JBeµˆBjœIBªÀ‡BjœIBªÀ‡Bİ*IBKÍ†Bİ*IBKÍ†B­HBqÛ…B­HBqÛ…Bş"HBBë„Bş"HBBë„B×ŒGBæüƒB×ŒGBæüƒB«êFB„ƒB«êFB„ƒB”<FBC&‚B”<FBC&‚B°‚EBI>B°‚EBI>B½DB¼X€B½DB¼X€BùëCB„ë~BùëCB„ë~BjCB+}BjCB+}B“'BB:p{B“'BB:p{B™4ABt»yB™4ABt»yB¥6@BøxB¥6@BøxBà-?BevBà-?BevBv>BûÃtBv>BûÃtB’ü<B*sB’ü<B*sBgÔ;Bg—qBgÔ;Bg—qB"¢:BmpB"¢:BmpB÷e9BT‰nB÷e9BT‰nB 8BZmB 8BZmB¿Ğ6BÁ›kB¿Ğ6BÁ›kBx5BÃ1jBx5BÃ1jBo4B›ĞhBo4B›ĞhBí«2B…xgBí«2B…xgBÔ81B¸)fBÔ81B¸)fB_½/BlädB_½/BlädBÌ9.BÔ¨cBÌ9.BÔ¨cB]®,B'wbB]®,B'wbBQ+B–OaBQ+B–OaBë€)BO2`Bë€)BO2`Bnß'B…_Bnß'B…_B7&Bb^B7&Bb^BBˆ$B]BBˆ$B]BÓ"B¿'\BÓ"B¿'\Bş!B‘@[B›FB8wrB~FB›\sB›FB8wrBa»EBM”qBa»EBM”qBrQEBş³pBrQEBş³pBİáDBoÖoBİáDBoÖoB¶lDBÆûnB¶lDBÆûnBòCB&$nBòCB&$nBşqCB³OmBşqCB³OmB–ìBB~lB–ìBB~lBíaBBÜ°kBíaBBÜ°kBÒAB½æjBÒAB½æjB7=ABR jB7=ABR jBZ£@B½]iBZ£@B½]iBœ@BŸhBœ@BŸhBa?B‘ägBa?B‘ägBè¸>B8.gBè¸>B8.gB(>B/|fB(>B/|fBõZ=B•ÎeBõZ=B•ÎeBl¥<B†%eBl¥<B†%eBªë;BdBªë;BdBÍ-;BtácBÍ-;BtácBök:B¨FcBök:B¨FcBC¦9BĞ°bBC¦9BĞ°bBÕÜ8B bBÕÜ8B bBÎ8Ba”aBÎ8Ba”aBO?7BøaBO?7BøaBzk6BáŒ`Bzk6BáŒ`Bq”5B1`Bq”5B1`BYº4Bıš_BYº4Bıš_BUİ3BX*_BUİ3BX*_Bˆı2BU¿^Bˆı2BU¿^B2BZ^B2BZ^B,61Bxú]B,61Bxú]BæN0B¾ ]BæN0B¾ ]Bne/BçL]Bne/BçL]Bêy.B ÿ\Bêy.B ÿ\B€Œ-B·\B€Œ-B·\BW,B2u\BW,B2u\B—¬+Bc9\B—¬+Bc9\Bhº*B±\Bhº*B±\BğÆ)B$Ô[BğÆ)B$Ô[BXÒ(BÆª[BXÒ(BÆª[BÈÜ'B›‡[BÈÜ'B›‡[Biæ&B«j[Biæ&B«j[Bbï%BúS[Bbï%BúS[BÜ÷$BŒC[BÜ÷$BŒC[B  $Bb9[B  $Bb9[B÷#B€5[B÷#B€5[Bè"Bæ7[Bè"Bæ7[Bş!B“@[B~ì„B`ZBk„B›tZBk„B›tZBzèƒB@ÇZBzèƒB@ÇZBìdƒBC[BìdƒBC[Bsà‚B–X[Bsà‚B–X[B$[‚B/—[B$[‚B/—[BÕBÏ[BÕBÏ[B[NB \B[NB \BÇ€B8*\BÇ€B8*\BC?€B‹M\BC?€B‹M\B#nBúi\B#nBúi\B]~Bƒ\B]~Bƒ\B£K}B \B£K}B \Bà9|BĞ•\Bà9|BĞ•\B({B‘–\B({B‘–\B5zBc\B5zBc\B¦yBHƒ\B¦yBHƒ\BƒówBAo\BƒówBAo\BùâvBQT\BùâvBQT\B3ÓuB~2\B3ÓuB~2\B^ÄtBÌ	\B^ÄtBÌ	\B¨¶sBCÚ[B¨¶sBCÚ[B<ªrBé£[B<ªrBé£[BFŸqBÉf[BFŸqBÉf[Bò•pBë"[Bò•pBë"[BloB\ØZBloB\ØZBŞˆnB'‡ZBŞˆnB'‡ZBt…mBZ/ZBt…mBZ/ZBX„lBÑYBX„lBÑYBµ…kB2lYBµ…kB2lYB´‰jB÷ YB´‰jB÷ YB~iBcXB~iBcXB=šhBŠXB=šhBŠXB§gB™WB§gB™WB:·fBWWB:·fBWWBÆÊeB'‹VBÆÊeB'‹VBæádBûUBæádBûUB¾ücBeUB¾ücBeUBvcBQÉTBvcBQÉTB1>bBï'TB1>bBï'TBeaB SBeaB SBB`B ÔRBB`B ÔRBß¿_Bë"RBß¿_Bë"RBô^BÿkQBô^BÿkQBí,^Bø¯PBí,^Bø¯PBŸj]B÷îOBŸj]B÷îOBE­\B)OBE­\B)OBüô[Bƒ^NBüô[Bƒ^NBãA[BQMBãA[BQMB”ZB¨»LB~ÍàA”[B¼MÛA•]B~ÍàA”[BÈfæA¥YBÈfæA¥YBªìAGÈWBªìAGÈWB7âñA!şUB7âñA!şUB}Â÷AáFTB}Â÷AáFTB‡¸ıAÏ¢RB‡¸ıAÏ¢RB«áB0QB«áB0QBöğBF•OBöğBF•OB¨	BN,NB¨	BN,NB:+B†×LB:+B†×LB+UB$—KB+UB$—KBõ†B]kJBõ†B]kJBÀBaTIBÀBaTIBÿÿB`RHBÿÿB`RHB-FBƒeGB-FBƒeGB’BñFB’BñFB/ã!BÍËEB/ã!BÍËEBë8%B8EBë8%B8EBÀ’(BNˆDBÀ’(BNˆDB"ğ+B&DB"ğ+B&DB€P/BØ›CB€P/BØ›CBO³2BsFCBO³2BsFCB6BCB6BCB~9BİBB~9BİBBÑä<B=ÊBBÑä<B=ÊBBÑK@BéÌBBÑK@BéÌBBz²CB¢åBBz²CB¢åBB:GBbCB:GBbCBƒ|JB#YCBƒ|JB#YCBÊŞMBÙ³CBÊŞMBÙ³CB|>QBu$DB|>QBu$DB›TBåªDB›TBåªDBğóWBGEBğóWBGEB›H[BäøEB›H[BäøEB~˜^B=ÀFB~˜^B=ÀFBãaBûœGBãaBûœGBÆ'eBıHBÆ'eBıHBfhB–IBfhB–IB{kB!²JB{kB!²JBjÍnBìâKBjÍnBìâKBbõqBF(MBbõqBF(MBØuBøNBØuBøNBM+xBÊïOBM+xBÊïOBA8{B‚qQBA8{B‚qQB/;~BŞSB/;~BŞSBÍ™€Bœ¯TBÍ™€Bœ¯TB„‚BxkVB„‚BxkVB~ƒB(:XB~ƒB(:XB~ì„B`ZBíÌ”Bˆ€B®×”B…‘€BíÌ”Bˆ€B¢¾”B¸ó~B¢¾”B¸ó~BĞ¬”B0İ}BĞ¬”B0İ}Bx—”B¦Ç|Bx—”B¦Ç|B~”BG³{B~”BG³{BGb”BB zBGb”BB zBxB”BÁyBxB”BÁyB4”Bô~xB4”Bô~xBƒø“BqwBƒø“BqwBkÎ“B$evBkÎ“B$evBò “By[uBò “By[uB p“B1TtB p“B1TtBı;“BxOsBı;“BxOsB‘“BxMrB‘“BxMrBæÉ’B[NqBæÉ’B[NqBŒ’BKRpBŒ’BKRpBùJ’BsYoBùJ’BsYoBÌ’BúcnBÌ’BúcnBˆ¿‘BrmBˆ¿‘BrmB;u‘BÆƒlB;u‘BÆƒlBğ'‘BZ™kBğ'‘BZ™kB´×Bì²jB´×Bì²jB“„B ĞiB“„B ĞiBœ.BœòhBœ.BœòhBİÕBhBİÕBhBdzBıCgBdzBıCgBAB©sfBAB©sfB‚»B)¨eB‚»B)¨eB7XB¡ádB7XB¡ádBròB/ dBròB/ dBBŠBõccBBŠBõccB¹B­bB¹B­bBè²ŒBŸûaBè²ŒBŸûaBàCŒB¾OaBàCŒB¾OaBµÒ‹B‹©`BµÒ‹B‹©`By_‹B!	`By_‹B!	`B?êŠB˜n_B?êŠB˜n_BsŠBÚ^BsŠBÚ^Bú‰B•K^Bú‰B•K^B[‰BIÃ]B[‰BIÃ]Bë‰B?A]Bë‰B?A]Bß„ˆBÅ\Bß„ˆBÅ\BNˆBFP\BNˆBFP\BJ„‡B~á[BJ„‡B~á[Bê‡BHy[Bê‡BHy[BC~†B´[BC~†B´[Bkù…BÒ¼ZBkù…BÒ¼ZBws…B±hZBws…B±hZB~ì„B`ZBÓó"BííYBş!B’@[BÓó"BííYBØ$Bo§XBØ$Bo§XBsÄ&BOmWBsÄ&BOmWB›¸(B¿?VB›¸(B¿?VB=´*BğUB=´*BğUB·,BTB·,BTBÀ.BUSBÀ.BUSB³Ğ0Bà
+RB³Ğ0Bà
+RBîæ2BİQBîæ2BİQBö5Bt@PBö5Bt@PBr$7BÉoOBr$7BÉoOB
+K9Bş¬NB
+K9Bş¬NBev;B3øMBev;B3øMB$¦=B…QMB$¦=B…QMBíÙ?B¹LBíÙ?B¹LBfBBî.LBfBBî.LB-LDB4³KB-LDB4³KBè‰FBøEKBè‰FBøEKB8ÊHBJçJB8ÊHBJçJB¿KB:—JB¿KB:—JBQMBÖUJBQMBÖUJBñ–OB)#JBñ–OB)#JBàİQB9ÿIBàİQB9ÿIB‡%TBêIB‡%TBêIB‡mVB¬ãIB‡mVB¬ãIBµXBìIBµXBìIBıZBAJBıZBAJBãC]B3)JBãC]B3)JB‹‰_Bâ]JB‹‰_Bâ]JB¯ÍaBG¡JB¯ÍaBG¡JBídBUóJBídBUóJBèOfB TKBèOfB TKBAhB8ÃKBAhB8ÃKBœÇjBê@LBœÇjBê@LB˜şlBÍLB˜şlBÍLBÚ1oBggMBÚ1oBggMBaqBNBaqBNB¿‹sB¹ÆNB¿‹sB¹ÆNBª±uBj‹OBª±uBj‹OBmÒwBö]PBmÒwBö]PB±íyB<>QB±íyB<>QB|B,RB|B,RBQ~B]'SBQ~B]'SB€Bè/TB€Bè/TBkBŒEUBkBŒEUB¼‚BhVB¼‚BhVBJƒBc—WBJƒBc—WBîúƒB7ÓXBîúƒB7ÓXB~ì„B`ZB~ì„B`ZBS2†BÅ ZBS2†BÅ ZB x‡B«ZB x‡B«ZB®½ˆBúYB®½ˆBúYBÇŠBÎYBÇŠBÎYB7G‹B~‘YB7G‹B~‘YBÈŠŒB“DYBÈŠŒB“DYBFÍBMçXBFÍBMçXBzB»yXBzB»yXB2NBîûWB2NBîûWB8Œ‘BımWB8Œ‘BımWBWÈ’BıÏVBWÈ’BıÏVB]”B	"VB]”B	"VB:•B=dUB:•B=dUBNo–B¹–TBNo–B¹–TBÒ¡—B¹SBÒ¡—B¹SBqÑ˜BÍRBqÑ˜BÍRBùı™B7ÑQBùı™B7ÑQB8'›B<ÆPB8'›B<ÆPBıLœBJ¬OBıLœBJ¬OBoBƒNBoBƒNB\B>LMB\B>LMB–§ŸB‡LB–§ŸB‡LB›½ B¡²JB›½ B¡²JB:Ï¡BÄPIB:Ï¡BÄPIBIÜ¢B*áGBIÜ¢B*áGBšä£BdFBšä£BdFBè¤B°ÙDBè¤B°ÙDBZæ¥BQBCBZæ¥BQBCBsß¦B3ABsß¦B3AB'Ó§Bší?B'Ó§Bší?BMÁ¨BÎ0>BMÁ¨BÎ0>B¾©©Bh<B¾©©Bh<BTŒªBÅ“:BTŒªBÅ“:Bêh«B´8Bêh«B´8B\?¬BsÉ6B\?¬BsÉ6B‡­BÔ4B‡­BÔ4BHÙ­BVÔ2BHÙ­BVÔ2B~œ®B‹Ê0B~œ®B‹Ê0B
+Y¯B	·.B
+Y¯B	·.BÌ°B'š,BÌ°B'š,B§½°B<t*B§½°B<t*B}e±B¥E(B}e±B¥E(B4²B½&B4²B½&B°Ÿ²BßÏ#B°Ÿ²BßÏ#BÚ1³Bm‰!BÚ1³Bm‰!B˜¼³BÃ;B˜¼³BÃ;BÔ?´BDçBÔ?´BDçBy»´BQŒBy»´BQŒBr/µBL+Bˆ6·B³ÿtBrò·BºÇvBˆ6·B³ÿtBçt¶BTAsBçt¶BTAsB°­µBèŒqB°­µBèŒqBá´B¶âoBá´B¶âoB´BCnB´BCnBÑ7³B®lBÑ7³B®lB[²B+$kB[²B+$kBez±B‰¥iBez±B‰¥iBu”°Bl2hBu”°Bl2hBå©¯BËfBå©¯BËfBÜº®B·oeBÜº®B·oeBÇ­B’ dBÇ­B’ dBüÏ¬BÙİbBüÏ¬BÙİbBvÔ«BÄ§aBvÔ«BÄ§aBÕªB„~`BÕªB„~`BÒ©BIb_BÒ©BIb_B{Ë¨BDS^B{Ë¨BDS^B’Á§B Q]B’Á§B Q]B}´¦B‡]\B}´¦B‡]\Bf¤¥B!w[Bf¤¥B!w[B{‘¤B–ZB{‘¤B–ZBé{£BÔYBé{£BÔYBİc¢B•YBİc¢B•YB‡I¡BaiXB‡I¡BaiXB- B‡ÉWB- B‡ÉWB°ŸB!8WB°ŸB!8WBîBEµVBîBEµVBÚÌœBAVBÚÌœBAVBÆ©›B†ÛUBÆ©›B†ÛUB…šBÅ„UB…šBÅ„UB;`™BØ<UB;`™BØ<UB%:˜BÉUB%:˜BÉUBm—B¢ÙTBm—B¢ÙTBEì•Bk¾TBEì•Bk¾TBİÄ”B'²TBİÄ”B'²TBe“BÙ´TBe“BÙ´TBv’B€ÆTBv’B€ÆTB	O‘BçTB	O‘BçTB†(BŸUB†(BŸUBµBUUBµBUUBÆİBQ¢UBÆİBQ¢UBê¹ŒBfşUBê¹ŒBfşUBP—‹B:iVBP—‹B:iVB'vŠB»âVB'vŠB»âVB¡V‰BÖjWB¡V‰BÖjWBë8ˆBtXBë8ˆBtXB4‡B}¦XB4‡B}¦XB«†BÖYYB«†BÖYYBì„BaZBúV¦BÇhBÙ¦B[çiBúV¦BÇhB;Ñ¥BŠ­gB;Ñ¥BŠ­gBöG¥BÖšfBöG¥BÖšfBC»¤B+eBC»¤B+eB8+¤BµŠdB8+¤BµŠdBì—£BŸcBì—£BŸcBy£B˜bBy£B˜bB÷g¢B;ªaB÷g¢B;ªaB~Ë¡B:Ä`B~Ë¡B:Ä`B),¡B9æ_B),¡B9æ_BŠ BZ_BŠ BZ_BSåŸBÃB^BSåŸBÃB^B>ŸB’}]B>ŸB’}]BK”BëÀ\BK”BëÀ\B9èBë\B9èBë\Bî9B¯a[Bî9B¯a[B†‰œBU¿ZB†‰œBU¿ZB×›B÷%ZB×›B÷%ZBÖ"›B­•YBÖ"›B­•YBÇlšBYBÇlšBYBµ™B´XBµ™B´XBÔû˜B1XBÔû˜B1XB,A˜B±WB,A˜B±WB8…—B{OWB8…—B{OWBÈ–Bj÷VBÈ–Bj÷VBé	–Bó¨VBé	–Bó¨VBÌJ•B#dVBÌJ•B#dVBßŠ”B)VBßŠ”B)VBCÊ“B¦÷UBCÊ“B¦÷UB	“B
+ĞUB	“B
+ĞUByG’B8²UByG’B8²UBŒ…‘B7UBŒ…‘B7UBmÃB	”UBmÃB	”UB>B¯“UB>B¯“UB?B*UB?B*UB+}Bx°UB+}Bx°UB‡»B—ÍUB‡»B—ÍUBQúŒB€ôUBQúŒB€ôUBª9ŒB/%VBª9ŒB/%VB°y‹Bš_VB°y‹Bš_VBƒºŠB¹£VBƒºŠB¹£VBBü‰B€ñVBBü‰B€ñVB?‰BãHWB?‰BãHWBƒˆBÒ©WBƒˆBÒ©WBBÈ‡B?XBBÈ‡B?XBé‡BˆXBé‡BˆXBW†BHYBW†BHYBê …B½‹YBê …B½‹YBì„BaZB¶ÎJB‡9”B®JBqV•B¶ÎJB‡9”BÕıJB“BÕıJB“BV;KBg’BV;KBg’B/‡KBæB/‡KBæBTáKBÀÌBTáKBÀÌBµILB/´BµILB/´BCÀLBBCÀLBBéDMBv‡ŒBéDMBv‡ŒB‘×MB©s‹B‘×MB©s‹B$xNBÎaŠB$xNBÎaŠB‡&OBR‰B‡&OBR‰BâOB¢DˆBâOB¢DˆBH¬PB©9‡BH¬PB©9‡BgƒQBS1†BgƒQBS1†BÖgRBË+…BÖgRBË+…BpYSB>)„BpYSB>)„BXTBÔ)ƒBXTBÔ)ƒBƒcUB¹-‚BƒcUB¹-‚B§{VB5B§{VB5BK WB@€BK WB@€B=ÑXB©~B=ÑXB©~BNZBÃ|BNZBÃ|BHW[B¦ğzBHW[B¦ğzBõ«\B¶&yBõ«\B¶&yB^B‹ewB^B‹ewB‰w_Bo­uB‰w_Bo­uBûí`B©şsBûí`B©şsB5obBƒYrB5obBƒYrBøúcB?¾pBøúcB?¾pB‘eB -oB‘eB -oB1gBk¦mB1gBk¦mBëÚhB^*lBëÚhB^*lB:jB7¹jB:jB7¹jBÀJlB3SiBÀJlB3SiB/nBøgB/nBøgB@ŞoB€©fB@ŞoB€©fB¨´qB>feB¨´qB>feB“sB/dB“sB/dB>yuBùcB>yuBùcBĞfwBXåaBĞfwBXåaB|[yBLÓ`B|[yBLÓ`BîV{BÎ_BîV{BÎ_BÓX}BªÕ^BÓX}BªÕ^BÙ`Bfê]BÙ`Bfê]BT·€B`]BT·€B`]BõÀB»;\BõÀB»;\B$Í‚Bšx[B$Í‚Bšx[B¶ÛƒBÃZB¶ÛƒBÃZB~ì„BaZB÷aGB¡rB~FB™\sB÷aGB¡rB+NHB‰ÎpB+NHB‰ÎpBBIB†oBBIB†oBË>JBÍXnBË>JBÍXnBçBKB'mBçBKB'mB©NLBıkB©NLBıkBâaMBSÙjBâaMBSÙjBg|NB´¼iBg|NB´¼iB
+OBR§hB
+OBR§hBšÆPB]™gBšÆPB]™gBçõQB “fBçõQB “fBÀ+SBf”eBÀ+SBf”eBñgTB¸dBñgTB¸dBGªUB¯cBGªUB¯cBŒòVBÄÈbBŒòVBÄÈbBŒ@XBÉêaBŒ@XBÉêaB”YBVaB”YBVaBÜìZBH`BÜìZBH`B¼J\B„_B¼J\B„_Bv­]B{É^Bv­]B{É^BÏ_Bs^BÏ_Bs^BŒ€`B‘n]BŒ€`B‘n]BsğaBòÎ\BsğaBòÎ\BEdcB±8\BEdcB±8\BÆÛdBæ«[BÆÛdBæ«[B¸VfB§([B¸VfB§([BßÔgB
+¯ZBßÔgB
+¯ZBúUiB%?ZBúUiB%?ZBÊÙjBÙYBÊÙjBÙYB`lBÄ|YB`lBÄ|YBèmBi*YBèmBi*YBÿroBâXBÿroBâXB%ÿpB¢£XB%ÿpB¢£XBÁŒrBLoXBÁŒrBLoXBtB
+EXBtB
+EXBK«uBå$XBK«uBå$XB¹;wBàXB¹;wBàXB”ÌxB XB”ÌxB XBœ]zBGXBœ]zBGXBî{Bµ	XBî{Bµ	XB(}BHXB(}BHXB)Bş8XB)Bş8XB'O€BÑ_XB'O€BÑ_XB,B¼XB,B¼XB‚ÜB¶ËXB‚ÜB¶ËXB	¢‚B¶YB	¢‚B¶YB fƒB±_YB fƒB±_YB'*„B™¸YB'*„B™¸YB~ì„B_ZBö~\BjJB”ZB©»LBö~\BjJB[{^BĞSGB[{^BĞSGBïˆ`BO³DBïˆ`BO³DB_§bBR BB_§bBR BBPÖdBG›?BPÖdBG›?BigB•$=BigB•$=BHdiB§¼:BHdiB§¼:BÂkBác8BÂkBác8BÚ/nB¤6BÚ/nB¤6BÁ«pBRá3BÁ«pBRá3Bİ5sBG¸1Bİ5sBG¸1BÄÍuBßŸ/BÄÍuBßŸ/BsxBp˜-BsxBp˜-B>%{BQ¢+B>%{BQ¢+Bîã}BÕ½)Bîã}BÕ½)BUW€BHë'BUW€BHë'B}ÂBû*&B}ÂBû*&B33ƒB5}$B33ƒB5}$B;©„B>â"B;©„B>â"BZ$†BVZ!BZ$†BVZ!BN¤‡BÁåBN¤‡BÁåBÚ(‰B»„BÚ(‰B»„B¿±ŠB~7B¿±ŠB~7Bº>ŒB@şBº>ŒB@şBŒÏB5ÙBŒÏB5ÙBòcBÈBòcBÈB¬ûBtÌB¬ûBtÌBt–’BåBt–’BåB4”B”B4”B”B%Ô•BUB%Ô•BUB…v—B¶¬B…v—B¶¬Bä™B“Bä™B“BşÀšBÅ›BşÀšBÅ›BhœB`3BhœB`3BKBuàBKBuàBóºŸB£BóºŸB£B@e¡B@{B@e¡B@{Bê£BiBê£BiB¬º¤BilB¬º¤BilB?e¦Bf…B?e¦Bf…B`¨Bú³B`¨Bú³BÇ¸©BøBÇ¸©BøB-a«BÃQB-a«BÃQBO­BŞÀBO­BŞÀBå­®B]EBå­®B]EB¬Q°B(ßB¬Q°B(ßB^ó±B(B^ó±B(B·’³B?RB·’³B?RBr/µBL+Bw`…B[ºWB~ì„B`ZBw`…B[ºWBÜ…Bh_UBÜ…Bh_UBX_†Bé
+SBX_†Bé
+SBê†B?½PBê†B?½PB@|‡BÍvNB@|‡BÍvNB¼ˆBï7LB¼ˆBï7LBs¶ˆBJBs¶ˆBJBI^‰BpÒGBI^‰BpÒGB$ŠB…¬EB$ŠB…¬EBæÂŠB£CBæÂŠB£CBr‹B!|ABr‹B!|AB¨BŒBVr?B¨BŒBVr?BiB—r=BiB—r=B”ÜB9};B”ÜB9};B³B’9B³B’9BœBç²7BœBç²7B2rB“Ş5B2rB“Ş5B£Z‘BŞ4B£Z‘BŞ4BÉH’BY2BÉH’BY2B}<“By¨0B}<“By¨0B–5”B[/B–5”B[/Bì3•Bül-Bì3•Bül-BV7–Bâ+BV7–Bâ+B§?—B‚e*B§?—B‚e*B¶L˜Bèõ(B¶L˜Bèõ(BU^™B”'BU^™B”'BZtšB%@&BZtšB%@&B”›Bnú$B”›Bnú$BÖ¬œBÃ#BÖ¬œBÃ#BóÎBbš"BóÎBbš"B¸ôBp€!B¸ôBp€!B÷ Buu B÷ Buu BJ¡BœyBJ¡BœyBz¢BBz¢BB¢¬£Bó¯B¢¬£Bó¯BÚá¤BoâBÚá¤BoâB“¦B£$B“¦B£$B™S§B¯vB™S§B¯vB¸¨B¯ØB¸¨B¯ØB¾Í©B¾JB¾Í©B¾JBv«BñÌBv«BñÌBªN¬B__BªN¬B__B(‘­BB(‘­BB¹Ô®B.µB¹Ô®B.µB)°B«xB)°B«xBB^±B™LBB^±B™LBĞ£²B1BĞ£²B1Bé³Bç%Bé³Bç%Br/µBL+B^|¸BuBsò·B»ÇvB^|¸BuBŠ ¹B ;sBŠ ¹B ;sBá~¹B›kqBá~¹B›kqBM÷¹BW•oBM÷¹BW•oB½iºB!¹mB½iºB!¹mBÖºBG×kBÖºBG×kBX<»BğiBX<»BğiBbœ»BãhBbœ»BãhB)ö»BûfB)ö»BûfBŸI¼B¯dBŸI¼B¯dB¶–¼BS$bB¶–¼BS$bBaİ¼B:'`Baİ¼B:'`B”½B¶&^B”½B¶&^BFW½B#\BFW½B#\BlŠ½BÁZBlŠ½BÁZBÿ¶½BúXBÿ¶½BúXBöÜ½B	VBöÜ½B	VBLü½B{üSBLü½B{üSBü¾BpîQBü¾BpîQB'¾BQßOB'¾BQßOBY2¾BsÏMBY2¾BsÏMB7¾B-¿KB7¾B-¿KBú4¾BÖ®IBú4¾BÖ®IBC,¾BÅGBC,¾BÅGBİ¾BPEBİ¾BPEBÌ¾BÏ€CBÌ¾BÏ€CBê½B–sABê½B–sAB¶Æ½Büg?B¶Æ½Büg?B»œ½BX^=B»œ½BX^=B*l½BşV;B*l½BşV;B
+5½BFR9B
+5½BFR9Bd÷¼BP7Bd÷¼BP7BC³¼BR5BC³¼BR5B±h¼B'W3B±h¼B'W3B»¼B9`1B»¼B9`1BnÀ»Bm/BnÀ»Bm/BØb»Bv-BØb»Bv-B	ÿºBD–+B	ÿºBD–+B•ºBH²)B•ºBH²)B%ºBÑÓ'B%ºBÑÓ'Bî®¹B-û%Bî®¹B-û%Bè2¹B«($Bè2¹B«($B±¸B–\"B±¸B–\"BY)¸B:— BY)¸B:— Bü›·BâØBü›·BâØB	·B×!B	·B×!BŠp¶BarBŠp¶BarB¦ÒµBÆÊB¦ÒµBÆÊBr/µBL+B«˜¦BøhBÙ¦BZçiB«˜¦BøhB#^¦BzAfB#^¦BzAfB)¦B,jdB)¦B,jdBóú¥B[bBóú¥B[bB[Ò¥BT´`B[Ò¥BT´`BÎ¯¥BgÖ^BÎ¯¥BgÖ^BO“¥Báö\BO“¥Báö\Bå|¥B[Bå|¥B[B“l¥BF4YB“l¥BF4YB[b¥BÎQWB[b¥BÎQWB?^¥BûnUB?^¥BûnUB@`¥BŒSB@`¥BŒSB]h¥By©QB]h¥By©QB•v¥BjÇOB•v¥BjÇOBæŠ¥B:æMBæŠ¥B:æMBM¥¥B:LBM¥¥B:LBÅÅ¥B¶'JBÅÅ¥B¶'JBHì¥B KHBHì¥B KHBÑ¦BcpFBÑ¦BcpFBXK¦B.˜DBXK¦B.˜DBÕƒ¦B¯ÂBBÕƒ¦B¯ÂBB?Â¦B2ğ@B?Â¦B2ğ@B‹§B!?B‹§B!?B®P§BsU=B®P§BsU=Bœ §BÈ;Bœ §BÈ;BHö§BMÊ9BHö§BMÊ9B¤Q¨BO8B¤Q¨BO8B ²¨BQ6B ²¨BQ6B.©Bè›4B.©Bè›4B<…©Bì2B<…©Bì2B¸ö©BÔA1B¸ö©BÔA1BmªBz/BmªBz/B¯éªBGÿ-B¯éªBGÿ-Bk«B~g,Bk«B~g,Bvñ«BcÖ*Bvñ«BcÖ*Bñ|¬B7L)Bñ|¬B7L)B^­B;É'B^­B;É'B¥¢­B¯M&B¥¢­B¯M&B­<®BÒÙ$B­<®BÒÙ$B^Û®Bßm#B^Û®Bßm#B~¯B
+"B~¯B
+"BO&°B¦® BO&°B¦® BZÒ°BÔ[BZÒ°BÔ[B ‚±BÓB ‚±BÓB7²BÛĞB7²BÛĞBkï²B™Bkï²B™B´«³BÒjB´«³BÒjBÁk´B&FBÁk´B&FBr/µBL+B(±B ëB–°BÛ“êB–°BÛ“êBû¯B !êBû¯B !êB^®B‚§éB^®B‚§éBë­Bu'éBë­Bu'éBÊ¬Bï èBÊ¬Bï èB%«BèB%«BèB' ªBÍ€çB' ªBÍ€çB÷,©BaçæB÷,©BaçæB¼=¨BÚGæB¼=¨BÚGæBŸR§BR¢åBŸR§BR¢åBÇk¦BäöäBÇk¦BäöäBX‰¥B¬EäBX‰¥B¬EäBx«¤BÇãBx«¤BÇãBKÒ£BSÒâBKÒ£BSÒâBöı¢BoâBöı¢BoâBš.¢B;IáBš.¢B;IáBZd¡BØ|àBZd¡BØ|àBXŸ Bh«ßBXŸ Bh«ßB³ßŸBÕŞB³ßŸBÕŞBŠ%ŸBæùİBŠ%ŸBæùİBıpBİBıpBİB)ÂBÔ5ÜB)ÂBÔ5ÜB+B1MÛB+B1MÛBvœBZ`ÚBvœBZ`ÚBÙ›BvoÙBÙ›BvoÙBCB›B¬zØBCB›B¬zØB¦±šB$‚×B¦±šB$‚×Ba'šB†ÖBa'šB†ÖBˆ£™B†ÕBˆ£™B†ÕB2&™B·ƒÔB2&™B·ƒÔBt¯˜BØ}ÓBt¯˜BØ}ÓB`?˜BuÒB`?˜BuÒB	Ö—BiÑB	Ö—BiÑBs—B^[ĞBs—B^[ĞB×—BÕJÏB×—BÕJÏBÃ–B8ÎBÃ–B8ÎB[u–B<#ÍB[u–B<#ÍB¢.–B‡ÌB¢.–B‡ÌBşî•BôÊBşî•BôÊBx¶•B0ÚÉBx¶•B0ÚÉB…•Bì¾ÈB…•Bì¾ÈBëZ•B~¢ÇBëZ•B~¢ÇBó7•B…ÆBó7•B…ÆB7•BäfÅB7•BäfÅB½•BHÄB½•BHÄB†ú”BØ(ÃB†ú”BØ(ÃB–ô”B^	ÂB–ô”B^	ÂBîõ”BÕéÀBîõ”BÕéÀBŒş”BlÊ¿BjìaB>ê¿B jaBÙ7ÀBjìaB>ê¿B—rbBP¿B—rbBP¿B‘übBT¿B‘übBT¿BAŠcBª¿BAŠcBª¿B‘dB
+Å¾B‘dB
+Å¾Bh°dBH€¾Bh°dBH€¾B®HeBm=¾B®HeBm=¾BJäeB…ü½BJäeB…ü½B#ƒfBš½½B#ƒfBš½½B%gB¸€½B%gB¸€½B ÊgBçE½B ÊgBçE½BrhB2½BrhB2½BÑiB¡Ö¼BÑiB¡Ö¼BFÊiB>¢¼BFÊiB>¢¼BUzjBp¼BUzjBp¼Bß,kB$@¼Bß,kB$@¼BÈákB}¼BÈákB}¼Bò˜lB#ç»Bò˜lB#ç»B>RmB¾»B>RmB¾»BnBv—»BnBv—»BÆÊnB/s»BÆÊnB/s»BÃ‰oBQQ»BÃ‰oBQQ»BhJpBà1»BhJpBà1»B”qBá»B”qBá»B(ĞqB[úºB(ĞqB[úºB•rBPâºB•rBPâºB[sBÅÌºB[sBÅÌºB"tB½¹ºB"tB½¹ºBêtB<©ºBêtB<©ºB¹²uBD›ºB¹²uBD›ºB|vBØºB|vBØºBòEwBù†ºBòEwBù†ºB2xB¨€ºB2xB¨€ºB´ÚxBè|ºB´ÚxBè|ºBV¥yB¸{ºBV¥yB¸{ºB÷ozB}ºB÷ozB}ºBu:{B
+ºBu:{B
+ºB°|B‹‡ºB°|B‹‡ºB…Î|BšºB…Î|BšºBÕ—}B7œºBÕ—}B7œºB~`~B_ªºB~`~B_ªºB^(B»ºB^(B»ºBVïBHÎºBVïBHÎºB¢Z€BäºB¢Z€BäºB½€B<üºB½€B<üºBÂBò»BÂBò»BÊB4»BÊB4»BàB¾S»BàB¾S»B|?‚BÊu»B†¶”Bïz¿BŒş”BkÊ¿B†¶”Bïz¿Bƒl”BK-¿Bƒl”BK-¿B ”Bá¾B ”Bá¾B¶Ò“BÃ—¾B¶Ò“BÃ—¾Bƒ“B÷O¾Bƒ“B÷O¾BŠ1“B5
+¾BŠ1“B5
+¾BRŞ’B‰Æ½BRŞ’B‰Æ½Bi‰’Bı„½Bi‰’Bı„½Bß2’BE½Bß2’BE½BÂÚ‘Bt½BÂÚ‘Bt½B‘BŠÍ¼B‘BŠÍ¼B&‘Bê”¼B&‘Bê”¼B…ÉB^¼B…ÉB^¼B¬kB¬*¼B¬kB¬*¼BŠBù»BŠBù»B.¬BÿÉ»B.¬BÿÉ»BªJBS»BªJBS»BèB"s»BèB"s»Bd„BuK»Bd„BuK»BÄBP&»BÄBP&»B;ºBº»B;ºBº»BÚSB¹ãºBÚSB¹ãºB²ìŒBSÆºB²ìŒBSÆºBÕ„ŒB‹«ºBÕ„ŒB‹«ºBRŒBf“ºBRŒBf“ºB;³‹Bé}ºB;³‹Bé}ºB¢I‹BkºB¢I‹BkºB—ßŠBòZºB—ßŠBòZºB-uŠB}MºB-uŠB}MºBt
+ŠB¼BºBt
+ŠB¼BºB~Ÿ‰B¯:ºB~Ÿ‰B¯:ºB]4‰BX5ºB]4‰BX5ºB!ÉˆB·2ºB!ÉˆB·2ºBŞ]ˆBÎ2ºBŞ]ˆBÎ2ºB¤ò‡B›5ºB¤ò‡B›5ºB…‡‡B;ºB…‡‡B;ºB’‡BYCºB’‡BYCºBŞ±†BHNºBŞ±†BHNºByG†Bé[ºByG†Bé[ºBvİ…B:lºBvİ…B:lºBäs…B9ºBäs…B9ºBÖ
+…Bâ”ºBÖ
+…Bâ”ºB^¢„B3­ºB^¢„B3­ºB‹:„B&ÈºB‹:„B&ÈºBpÓƒB¹åºBpÓƒB¹åºBmƒBä»BmƒBä»B£ƒB¥(»B£ƒB¥(»B£‚BôM»B£‚BôM»B{?‚BËu»B[…@BÚ6ÀBÃj?Bñ¼ÀB[…@BÚ6ÀB¦¦ABb´¿B¦¦ABb´¿BsÎBBŸ5¿BsÎBBŸ5¿B“üCB¤º¾B“üCB¤º¾BÕ0EB†C¾BÕ0EB†C¾BkFBYĞ½BkFBYĞ½BğªGB/a½BğªGB/a½BağHBö¼BağHBö¼B$;JB.¼B$;JB.¼B‹KBy,¼B‹KBy,¼BÂßLBÎ»BÂßLBÎ»B/9NBøs»B/9NBøs»B—OBJ»B—OBJ»B)ùPBÍºB)ùPBÍºBB_RBZ€ºBB_RBZ€ºB!ÉSB18ºB!ÉSB18ºB‰6UB£ô¹B‰6UB£ô¹B>§VBºµ¹B>§VBºµ¹BXB{¹BXB{¹B ‘YBF¹B ‘YBF¹BÑ
+[BE¹BÑ
+[BE¹B[†\BQé¸B[†\BQé¸B ^B0Â¸B ^B0Â¸B€ƒ_BæŸ¸B€ƒ_BæŸ¸BaBy‚¸BaBy‚¸B‡bBïi¸B‡bBïi¸B²
+dBJV¸B²
+dBJV¸B*eBG¸B*eBG¸BAgBÁ=¸BAgBÁ=¸B¹™hBà8¸B¹™hBà8¸BNjBí8¸BNjBí8¸BÃ¤kBè=¸BÃ¤kBè=¸B×)mBÑG¸B×)mBÑG¸BL®nB¦V¸BL®nB¦V¸Bà1pBdj¸Bà1pBdj¸BU´qB	ƒ¸BU´qB	ƒ¸Bk5sB ¸Bk5sB ¸Bâ´tBóÂ¸Bâ´tBóÂ¸B{2vB.ê¸B{2vB.ê¸Bù­wB;¹Bù­wB;¹B'yBG¹B'yBG¹BªzB«|¹BªzB«|¹Ba|Bü¶¹Ba|Bü¶¹B‚}Bşõ¹B‚}Bşõ¹B\ï~B¥9ºB\ï~B¥9ºB“,€BæºB“,€BæºB•ß€BµÎºB•ß€BµÎºB˜B »B˜B »B|?‚BÌu»B|?‚BÌu»BÖABO#»BÖABO#»BZF€BmÊºBZF€BmÊºBfš~B4kºBfš~B4kºB­|BµºB­|BµºBÅzB š¹BÅzB š¹B¡âxB&(¹B¡âxB&(¹B"wB;°¸B"wB;°¸BÜ/uBR2¸BÜ/uBR2¸B`sB~®·B`sB~®·B.—qBØ$·B.—qBØ$·B^ÕoBt•¶B^ÕoBt•¶BönBj ¶BönBj ¶B=hlBÓeµB=hlBÓeµB{½jBÈÅ´B{½jBÈÅ´B÷iBd ´B÷iBd ´Bô€gBÁu³Bô€gBÁu³B¸ïeBüÅ²B¸ïeBüÅ²B‚gdB1²B‚gdB1²B“èbB~W±B“èbB~W±B*saB™°B*saB™°B…`BÚÕ¯B…`BÚÕ¯Bà¥^B)¯Bà¥^B)¯BrN]BB®BrN]BB®Bw\B¬q­Bw\B¬q­B$¿ZB$¬B$¿ZB$¬B®‡YB™Ä«B®‡YB™Ä«BG[XB.èªBG[XB.èªB":WBªB":WBªBn$VBL$©Bn$VBL$©BXUB=¨BXUB=¨BTB¥R§BTB¥R§Bµ)SBe¦Bµ)SBe¦ByCRBmt¥ByCRBmt¥B}iQBû€¤B}iQBû€¤Bç›PBÛŠ£Bç›PBÛŠ£BØÚOB5’¢BØÚOB5’¢Bo&OB2—¡Bo&OB2—¡BÊ~NBû™ BÊ~NBû™ BäMBºšŸBäMBºšŸB9VMB˜™B9VMB˜™B}ÕLBÀ–B}ÕLBÀ–BæaLB\’œBæaLB\’œB‡ûKB—Œ›B‡ûKB—Œ›Br¢KBœ…šBr¢KBœ…šB´VKB•}™B´VKB•}™B[KB¯t˜B[KB¯t˜BoçJBk—BoçJBk—BúÃJBñ`–BúÃJBñ`–B®JBqV•Bqò·B¹ÇvBÏY¶BâwBÏY¶BâwB¸½´B}èxB¸½´B}èxBt³BˆÙyBt³BˆÙyBD|±BzµzBD|±BzµzBn×¯B.|{Bn×¯B.|{B60®Bƒ-|B60®Bƒ-|Bã†¬B\É|Bã†¬B\É|BºÛªB¡O}BºÛªB¡O}B /©B:À}B /©B:À}Bı€§B~Bı€§B~B÷Ñ¥B#`~B÷Ñ¥B#`~B5"¤BZ~B5"¤BZ~Büq¢B±¨~Büq¢B±¨~B–Á B$¬~B–Á B$¬~BHŸB²™~BHŸB²™~BXaB_q~BXaB_q~B²›B23~B²›B23~B³šB4ß}B³šB4ß}BŠV˜Bsu}BŠV˜Bsu}BÛª–B ö|BÛª–B ö|Bì •Bñ`|Bì •Bñ`|BY“B^¶{BY“B^¶{Be³‘BbözBe³‘BbözBXB!zBXB!zB!pB´6yB!pB´6yBÓŒBL7xBÓŒBL7xBB9‹B#wBB9‹B#wB#£‰B'úuB#£‰B'úuBçˆBÊ¼tBçˆBÊ¼tBÏ‚†B)ksBÏ‚†B)ksBù„B}rBù„B}rBtƒB ŒpBtƒB ŒpBôóBğşnBôóBğşnB÷x€B^mB÷x€B^mB¾~B«kB¾~B«kBÒ&{BçäiBÒ&{BçäiB RxB4hB RxB4hB¢ŠuBS!fB¢ŠuBS!fBKÏrB–$dBKÏrB–$dB!pBNbB!pBNbB[€mBÑö_B[€mBÑö_B£íjBzÆ]B£íjBzÆ]BOihB¥…[BOihB¥…[BÉóeB¯4YBÉóeB¯4YB{cBûÓVB{cBûÓVBÈ6aBìcTBÈ6aBìcTBğ^BèäQBğ^BèäQB·¹\BWWOB·¹\BWWOB”ZB¨»LBâg•B
+€B¯×”B…‘€Bâg•B
+€Bwû•BµBwû•BµBU’–BÊ~BU’–BÊ~Be,—B˜}Be,—B˜}BŒÉ—BG$|BŒÉ—BG$|B°i˜Bı;{B°i˜Bı;{B¹™Bã[zB¹™Bã[zB‰²™B„yB‰²™B„yB[šBÌ´xB[šBÌ´xB›BîwB›BîwB³›B0wB³›B0wB~cœBòzvB~cœBòzvBšBÂÎuBšBÂÎuBÖÉB¦+uBÖÉB¦+uB€B¶‘tB€B¶‘tB48ŸBtB48ŸBtBòŸBÃysBòŸBÃysB¨­ BíûrB¨­ BíûrB¾j¡B ‡rB¾j¡B ‡rB=)¢BïrB=)¢BïrBé¢Bì»qBé¢Bì»qBú©£B§dqBú©£B§dqBúk¤B-qBúk¤B-qBã.¥BÓpBã.¥BÓpB™ò¥BĞ™pB™ò¥BĞ™pBù¶¦B jpBù¶¦B jpBä{§B%DpBä{§B%DpB9A¨BE(pB9A¨BE(pBÙ©BfpBÙ©BfpB¢Ì©B‰pB¢Ì©B‰pBu’ªB°pBu’ªB°pB0X«BÛpB0X«BÛpB´¬B3pB´¬B3pBàâ¬B2SpBàâ¬B2SpB“§­BV}pB“§­BV}pB­k®Bk±pB­k®Bk±pB/¯BjïpB/¯BjïpB˜ñ¯BH7qB˜ñ¯BH7qB(³°BùˆqB(³°BùˆqBŸs±BpäqBŸs±BpäqBß2²BŸIrBß2²BŸIrBÇğ²Bs¸rBÇğ²Bs¸rB8­³BÜ0sB8­³BÜ0sBh´BÆ²sBh´BÆ²sB;!µB>tB;!µB>tBØµBÂÒtBØµBÂÒtBó¶B§puBó¶B§puBIA·B®vBIA·B®vBrò·B»ÇvBqò·B¹ÇvBEÛ¶BD‰wBEÛ¶BD‰wB¼ÁµB<xB¼ÁµB<xB¦´B¦áxB¦´B¦áxBOˆ³BDxyBOˆ³BDxyBÉh²B_ zBÉh²B_ zB G±BàyzB G±BàyzB%°B´äzB%°B´äzB*¯BÉ@{B*¯BÉ@{B;Ü­B{B;Ü­B{Bj¶¬B{Ì{Bj¶¬B{Ì{Bç«Bü{Bç«Bü{BâhªBš|BâhªBš|B‹A©BA.|B‹A©BA.|B¨Bó0|B¨Bó0|B«ò¦B¯$|B«ò¦B¯$|BƒË¥Bx	|BƒË¥Bx	|BË¤¤BQß{BË¤¤BQß{Bµ~£BB¦{Bµ~£BB¦{BoY¢BU^{BoY¢BU^{B*5¡B”{B*5¡B”{B B¢zB B¢zBcğBÕ-zBcğBÕ-zB@ĞBùªyB@ĞBùªyBŞ±œB“yBŞ±œB“yBi•›B¹yxBi•›B¹yxB{šB…ËwB{šB…ËwBc™BwBc™BwBuM˜B„DvBuM˜B„DvBŠ:—BùkuBŠ:—BùkuBs*–B“…tBs*–B“…tB^•Bz‘sB^•Bz‘sBu”BÖrBu”BÖrBå“BÑ€qBå“BÑ€qBØ	’B–dpBØ	’B–dpBz
+‘BV;oBz
+‘BV;oBôBAnBôBAnBoBˆÂlBoBˆÂlB$BcskB$BcskB5BjB5BjB{JŒB®°hB{JŒB®°hB‹d‹B‘=gB‹d‹B‘=gB`ƒŠBï¾eB`ƒŠBï¾eB§‰B5dB§‰B5dBìÏˆB bBìÏˆB bBìı‡Bd aBìı‡Bd aB@1‡B2V_B@1‡B2V_B	j†BÆ¡]B	j†BÆ¡]Bh¨…Bgã[Bh¨…Bgã[B~ì„B`ZBrò·BºÇvB>O·B@(uB>O·B@(uBZ±¶B¥€sBZ±¶B¥€sBà¶B/ÑqBà¶B/ÑqBè…µB$pBè…µB$pB‹ø´BÌ[nB‹ø´BÌ[nBßp´Bp–lBßp´Bp–lBüî³B[ÊjBüî³B[ÊjBör³BÙ÷hBör³BÙ÷hBáü²B5gBáü²B5gBÒŒ²B¾@eBÒŒ²B¾@eBÛ"²BÂ\cBÛ"²BÂ\cB¿±BsaB¿±BsaBva±By…_Bva±By…_B)
+±BÍ’]B)
+±BÍ’]B3¹°Bß›[B3¹°Bß›[B¡n°B¡YB¡n°B¡YB€*°B…¢WB€*°B…¢WBÚì¯BÀ UBÚì¯BÀ UBºµ¯BœSBºµ¯BœSB)…¯B®”QB)…¯B®”QB.[¯B
+‹OB.[¯B
+‹OBÑ7¯BpMBÑ7¯BpMB¯B7rKB¯B7rKB¯B¶cIB¯B¶cIB¡õ®BATGB¡õ®BATGBêì®B0DEBêì®B0DEBâê®BÙ3CBâê®BÙ3CB‹ï®B“#AB‹ï®B“#ABãú®Bµ?Bãú®Bµ?Bè¯B–=Bè¯B–=B˜%¯B‹ö:B˜%¯B‹ö:BîD¯Bëé8BîD¯Bëé8Båj¯Bß6Båj¯Bß6Bx—¯BEÖ4Bx—¯BEÖ4BÊ¯BéÏ2BÊ¯BéÏ2BP°BPÌ0BP°BPÌ0BƒD°BÌË.BƒD°BÌË.B.‹°B³Î,B.‹°B³Î,BEØ°BWÕ*BEØ°BWÕ*B»+±Bà(B»+±Bà(B‚…±B#ï&B‚…±B#ï&BŒå±Bî%BŒå±Bî%BÈK²B¿#BÈK²B¿#B'¸²Bå9!B'¸²Bå9!B—*³B¯]B—*³B¯]B£³Bk‡B£³Bk‡BZ!´Bf·BZ!´Bf·B†¥´BîíB†¥´BîíBq/µBK+Bqò·BºÇvB¯·B¢ùvB¯·B¢ùvBT,·B…&wBT,·B…&wBoÈ¶B]NwBoÈ¶B]NwBd¶B#qwBd¶B#qwBLÿµBÑwBLÿµBÑwB.šµBc§wB.šµBc§wBÉ4µBÕºwBÉ4µBÕºwB-Ï´B"ÉwB-Ï´B"ÉwBki´BJÒwBki´BJÒwB”´BJÖwB”´BJÖwB¹³B!ÕwB¹³B!ÕwBé7³BÑÎwBé7³BÑÎwB6Ò²BZÃwB6Ò²BZÃwB±l²B½²wB±l²B½²wBj²BşœwBj²BşœwBq¢±B ‚wBq¢±B ‚wBØ=±B(bwBØ=±B(bwB¯Ù°B=wB¯Ù°B=wBv°BÿwBv°BÿwBí°BÚãvBí°BÚãvBv°¯Bµ¯vBv°¯Bµ¯vB°N¯B˜vvB°N¯B˜vvBªí®BŒ8vBªí®BŒ8vBv®BœõuBv®BœõuB".®BÓ­uB".®BÓ­uB¿Ï­B<auB¿Ï­B<auB\r­BäuB\r­BäuB­BÙ¹tB­BÙ¹tBÒº¬B(_tBÒº¬B(_tBÊ`¬BàÿsBÊ`¬BàÿsBş¬BœsBş¬BœsB|°«BË3sB|°«BË3sBTZ«B ÇrBTZ«B ÇrB’«B!VrB’«B!VrBF²ªBáàqBF²ªBáàqB|`ªBsgqB|`ªBsgqBCªBëépBCªBëépB§Á©B]hpB§Á©B]hpBµt©BàâoBµt©BàâoBz)©BˆYoBz)©BˆYoBà¨BlÌnBà¨BlÌnBZ˜¨B£;nBZ˜¨B£;nBŒR¨BF§mBŒR¨BF§mB¥¨BlmB¥¨BlmB°Ì§B/tlB°Ì§B/tlB·Œ§B§ÕkB·Œ§B§ÕkBÄN§Bğ3kBÄN§Bğ3kBã§B"jBã§B"jBÙ¦BZçiBıLBÁØ“B®JBpV•BıLBÁØ“B@_OB¬b’B@_OB¬b’B.ÔQBpôB.ÔQBpôBs[TBGBs[TBGB¥ôVBm0B¥ôVBm0BXŸYBÛŒBXŸYBÛŒB[\B‰‹B[\B‰‹Bx'_BíJŠBx'_BíJŠBÿbB}‰BÿbB}‰B3ğdBmß‡B3ğdBmß‡BœëgBî·†BœëgBî·†B½õjB1š…B½õjB1š…BnBc†„BnBc†„B$4qBµ|ƒB$4qBµ|ƒBbgtBP}‚BbgtBP}‚BM§wB^ˆBM§wB^ˆBYózB€BYózB€BıJ~Bç|BıJ~Bç|BÖÖ€BÓ}BÖÖ€BÓ}Bm‚BD@|Bm‚BD@|BúH„BRÃzBúH„BRÃzB5	†Bõ\yB5	†Bõ\yBÕÍ‡BdxBÕÍ‡BdxB–‰BÛÔvB–‰BÛÔvBc‹B‹³uBc‹B‹³uB#3B£©tB#3B£©tBhBN·sBhBN·sB—ÜB¶ÜrB—ÜB¶ÜrBcµ’BşrBcµ’BşrB”BEoqB”BEoqBŸm–B©ÜpBŸm–B©ÜpBrL˜B@bpBrL˜B@bpBª,šB pBª,šB pBùœBU¶oBùœBU¶oBğBğ„oBğBğ„oBÒŸB÷koBÒŸB÷koBVµ¡BnkoBVµ¡BnkoBè—£BVƒoBè—£BVƒoBz¥Bª³oBz¥Bª³oB^[§BbüoB^[§BbüoB¥;©Bt]pB¥;©Bt]pB‰«BÎÖpB‰«BÎÖpB¼÷¬B\hqB¼÷¬B\hqBòÒ®BrBòÒ®BrBÙ«°B´ÓrBÙ«°B´ÓrB'‚²BB­sB'‚²BB­sBU´BtBU´BtBÀ%¶Bn§uBÀ%¶Bn§uBqò·BºÇvB)*¾BõßB  ¾B´W‘B)*¾BõßBHQ¾B.gBHQ¾B.gBTu¾BtíBTu¾BtíBI–¾BÛrBI–¾BÛrB ´¾Bv÷B ´¾Bv÷BÖÎ¾BY{BÖÎ¾BY{Bdæ¾BšşBdæ¾BšşBÉú¾BLBÉú¾BLB ¿B…B ¿B…B¿BX…ŒB¿BX…ŒBÚ$¿BÚŒBÚ$¿BÚŒBy,¿B!ˆ‹By,¿B!ˆ‹Bâ0¿BA	‹Bâ0¿BA	‹B2¿BOŠŠB2¿BOŠŠB0¿B_ŠB0¿B_ŠBÖ*¿B‡Œ‰BÖ*¿B‡Œ‰Bf"¿BÛ‰Bf"¿BÛ‰BÂ¿BpˆBÂ¿BpˆBë¿B[ˆBë¿B[ˆBåõ¾B±“‡Båõ¾B±“‡B±à¾B…‡B±à¾B…‡BUÈ¾Bî™†BUÈ¾Bî™†BÓ¬¾Bş†BÓ¬¾Bş†B0¾BË¢…B0¾BË¢…Bql¾Bh(…Bql¾Bh(…BœG¾Bê®„BœG¾Bê®„B¶¾Be6„B¶¾Be6„BÇô½Bì¾ƒBÇô½Bì¾ƒBÖÆ½B“HƒBÖÆ½B“HƒBé•½BnÓ‚Bé•½BnÓ‚Bb½B_‚Bb½B_‚B>+½B
+íB>+½B
+íB’ñ¼Bò{B’ñ¼Bò{Bµ¼BXBµ¼BXBºu¼BP€Bºu¼BP€B¤3¼Bë1€B¤3¼Bë1€BÔî»BxBÔî»BxBW§»B¥¼~BW§»B¥¼~B8]»Bƒî}B8]»Bƒî}Bƒ»B3$}Bƒ»B3$}BDÁºBÔ]|BDÁºBÔ]|BŠoºBŠ›{BŠoºBŠ›{B`ºBsİzB`ºBsİzBÖÄ¹B­#zBÖÄ¹B­#zBùk¹BYnyBùk¹BYnyB×¹B”½xB×¹B”½xB³¸BzxB³¸BzxBT¸B(jwBT¸B(jwBqò·B¹ÇvBÙ¦BYçiB<£¥B7ĞjB<£¥B7ĞjBj¤BR©kBj¤BR©kB /£B†rlB /£B†rlBNñ¡B±+mBNñ¡B±+mB>± B·ÔmB>± B·ÔmB$oŸBzmnB$oŸBzmnB6+BâõnB6+BâõnB©åœBÙmoB©åœBÙmoB±›BJÕoB±›BJÕoB…VšB&,pB…VšB&,pB[™B\rpB[™B\rpBhÃ—Bã§pBhÃ—Bã§pBãx–B²ÌpBãx–B²ÌpB.•BÁàpB.•BÁàpBúâ“BäpBúâ“BäpB˜’B™ÖpB˜’B™ÖpBSM‘Bd¸pBSM‘Bd¸pB Bs‰pB Bs‰pB¡¹BÎIpB¡¹BÎIpB
+qB€ùoB
+qB€ùoB’)ŒB–˜oB’)ŒB–˜oBpãŠB 'oBpãŠB 'oB×‰B0¥nB×‰B0¥nBÿ[ˆBÜnBÿ[ˆBÜnB‡B<pmB‡B<pmBaÜ…Bj½lBaÜ…Bj½lB „B„úkB „B„úkB7fƒB©'kB7fƒB©'kB1/‚BıDjB1/‚BıDjB"û€B¤RiB"û€B¤RiB{”BÇPhB{”BÇPhBl9}B?gBl9}B?gByåzB*fByåzB*fB™xBÆïdB™xBÆïdBkTvB–±cBkTvB–±cBtBÎdbBtBÎdbBRäqB¤	aBRäqB¤	aBŒ¹oBQ _BŒ¹oBQ _B˜mB)^B˜mB)^BS€kB!¤\BS€kB!¤\BriBÀ[BriBÀ[B'ogB2rYB'ogB2rYBoveBºÅWBoveBºÅWB¸ˆcBVB¸ˆcBVBT¦aB'GTBT¦aB'GTB“Ï_BŸuRB“Ï_BŸuRBÁ^BS˜PBÁ^BS˜PB)F\B¯NB)F\B¯NB”ZB¨»LB •B
+#€B¯×”B…‘€B •B
+#€BZ5•BkBZ5•BkBTh•Bl“~BTh•Bl“~B•Bÿ½}B•Bÿ½}BgÖ•B\ë|BgÖ•B\ë|Bm–B¥|Bm–B¥|BO–BüN{BO–BüN{BF–Bƒ…zBF–Bƒ…zBÒ–BZ¿yBÒ–BZ¿yB<—B£üxB<—B£üxBæ^—B}=xBæ^—B}=xBö¨—B‚wBö¨—B‚wB_õ—B`ÊvB_õ—B`ÊvBD˜B§vBD˜B§vB•˜BùfuB•˜BùfuB4è˜Br»tB4è˜Br»tB=™B0tB=™B0tBå”™BLqsBå”™BLqsBRî™BãÒrBRî™BãÒrBºIšB9rBºIšB9rB§šBå£qB§šBå£qB9›BƒqB9›BƒqB3g›Bş‡pB3g›Bş‡pBèÉ›BmpBèÉ›BmpBJ.œBçoBJ.œBçoBG”œB€oBG”œB€oBÏûœBNŒnBÏûœBNŒnBĞdBcnBĞdBcnB:ÏBÒ­mB:ÏBÒ­mBû:B­FmBû:B­FmB¨BålB¨BålB;ŸBëˆlB;ŸBëˆlB–…ŸBl2lB–…ŸBl2lBöŸB˜ákBöŸB˜ákBhg B{–kBhg B{–kB¹Ù B#QkB¹Ù B#QkBáL¡B™kBáL¡B™kBÎÀ¡Bé×jBÎÀ¡Bé×jBl5¢B¤jBl5¢B¤jB¨ª¢B<vjB¨ª¢B<vjBp £BONjBp £BONjB¯–£B[,jB¯–£B[,jBS¤BfjBS¤BfjBG„¤BvúiBG„¤BvúiByû¤BêiByû¤BêiBÔr¥B®àiBÔr¥B®àiBFê¥BÛÜiBFê¥BÛÜiBºa¦BßiBºa¦BßiBÙ¦BYçiBÙ¦BZçiB²$¦BşvjB²$¦BşvjB…n¥BsıjB…n¥BsıjB³¶¤B¤zkB³¶¤B¤zkBZı£B|îkBZı£B|îkB™B£BéXlB™B£BéXlB†¢BØ¹lB†¢BØ¹lBZÉ¡B;mBZÉ¡B;mB¡B_mB¡B_mBìK B!£mBìK B!£mBò‹ŸBŒİmBò‹ŸBŒİmBKËB;nBKËB;nB
+B$5nB
+B$5nBqHBCRnBqHBCRnB†œB‘enB†œB‘enB^Ä›BonB^Ä›BonB/›B²nnB/›B²nnB@šB„dnB@šB„dnB#~™BƒPnB#~™BƒPnB†¼˜B±2nB†¼˜B±2nBYû—BnBYû—BnB½:—B´ÙmB½:—B´ÙmBĞz–B˜mBĞz–B˜mB³»•BÈYmB³»•BÈYmB„ı”BQmB„ı”BQmBd@”B@³lBd@”B@³lBp„“B£QlBp„“B£QlBÈÉ’BŠækBÈÉ’BŠækBŠ’BrkBŠ’BrkBÕX‘B,ôjBÕX‘B,ôjBÆ¢BmjBÆ¢BmjB}îBÄÜiB}îBÄÜiB<BfCiB<BfCiB®‹B¡hB®‹B¡hBcİBĞõgBcİBĞõgBQ1BĞAgBQ1BĞAgB”‡ŒB)…fB”‡ŒB)…fBIà‹Bø¿eBIà‹Bø¿eBŠ;‹BaòdBŠ;‹BaòdBs™ŠB‚dBs™ŠB‚dBú‰B>cBú‰B>cB¥]‰B€XbB¥]‰B€XbB#ÄˆB§jaB#ÄˆB§jaB°-ˆBu`B°-ˆBu`Bdš‡Bx_Bdš‡Bx_BY
+‡Bs^BY
+‡Bs^B¦}†Båg]B¦}†Båg]Baô…B1U\Baô…B1U\B¢n…BŸ;[B¢n…BŸ;[B~ì„B`ZBÙ¦BZçiBÏœ§B€ÌhBÏœ§B€ÌhBÜ\¨BÔ§gBÜ\¨BÔ§gB%©B‡yfB%©B‡yfB‹Ñ©BËAeB‹Ñ©BËAeBğ…ªBÓ dBğ…ªBÓ dB66«BÒ¶bB66«BÒ¶bBAâ«B daBAâ«B daBó‰¬B•`Bó‰¬B•`B2-­BÇ¤^B2-­BÇ¤^BãË­BÔ8]BãË­BÔ8]Bëe®B÷Ä[Bëe®B÷Ä[B2û®BkIZB2û®BkIZBŸ‹¯BoÆXBŸ‹¯BoÆXB°BC<WB°BC<WB°B(«UB°B(«UBá±B_TBá±B_TB›±B,uRB›±B,uRBØ²BÒĞPBØ²BÒĞPBTƒ²B–&OBTƒ²B–&OBbï²B¾vMBbï²B¾vMBğU³B‘ÁKBğU³B‘ÁKBì¶³BWJBì¶³BWJBH´BYHHBH´BYHHBôg´BŞ„FBôg´BŞ„FBâ·´B3½DBâ·´B3½DBµB¡ñBBµB¡ñBBQFµBt"ABQFµBt"AB»„µB÷O?B»„µB÷O?B8½µBxz=B8½µBxz=B¿ïµBC¢;B¿ïµBC¢;BH¶B¦Ç9BH¶B¦Ç9BËB¶Bğê7BËB¶Bğê7BCc¶Bl6BCc¶Bl6Bª}¶Bl,4Bª}¶Bl,4Bû‘¶B<K2Bû‘¶B<K2B3 ¶B-i0B3 ¶B-i0BP¨¶B†.BP¨¶B†.BQª¶B«£,BQª¶B«£,B5¦¶BØÀ*B5¦¶BØÀ*Bı›¶B`Ş(Bı›¶B`Ş(B«‹¶B•ü&B«‹¶B•ü&BAu¶BÅ%BAu¶BÅ%BÂX¶B?<#BÂX¶B?<#B56¶BR^!B56¶BR^!B¶BK‚B¶BK‚BßµBz¨BßµBz¨BmªµB,ÑBmªµB,ÑBåoµB®üBåoµB®üBs/µBL+B«¸·BòvBqò·BºÇvB«¸·BòvBÊ|·B${uBÊ|·B${uB×>·BmÙtB×>·BmÙtBŞş¶Bå:tBŞş¶Bå:tBé¼¶B¨ŸsBé¼¶B¨ŸsBy¶BÎsBy¶BÎsB43¶BqsrB43¶BqsrBŒëµB¨âqBŒëµB¨âqB¢µBŒUqB¢µBŒUqBÙVµB4ÌpBÙVµB4ÌpBç	µB·FpBç	µB·FpBK»´B)ÅoBK»´B)ÅoBk´B¡GoBk´B¡GoBH´B3ÎnBH´B3ÎnBüÅ³BóXnBüÅ³BóXnB:q³BôçmB:q³BôçmB³BI{mB³BI{mBÃ²BmBÃ²BmBÄj²B4¯lBÄj²B4¯lB¼²BìOlB¼²BìOlB†µ±B;õkB†µ±B;õkB2Y±B0ŸkB2Y±B0ŸkBÏû°BØMkBÏû°BØMkBl°BAkBl°BAkB>°Bx¹jB>°Bx¹jBäİ¯BˆvjBäİ¯BˆvjBŞ|¯B|8jBŞ|¯B|8jB¯B_ÿiB¯B_ÿiB¡¸®B:ËiB¡¸®B:ËiBˆU®BœiBˆU®BœiBßñ­BùqiBßñ­BùqiB¶­BìLiB¶­BìLiB)­Bô,iB)­Bô,iB$Ä¬BiB$Ä¬BiBİ^¬BWühBİ^¬BWühBXù«BºëhBXù«BºëhB¥“«BCàhB¥“«BCàhBÕ-«BóÙhBÕ-«BóÙhBúÇªBÊØhBúÇªBÊØhB#bªBÊÜhB#bªBÊÜhBaü©BòåhBaü©BòåhBÅ–©B?ôhBÅ–©B?ôhB`1©B±iB`1©B±iBBÌ¨BC iBBÌ¨BC iB|g¨Bñ=iB|g¨Bñ=iB¨B·`iB¨B·`iB:Ÿ§BˆiB:Ÿ§BˆiBß;§BrµiBß;§BrµiBÙ¦BZçiB‹7LBµñ“B®JBpV•B‹7LBµñ“BÓMB’’BÓMB’’B+€OBÁ7‘B+€OBÁ7‘Bµ>QBûâBµ>QBûâB[SBù“B[SBù“BÒîTBïJBÒîTBïJBÉßVBŒBÉßVBŒBğàXB¡ËŠBğàXB¡ËŠBóñZBÅ•‰BóñZBÅ•‰Bz]BµfˆBz]BµfˆB+B_B¡>‡B+B_B¡>‡B¬€aB¼†B¬€aB¼†B ÍcB3…B ÍcB3…B£(fB6òƒB£(fB6òƒBS‘hBòç‚BS‘hBòç‚BMkB‘åBMkB‘åB'ŠmB?ë€B'ŠmB?ë€BxpBHòBxpBHòBÖ´rBÑ~BÖ´rBÑ~BÓ[uBd\|BÓ[uBd\|BşxBM«zBşxBM«zBçÊzBÒyBçÊzBÒyB’}B6~wB’}B6~wB“1€B½vB“1€B½vBÈB£™tBÈB£™tBrƒB%CsBrƒB%CsBS†„BxÿqBS†„BxÿqB. †BÕÎpB. †BÕÎpBÄ}‡Bk±oBÄ}‡Bk±oBÙşˆBk§nBÙşˆBk§nB,ƒŠBÿ°mB,ƒŠBÿ°mB}
+ŒBQÎlB}
+ŒBQÎlBŒ”B„ÿkBŒ”B„ÿkB!B¼DkB!B¼DkBä¯BjBä¯BjB©@’B°jB©@’B°jB(Ó“BŸiB(Ó“BŸiBg•Bù#iBg•Bù#iBJü–BÏÎhBJü–BÏÎhBg’˜B0hBg’˜B0hB6)šB%bhB6)šB%bhBqÀ›B¶JhBqÀ›B¶JhB×WBèGhB×WBèGhB&ïB¹YhB&ïB¹YhB† B(€hB† B(€hBl¢B.»hBl¢B.»hBà±£BÂ
+iBà±£BÂ
+iB2F¥BÖniB2F¥BÖniBÙ¦BZçiBbğ½BŒBÿÿ½B³W‘Bbğ½BŒB Û½BãÀB Û½BãÀBºÁ½BMöBºÁ½BMöBµ¢½Bp,Bµ¢½Bp,B—~½BlcB—~½BlcBeU½Bc›ŒBeU½Bc›ŒB''½BuÔ‹B''½BuÔ‹Bãó¼BÃ‹Bãó¼BÃ‹B¢»¼BnJŠB¢»¼BnJŠBm~¼B•‡‰Bm~¼B•‡‰BO<¼BYÆˆBO<¼BYÆˆBRõ»BÙˆBRõ»BÙˆB‚©»B4I‡B‚©»B4I‡BëX»B‹†BëX»B‹†Bš»BûÓ…Bš»BûÓ…B©ºB¤…B©ºB¤…BKºB¢g„BKºB¢g„Bàç¹BµƒBàç¹BµƒB=€¹BƒB=€¹BƒB.¹BÊW‚B.¹BÊW‚BÆ£¸BF­BÆ£¸BF­B/¸B¨B/¸B¨B/¶·Ba€B/¶·Ba€B)9·BB)9·BB¸¶BB~B¸¶BB~B3¶B¢}B3¶B¢}B#ªµBŒİ{B#ªµBŒİ{BmµB}µzBmµB}µzB´B§”yB´B§”yBÿø³B7{xBÿø³B7{xBva³B]iwBva³B]iwB‚Æ²BF_vB‚Æ²BF_vB=(²B]uB=(²B]uB¿†±BctB¿†±BctB&â°B=qsB&â°B=qsBŠ:°B×‡rBŠ:°B×‡rB¯B §qB¯B §qBºâ®BŞÎpBºâ®BŞÎpB¿2®B“ÿoB¿2®B“ÿoB3€­BC9oB3€­BC9oB3Ë¬B|nB3Ë¬B|nBİ¬BÈmBİ¬BÈmBNZ«BimBNZ«BimB¦ªB6|lB¦ªB6|lBá©BäkBá©BäkB„!©B‘VkB„!©B‘VkBI`¨BOÒjBI`¨BOÒjBp§BàWjBp§BàWjBÙ¦BYçiBÎÊHBÿ‚qB~FBš\sBÎÊHBÿ‚qB]#KBq¸oB]#KBq¸oBU‡MB=ımBU‡MB=ımBSöOB¬QlBSöOB¬QlBğoRB¶jBğoRB¶jBÇóTB„*iBÇóTB„*iBjWBs¯gBjWBs¯gBpZBEfBpZBEfBn¸\BëdBn¸\BëdBò`_B,£cBò`_B,£cBbB lbBbB lbBÑÉdBœFaBÑÉdBœFaBK‰gBĞ2`BK‰gBĞ2`B„OjBé0_B„OjBé0_BmBA^BmBA^BkîoBrc]BkîoBrc]B*ÆrB-˜\B*ÆrB-˜\BÒ¢uBeß[BÒ¢uBeß[BìƒxB89[BìƒxB89[B i{BÁ¥ZB i{BÁ¥ZB‘Q~B%ZB‘Q~B%ZB”€BT·YB”€BT·YB¤‚B…\YB¤‚B…\YB¼ƒBºYB¼ƒBºYB…B àXB…B àXB
+€†B^¾XB
+€†B^¾XBÆù‡BÛ¯XBÆù‡BÛ¯XB‘s‰By´XB‘s‰By´XB.íŠB7ÌXB.íŠB7ÌXB`fŒB÷XB`fŒB÷XBèŞB 5YBèŞB 5YBˆVBú…YBˆVBú…YBÍBñéYBÍBñéYBB’BÖ`ZBB’BÖ`ZB”µ“B•êZB”µ“B•êZB/'•B‡[B/'•B‡[B²––BB6\B²––BB6\BŞ˜Bú÷\BŞ˜Bú÷\Byn™BÌ]Byn™BÌ]BGÖšB²^BGÖšB²^B;œB#«_B;œB#«_BœB²µ`BœB²µ`B–úBÒaB–úBÒaBæT B cBæT B cBG«¡B?dBG«¡B?dBı¢B,eBı¢B,eB\K¤BÚñfB\K¤BÚñfB£”¥BTdhB£”¥BTdhBÙ¦BZçiB [B™JB”ZB¨»LB [B™JBÿz[B\HBÿz[B\HB"Ù[B)FB"Ù[B)FBù(\BRóCBù(\BRóCBxj\B¼»ABxj\B¼»AB“\B¬‚?B“\B¬‚?BBÂ\B~H=BBÂ\B~H=BØ\B“;BØ\B“;BFà\BFÒ8BFà\BFÒ8B—Ù\Bõ–6B—Ù\Bõ–6BrÄ\Bÿ[4BrÄ\Bÿ[4BÛ \BÀ!2BÛ \BÀ!2B×n\B—è/B×n\B—è/Bo.\Bà°-Bo.\Bà°-B®ß[Búz+B®ß[Búz+BŸ‚[B@G)BŸ‚[B@G)BT[B'BT[B'BÜZBÅç$BÜZBÅç$BMZB»¼"BMZB»¼"B»€YBM• B»€YBM• BAİXBÕqBAİXBÕqBø+XB®RBø+XB®RBşlWB08BşlWB08Br VB´"Br VB´"BvÆUB‘BvÆUB‘B-ßTBB-ßTBB¾êSB±B¾êSB±BPéRBBPéRBBÛQB:BÛQB:B#ÀPBÕB#ÀPBÕB¿˜OBÃ4
+B¿˜OBÃ4
+BeNBSSBeNBSSBO%MBÔyBO%MBÔyB©ÙKB•¨B©ÙKB•¨BX‚JBáßBX‚JBáßB”IB B”IB B•±GB‰ÒşA•±GB‰ÒşAš8FBİwûAš8FBİwûAà´DB0øAà´DB0øA¥&CB!ıôA¥&CB!ıôA-AB#ŞñA-AB#ŞñA¹ë?BÔîA¹ë?BÔîA?>BwßëA?>BwßëAó‰<BÁ éAó‰<BÁ éA0Ë:Br8æA0Ë:Br8æA9Bû†ãA9Bû†ãAV37BÎìàAV37BÎìàAÕZ5BWjŞAÕZ5BWjŞA[z3B ÜAbBfO¿B"jaBÚ7ÀBbBfO¿B°bBâd¾B°bBâd¾B<AcBux½B<AcBux½B]ÆcBDŠ¼B]ÆcBDŠ¼Bd?dBxš»Bd?dBxš»B>¬dB7©ºB>¬dB7©ºB×eB©¶¹B×eB©¶¹B!aeBöÂ¸B!aeBöÂ¸B©eBFÎ·B©eBFÎ·B‘äeBÁØ¶B‘äeBÁØ¶B¡fBâµB¡fBâµB76fBÙë´B76fBÙë´BLLfBÈô³BLLfBÈô³BŞUfB‚ı²BŞUfB‚ı²BêRfB3²BêRfB3²BpCfB±BpCfB±Bu'fB°Bu'fB°BûşeB™!¯BûşeB™!¯B
+ÊeB³+®B
+ÊeB³+®BªˆeB6­BªˆeB6­Bç:eBPB¬Bç:eBPB¬BÌàdB#O«BÌàdB#O«BjzdB-]ªBjzdB-]ªBÏdB—l©BÏdB—l©B‰cBˆ}¨B‰cBˆ}¨BAşbB'§BAşbB'§BygbBœ¤¦BygbBœ¤¦BĞÄaB»¥BĞÄaB»¥BaaBÓ¤BaaBÓ¤BJ\`Byî£BJ\`Byî£B¨–_BÂ£B¨–_BÂ£BœÅ^B+¢BœÅ^B+¢BHé]B0N¡BHé]B0N¡BÏ]BŸs BÏ]BŸs BZ\BœŸBZ\BœŸB[B¡ÇB[B¡ÇB
+ZByöB
+ZByöB÷XB»(B÷XB»(BĞÚWB†^œBĞÚWB†^œBŞ³VBı—›BŞ³VBı—›Bö‚UB?ÕšBö‚UB?ÕšBLHTBnšBLHTBnšBSB§[™BSB§[™B~¶QB¥˜B~¶QB¥˜BÇ_PB¶ò—BÇ_PB¶ò—B% OBÇD—B% OBÇD—BÑ—MBY›–BÑ—MBY›–B'LBˆö•B'LBˆö•B®JBpV•BÒAUZ¥BR£AÊ²¦BÒAUZ¥BÅE%A;
+¤BÅE%A;
+¤B¦ü/AµÂ¢B¦ü/AµÂ¢Bùô:Aøƒ¡Bùô:Aøƒ¡Bó,FA7N Bó,FA7N BÁ¢QA¦!ŸBÁ¢QA¦!ŸBwT]AvşBwT]AvşB.@iAØäœB.@iAØäœBúcuAøÔ›BúcuAøÔ›BçŞ€AÏšBçŞ€AÏšBÖ%‡A'Ó™BÖ%‡A'Ó™BÁ…AŠá˜BÁ…AŠá˜B¡ı“ATú—B¡ı“ATú—B_ŒšA¬—B_ŒšA¬—Bë0¡A¶K–Bë0¡A¶K–B1ê§A”„•B1ê§A”„•B·®AgÈ”B·®AgÈ”Bn–µAN”Bn–µAN”B+‡¼Aeq“B+‡¼Aeq“B&ˆÃAÉÖ’B&ˆÃAÉÖ’B2˜ÊA’G’B2˜ÊA’G’B)¶ÑAØÃ‘B)¶ÑAØÃ‘BæàØA°K‘BæàØA°K‘B3àA/ßB3àA/ßBäWçAf~BäWçAf~BË¡îAd)BË¡îAd)B¸óõA9àB¸óõA9àBoLıAï¢BoLıAï¢BaUB’qBaUB’qB¾B(LB¾B(LB±¹	B¹2B±¹	B¹2B mBH%B mBH%Bï!B×#Bï!B×#BÖBg.BÖBg.BB‰BöDBB‰BöDB;BgB;BgBÎêB–BÎêB–Bä—#BpĞBä—#BpĞB·A'BÂB·A'BÂB®ç*BîhB®ç*BîhB2‰.BåÆB2‰.BåÆB¥%2B™0‘B¥%2B™0‘Bs¼5Bö¥‘Bs¼5Bö¥‘BM9Bì&’BM9Bì&’BÅÖ<Bc³’BÅÖ<Bc³’BY@BFK“BY@BFK“BzÓCB{î“BzÓCB{î“BNEGBèœ”BNEGBèœ”B®JBpV•B®JBpV•BÄ!LB¾˜”BÄ!LB¾˜”BÏ‹MBgÖ“BÏ‹MBgÖ“BåëNBŠ“BåëNBŠ“BÌAPBJD’BÌAPBJD’BNQBÆt‘BNQBÆt‘B3ÎRB ¡B3ÎRB ¡BFTB}ÉBFTB}ÉBU/UBÿíBU/UBÿíB/OVBÉB/OVBÉB¤cWB,B¤cWB,BˆlXBÌEŒBˆlXBÌEŒB®iYBP\‹B®iYBP\‹BíZZB²oŠBíZZB²oŠB@[B€‰B@[B€‰B\B°ˆB\B°ˆBÀå\Bš˜‡BÀå\Bš˜‡Bë¥]B¡†Bë¥]B¡†BY^B§…BY^B§…B[ _Béª„B[ _Béª„Bgš_B½¬ƒBgš_B½¬ƒB‡'`B²¬‚B‡'`B²¬‚B¥§`BóªB¥§`BóªB­aBª§€B­aBª§€BŠ€aBFBŠ€aBFB-ÙaBH:}B-ÙaBH:}B†$bB{,{B†$bB{,{BŠbbBğyBŠbbBğyB.“bBşwB.“bBşwBk¶bBıùtBk¶bBıùtB:ÌbBCçrB:ÌbBCçrB˜ÔbB'ÔpB˜ÔbB'ÔpB„ÏbB ÁnB„ÏbB ÁnBş¼bB&®lBş¼bB&®lB	bBğ›jB	bBğ›jB¬obB³ŠhB¬obB³ŠhBì4bBÉzfBì4bBÉzfBÔìaB†ldBÔìaB†ldBp—aBC`bBp—aBC`bBÍ4aBSV`BÍ4aBSV`BüÄ`BO^BüÄ`BO^BH`BÆJ\BH`BÆJ\B¾_BÓIZB¾_BÓIZB7'_B‰LXB7'_B‰LXBzƒ^B9SVBzƒ^B9SVB Ó]B9^TB Ó]B9^TBæ]BÙmRBæ]BÙmRBJL\Bk‚PBJL\Bk‚PBOv[BAœNBOv[BAœNB”ZB¨»LB®JBpV•BÖHB:•BÖHB:•BPqEB*•BPqEB*•BàÕBBÒç”BàÕBBÒç”Bò<@B²”Bò<@B²”Bô¦=Bßs”Bô¦=Bßs”BQ;BW-”BQ;BW-”Bw…8B~Ş“Bw…8B~Ş“BÑú5Bb‡“BÑú5Bb‡“BÈt3B(“BÈt3B(“BÈó0B›À’BÈó0B›À’B:x.BQ’B:x.BQ’B†,BƒÙ‘B†,BƒÙ‘B“)BZ‘B“)BZ‘BF*'B²ÒBF*'B²ÒB‡È$B™CB‡È$B™CB7n"BÔ¬B7n"BÔ¬B¼ B}B¼ B}BvÑB¬hBvÑB¬hBÆB}»BÆB}»BWBBWBBœ'BxKŒBœ'BxKŒBİBŞˆ‹BİBŞˆ‹B$æB_¿ŠB$æB_¿ŠBÍÔBï‰BÍÔBï‰B,ÎB6‰B,ÎB6‰B—ÒBÒ:ˆB—ÒBÒ:ˆB_â
+BW‡B_â
+BW‡BÙıBm†BÙıBm†BS%B}…BS%B}…BYB3‡„BYB3‡„Bz™BŠ‹ƒBz™BŠ‹ƒB½æBLŠ‚B½æBLŠ‚B)A B¢ƒB)A B¢ƒBRıA·w€BRıA·w€B!=úAoÍ~B!=úAoÍ~B D÷A¢¡|B D÷A¢¡|BgôA`lzBgôA`lzB»§ñA.xB»§ñA.xBDïAõæuBDïAõæuB‰€ìAŠ—sB‰€ìAŠ—sBòêA%@qBòêA%@qBèÑçA+ánBèÑçA+ánBÈ¨åAızlBÈ¨åAızlBîãAjBîãAjB¯´áA šgB¯´áA šgB[êßA=!eB[êßA=!eB>@ŞA?¢bB>@ŞA?¢bB¶ÜA`B¶ÜA`BºMÛA•]Bkn¸@Ë–œBıÿŸ@—àBkn¸@Ë–œBz`Ñ@ÿV›Bz`Ñ@ÿV›BóÑê@h!šBóÑê@h!šB]_A8ö˜B]_A8ö˜BF‘A¡Õ—BF‘A¡Õ—B”üAÒ¿–B”üAÒ¿–BŸ*Aø´•BŸ*Aø´•B[v8A@µ”B[v8A@µ”Bd€FAÓÀ“Bd€FAÓÀ“B½ºTAÙ×’B½ºTAÙ×’B#cAyú‘B#cAyú‘B·qAÖ(‘B·qAÖ(‘B4:€AcB4:€AcBA¬‡AS©BA¬‡AS©B0A±ûB0A±ûB¼Å–AJZB¼Å–AJZB¬jA9ÅB¬jA9ÅB¦A˜<B¦A˜<B­Ş­A{ÀŒB­Ş­A{ÀŒB:«µA÷PŒB:«µA÷PŒBj‚½A î‹Bj‚½A î‹B÷bÅA˜‹B÷bÅA˜‹BœKÍA²N‹BœKÍA²N‹B;ÕA6‹B;ÕA6‹Bá/İAšâŠBá/İAšâŠBë(åAç¿ŠBë(åAç¿ŠBÖ$íA ªŠBÖ$íA ªŠBI"õAK¡ŠBI"õAK¡ŠBúıAh¥ŠBúıAh¥ŠBNBw¶ŠBNBw¶ŠBl‹BtÔŠBl‹BtÔŠB²†
+B]ÿŠB²†
+B]ÿŠBwB(7‹BwB(7‹BuBÍ{‹BuBÍ{‹BìfB@Í‹BìfB@Í‹BLTBu+ŒBLTBu+ŒB–<B\–ŒB–<B\–ŒB#"BãB#"BãBRû%B÷‘BRû%B÷‘BĞ)B‚"BĞ)B‚"B-Bl¿B-Bl¿BWc1BœhBWc1BœhBÁ5BõBÁ5BõB°Ò8B[ßB°Ò8B[ßB…{<B­¬‘B…{<B­¬‘B¨@BÉ…’B¨@BÉ…’B‚¬CBŒj“B‚¬CBŒj“B}3GBÒZ”B}3GBÒZ”B®JBqV•B®JBpV•BåLB•BåLB•BÌOB|¿•BÌOB|¿•BÑZQB0é•BÑZQB0é•BÃ˜SB¢–BÃ˜SB¢–BDØUBÎ&–BDØUBÎ&–BøXB¯:–BøXB¯:–B|ZZBBG–B|ZZBBG–Btœ\B…L–Btœ\B…L–BƒŞ^BvJ–BƒŞ^BvJ–BF aBA–BF aBA–B`acBh0–B`acBh0–Br¡eBm–Br¡eBm–B àgB)ù•B àgB)ù•BjB¢Ò•BjB¢Ò•BÎWlBŞ¤•BÎWlBŞ¤•BnBäo•BnBäo•B}ÅpB½3•B}ÅpB½3•B¬÷rBsğ”B¬÷rBsğ”BD&uB¦”BD&uB¦”BìPwB£T”BìPwB£T”BEwyB7ü“BEwyB7ü“Bø˜{BÛœ“Bø˜{BÛœ“B«µ}B6“B«µ}B6“BÍB’É’BÍB’É’BUï€BÈU’BUï€BÈU’B%õBTÛ‘B%õBTÛ‘BÆ÷‚BHZ‘BÆ÷‚BHZ‘B÷ƒB¼ÒB÷ƒB¼ÒBĞò„BÅDBĞò„BÅDBèê…By°Bèê…By°B*ß†BòB*ß†BòBnÏ‡BIuBnÏ‡BIuB»ˆB˜ÎB»ˆB˜ÎBb£‰Bû!Bb£‰Bû!BÄ†ŠBoŒBÄ†ŠBoŒBe‹Bm·‹Be‹Bm·‹B ?ŒB·ùŠB ?ŒB·ùŠBÑB6ŠBÑB6ŠBÿäBn‰BÿäBn‰B	°BX ˆB	°BX ˆBÎuBÍ‡BÎuBÍ‡B,6BØõ†B,6BØõ†BñBS†BñBS†B9¦‘B%8…B9¦‘B%8…B«U’BtR„B«U’BtR„B?ÿ’BehƒB?ÿ’BehƒB×¢“Bz‚B×¢“Bz‚B[@”BÅ‡B[@”BÅ‡B®×”B…‘€B‹«”Bnp¾Bş”BkÊ¿B‹«”Bnp¾BÍO”B¨½BÍO”B¨½Bdë“BPÃ»Bdë“BPÃ»B^~“BŸpºB^~“BŸpºBÏ“BÌ ¹BÏ“BÌ ¹BÉŠ’BÔ·BÉŠ’BÔ·Ba’BŠ¶Ba’BŠ¶B­u‘B®DµB­u‘B®DµBÅŞBv´BÅŞBv´BÁ?B*Ä²BÁ?B*Ä²B¼˜B Š±B¼˜B Š±BĞéB)T°BĞéB)T°B3BØ"¯B3BØ"¯BºtBBö­BºtBBö­BÍ®ŒB•Î¬BÍ®ŒB•Î¬Btá‹B¬«Btá‹B¬«BÑ‹B¼ªBÑ‹B¼ªB1ŠBïv©B1ŠBïv©B:N‰BÈd¨B:N‰BÈd¨BdˆBuX§BdˆBuX§B,t‡B#R¦B,t‡B#R¦B9}†BıQ¥B9}†BıQ¥Bİ…B+X¤Bİ…B+X¤BE|„BØd£BE|„BØd£B˜rƒB+x¢B˜rƒB+x¢Bc‚BK’¡Bc‚BK’¡B´MB^³ B´MB^³ B×2€BˆÛŸB×2€BˆÛŸB3%~Bí
+ŸB3%~Bí
+ŸBXÚ{B¯ABXÚ{B¯AB~…yBïB~…yBïB'wBÍÅœB'wBÍÅœBR¿tBgœBR¿tBgœBÈNrBÛh›BÈNrBÛh›BÑÕoBDÆšBÑÕoBDÆšBÒTmB½+šBÒTmB½+šB3ÌjB`™™B3ÌjB`™™Bb<hBE™Bb<hBE™BÉ¥eB‚˜BÉ¥eB‚˜BÔcB-˜BÔcB-˜Bğe`BY£—Bğe`BY£—B½]B;—B½]B;—B[B~Û–B[B~Û–B^XB—„–B^XB—„–BÑ§UBt6–BÑ§UBt6–BØíRB!ñ•BØíRB!ñ•B–0PB©´•B–0PB©´•B|pMB•B|pMB•B®JBqV•BbAc­BÀïYAÖÃ®BbAc­B)ZjA
+¬B)ZjA
+¬Bü÷rAY·ªBü÷rAY·ªB°Ù{A½k©B°Ù{A½k©Bé~‚Ao'¨Bé~‚Ao'¨Bs1‡A¡ê¦Bs1‡A¡ê¦B«ŒA‹µ¥B«ŒA‹µ¥BÊôA]ˆ¤BÊôA]ˆ¤B–AIc£B–AIc£B|0›A€F¢B|0›A€F¢B^y A02¡B^y A02¡BËİ¥A‡& BËİ¥A‡& Bå\«A¯#ŸBå\«A¯#ŸB½õ°AÕ)B½õ°AÕ)Bl§¶A 9Bl§¶A 9Bq¼A¹QœBq¼A¹QœB’QÂAÅs›B’QÂAÅs›BHÈAhŸšBHÈAhŸšB¨SÎAÇÔ™B¨SÎAÇÔ™B>sÔA ™B>sÔA ™BÔ¥ÚA6]˜BÔ¥ÚA6]˜BkêàA…°—BkêàA…°—Bş?çA	—Bş?çA	—B|¥íAŞu–B|¥íAŞu–BÜôAè•BÜôAè•BœúAÛd•BœúAÛd•B„• B/ì”B„• B/ì”BÕâB.~”BÕâB.~”Bs5Bé”Bs5Bé”BÔŒ
+BpÂ“BÔŒ
+BpÂ“BgèBÒt“BgèBÒt“B¡GB2“B¡GB2“Bö©BWú’Bö©BWú’BØBÍ’BØBÍ’BµuBÉ«’BµuBÉ«’B ŞB•’B ŞB•’B-G"B[‰’B-G"B[‰’B§°%B¸ˆ’B§°%B¸ˆ’Bâ)B$“’Bâ)B$“’BO‚,Bœ¨’BO‚,Bœ¨’B_é/BÉ’B_é/BÉ’BN3B¢ô’BN3B¢ô’B(±6B#+“B(±6B#+“BÇ:B˜l“BÇ:B˜l“BÌl=Bö¸“BÌl=Bö¸“B®Ä@B0”B®Ä@B0”BßDB8r”BßDB8r”BÕeGBşŞ”BÕeGBşŞ”B®JBpV•BŠ>B]ä¿BÂj?Bğ¼ÀBŠ>B]ä¿B`´=B	¿B`´=B	¿Bàé<B+¾Bàé<B+¾B®*<BJ½B®*<BJ½Bèv;Bºg¼Bèv;Bºg¼B­Î:B³‚»B­Î:B³‚»B2:B›ºB2:B›ºBD¡9B ²¹BD¡9B ²¹BF9BàÇ¸BF9BàÇ¸B6£8B…Û·B6£8B…Û·B'68Bµí¶B'68Bµí¶B,Õ7B–şµB,Õ7B–şµBS€7BRµBS€7BRµB¬77B´B¬77B´BAû6Bò*³BAû6Bò*³BË6B&8²BË6B&8²BH§6BÓD±BH§6BÓD±BÈ6BQ°BÈ6BQ°B „6B3]¯B „6B3]¯BÒ…6B7i®BÒ…6B7i®B^“6BSu­B^“6BSu­BB­6B¯¬BB­6B¯¬BzÓ6Br«BzÓ6Br«Bÿ7BÆ›ªBÿ7BÆ›ªBÉD7BÑ©©BÉD7BÑ©©BÎ7B»¸¨BÎ7B»¸¨Bç7B¬È§Bç7B¬È§BUJ8BÌÙ¦BUJ8BÌÙ¦B¸¹8B@ì¥B¸¹8B@ì¥B59B1 ¥B59B1 ¥Bc¼9BÆ¤Bc¼9BÆ¤B€O:B$-£B€O:B$-£BXî:BrF¢BXî:BrF¢BÒ˜;BÕa¡BÒ˜;BÕa¡BĞN<Bs BĞN<Bs B5=BrŸŸB5=BrŸŸBâÜ=BõÁBâÜ=BõÁB´´>B#çB´´>B#çB‰—?BB‰—?BB;…@B:œB;…@B:œB£}ABh›B£}ABh›B™€BB;™šB™€BB;™šBñCBÈÍ™BñCBÈÍ™B¥DBÎ™B¥DBÎ™BÇEBnA˜BÇEBnA˜BŠòFBÉ€—BŠòFBÉ€—B£'HBşÃ–B£'HBşÃ–B3fIB+–B3fIB+–B®JBqV•B®JBpV•BáòHBÙâ”BáòHBÙâ”B¾=GB¯i”B¾=GB¯i”BáEBë“BáEBë“B’æCBöf“B’æCBöf“BEBB‘İ’BEBB‘İ’B¯ª@BîN’B¯ª@BîN’B£?B%»‘B£?B%»‘B4Œ=BN"‘B4Œ=BN"‘B¡<Bƒ„B¡<Bƒ„B,:BÜáB,:BÜáB9Bv:B9Bv:B‘¯7BkB‘¯7BkBâM6B×İBâM6B×İBAõ4BØ(BAõ4BØ(Bç¥3B‹oŒBç¥3B‹oŒB	`2B²‹B	`2B²‹BŞ#1B‚ğŠBŞ#1B‚ğŠB™ñ/B+ŠB™ñ/B+ŠBnÉ.B¸a‰BnÉ.B¸a‰BŠ«-B»”ˆBŠ«-B»”ˆB ˜,B1Ä‡B ˜,B1Ä‡B[+B<ğ†B[+B<ğ†Bg‘*Bş†Bg‘*Bş†Bm)Bœ>…Bm)Bœ>…B–¶(B7a„B–¶(B7a„BÚ'Bö€ƒBÚ'Bö€ƒBä'Bı‚Bä'Bı‚BPC&Bp¸BPC&Bp¸Bl‰%BvĞ€Bl‰%BvĞ€BUÛ$BjÌBUÛ$BjÌB)9$B¦ó}B)9$B¦ó}B£#Bî|B£#Bî|Bø#B6zBø#B6zB#›"BÚRxB#›"BÚRxB–)"BlvB–)"BlvBeÄ!B¨‚tBeÄ!B¨‚tB k!BÌ–rB k!BÌ–rBV!BØ¨pBV!BØ¨pB“ß B¹nB“ß B¹nBb¬ BñÇlBb¬ BñÇlBÊ… B¡ÕjBÊ… B¡ÕjBÓk B~âhBÓk B~âhB^ BİîfB^ BİîfBÖ] BûdBÖ] BûdBÑi BdcBÑi BdcBr‚ B1aBr‚ B1aB³§ BÆ!_B³§ BÆ!_BÙ Bv0]BÙ Bv0]Bş!B‘@[B®JBpV•BÏLB’•BÏLB’•BµìNBÔ§”BµìNBÔ§”BQBCF”BQBCF”BUSBñİ“BUSBñİ“B$&UBín“B$&UBín“B*.WBKù’B*.WBKù’B0YB}’B0YB}’B+[Bzú‘B+[Bzú‘B- ]Buq‘B- ]Buq‘B¿_B$âB¿_B$âBçó`B LBçó`B LBUÒbB±BUÒbB±B½¨dBaB½¨dBaBÎvfBÚgBÎvfBÚgB=<hB‡ºB=<hB‡ºBÃøiB…BÃøiB…B¬kBòNŒB¬kBòNŒBæUmBë‹BæUmBë‹BøõnBÍŠBøõnBÍŠBŒpBŠBŒpBŠBÈrB_7‰BÈrB_7‰B™sBÌdˆB™sBÌdˆBtuBi‡BtuBi‡BßzvB[±†BßzvB[±†BÛwBÆĞ…BÛwBÆĞ…Bµ/yBÎë„Bµ/yBÎë„B¯xzB˜„B¯xzB˜„BÀµ{BLƒBÀµ{BLƒB²æ|B$‚B²æ|B$‚BV~B/BV~B/Bz#Bh6€Bz#Bh6€Bx€B™t~Bx€B™t~BÇ–€BÆu|BÇ–€BÆu|B“B«pzB“B«pzBËBœexBËBœexBZíBğTvBZíBğTvB0R‚Bş>tB0R‚Bş>tB;°‚B$rB;°‚B$rBmƒB¥pBmƒB¥pB¶WƒBïàmB¶WƒBïàmB
+¡ƒBV¹kB
+¡ƒBV¹kB]ãƒB3iB]ãƒB3iB¤„Bâ_gB¤„Bâ_gBÕR„BÀ.eBÕR„BÀ.eBç„B&ûbBç„B&ûbBÔ¥„BtÅ`BÔ¥„BtÅ`B”Ä„B^B”Ä„B^B#Ü„B3U\B#Ü„B3U\B~ì„B`ZB€4‚BKkºB|?‚BËu»B€4‚BKkºBÅ"‚B(a¹BÅ"‚B(a¹BP
+‚BW¸BP
+‚BW¸B#ëB§N·B#ëB§N·BDÅB F¶BDÅB F¶B¹˜B¥?µB¹˜B¥?µBŠeBà9´BŠeBà9´B¿+B|5³B¿+B|5³Baë€B¤2²Baë€B¤2²B{¤€B‚1±B{¤€B‚1±BW€BA2°BW€BA2°BE€B
+5¯BE€B
+5¯B"RB:®B"RB:®B‘~BaA­B‘~BaA­B}Ã}BAK¬B}Ã}BAK¬Bé|BÏW«Bé|BÏW«BE|B4gªBE|B4gªBí{B—y©Bí{B—y©B¢zB¨B¢zB¨BŒyBğ§§BŒyBğ§§BØòwB4Ä¦BØòwB4Ä¦B³ÑvBä¥B³ÑvBä¥BL¥uB£¥BL¥uB£¥BÖmtB/¤BÖmtB/¤Bƒ+sBZ£Bƒ+sBZ£BˆŞqB-Š¢BˆŞqB-Š¢B‡pB¾¡B‡pB¾¡Bu%oBbö Bu%oBbö BĞ¹mB;3 BĞ¹mB;3 BgDlB¾tŸBgDlB¾tŸBxÅjB»BxÅjB»BB=iB@BB=iB@B¬gB{VB¬gB{VBfBØ«œBfBØ«œBodBtœBodBtœB½ÄbBif›B½ÄbBif›BaBÒËšBaBÒËšBœW_BÈ6šBœW_BÈ6šBÌ•]Bd§™BÌ•]Bd§™BßÌ[B¾™BßÌ[B¾™BıYBê™˜BıYBê™˜BØ&XB˜BØ&XB˜BYJVB¤—BYJVB¤—BígTB<2—BígTB<2—BçRB‡Æ–BçRB‡Æ–B”’PBa–B”’PBa–BG NBÏ–BG NBÏ–BO©LBí¨•BO©LBí¨•B®JBpV•B®JBoV•BeGNB•æ•BeGNB•æ•BËçQBk–BËçQBk–B—UB«ã–B—UB«ã–B1;YBrP—B1;YBrP—Bí\BH±—Bí\BH±—Bl£`B˜Bl£`B˜BÓ]dBåN˜BÓ]dBåN˜BšhB’‹˜BšhB’‹˜B(ÜkB¼˜B(ÜkB¼˜BÙoBwà˜BÙoBwà˜BcsB¡ø˜BcsB¡ø˜B7(wB•™B7(wB•™B©ízBQ™B©ízBQ™BÆ²~BÔ÷˜BÆ²~BÔ÷˜By;B!ß˜By;B!ß˜BÈƒB=º˜BÈƒB=º˜B ı„B,‰˜B ı„B,‰˜BÓÛ†BøK˜BÓÛ†BøK˜Bñ¸ˆB©˜Bñ¸ˆB©˜B”ŠBM­—B”ŠBM­—BÛlŒBñK—BÛlŒBñK—B
+CB¥Ş–B
+CB¥Ş–BOB{e–BOB{e–B[æ‘B‡à•B[æ‘B‡à•Bã²“BŞO•Bã²“BŞO•B{•Bš³”B{•Bš³”B=@—BÒ”B=@—BÒ”Bx ™B£X“Bx ™B£X“B¼šB*š’B¼šB*š’BœrœB†Ğ‘BœrœB†Ğ‘Bô#BØûBô#BØûBÅÏŸBDBÅÏŸBDBËu¡Bî1BËu¡Bî1BÁ£Bü<BÁ£Bü<B`¯¤B—=B`¯¤B—=BgB¦Bé3ŒBgB¦Bé3ŒB”Î§B ‹B”Î§B ‹B¤S©B^ŠB¤S©B^ŠBXÑªBßÚˆBXÑªBßÚˆBsG¬BÏ©‡BsG¬BÏ©‡B¶µ­B_o†B¶µ­B_o†Bå¯BÃ+…Bå¯BÃ+…BÆy°B1ßƒBÆy°B1ßƒBÏ±Bß‰‚BÏ±Bß‰‚B¸³B,B¸³B,B[_´B¹‹B[_´B¹‹BÒ™µB@¯|BÒ™µB@¯|BêÊ¶BÃyBêÊ¶BÃyBqò·B¹ÇvB®JBoV•BØÓMB±’•BØÓMB±’•B{üPB»Ä•B{üPB»Ä•Bb'TB…ì•Bb'TB…ì•BTWB
+–BTWB
+–BğZB?–BğZB?–B°]B(&–B°]B(&–BXß`BÁ$–BXß`BÁ$–BÏdB
+–BÏdB
+–Bl;gB–Bl;gB–B¨gjB´â•B¨gjB´â•Bş‘mB ¸•Bş‘mB ¸•Bê¹pBMƒ•Bê¹pBMƒ•BéŞsBDD•BéŞsBDD•Bs wBû”Bs wBû”BzB¾§”BzB¾§”B#7}BZJ”B#7}BZJ”B¡%€Bôâ“B¡%€Bôâ“Bò¬Bœq“Bò¬Bœq“BD1ƒBgö’BD1ƒBgö’BY²„Bfq’BY²„Bfq’Bğ/†B²â‘Bğ/†B²â‘BÊ©‡B`J‘BÊ©‡B`J‘B¬‰BŠ¨B¬‰BŠ¨BU‘ŠBJıBU‘ŠBJıBŠş‹B¾HBŠş‹B¾HBgB‹BgB‹BªÊB3ÄBªÊB3ÄB)BvôŒB)BvôŒB4‚‘BêŒB4‚‘BêŒB³Õ’B´:‹B³Õ’B´:‹Ba#”BøPŠBa#”BøPŠB
+k•Bİ^‰B
+k•Bİ^‰Bw¬–B‹dˆBw¬–B‹dˆBtç—B*b‡Btç—B*b‡BÌ™BæW†BÌ™BæW†BMIšBéE…BMIšBéE…BÇo›B`,„BÇo›B`,„BœB{ƒBœB{ƒBá¦BgãBá¦BgãB$·BW´€B$·BW´€B¦¿ŸBõü~B¦¿ŸBõü~B9À B„|B9À B„|B´¸¡BZşyB´¸¡BZşyBğ¨¢BFlwBğ¨¢BFlwBÃ£BAÎtBÃ£BAÎtBp¤B¶$rBp¤B¶$rB›F¥BpoB›F¥BpoBX¦BÏ°lBX¦BÏ°lBÙ¦BYçiB ®JBpV•BóMBT^–BóMBT^–B8EQBŒ[—B8EQBŒ[—Bì£TBëM˜Bì£TBëM˜BXBL5™BXBL5™B¾„[B‡šB¾„[B‡šB¾_ByâšB¾_ByâšB‘bB ¨›B‘bB ¨›B&fBúaœB&fBúaœB&ÄiBKB&ÄiBKBÊjmBÔ²BÊjmBÔ²B]qB{IB]qB{IBCÏtB(ÔBCÏtB(ÔBã‹xBÄRŸBã‹xBÄRŸBšN|B:ÅŸBšN|B:ÅŸBg€Bw+ Bg€Bw+ BññBj… BññBj… B™ÚƒBÓ B™ÚƒBÓ BÅ…B<¡BÅ…B<¡B±‡BI¡B±‡BI¡B)‰BQq¡B)‰BQq¡B)Œ‹B ¡B)Œ‹B ¡B´zBlœ¡B´zBlœ¡B{iB1Ÿ¡B{iB1Ÿ¡B*X‘Bq•¡B*X‘Bq•¡BqF“B+¡BqF“B+¡B 4•Bd\¡B 4•Bd\¡B† —B!-¡B† —B!-¡B¯™Bkñ B¯™Bkñ B.õšBK© B.õšBK© B³ÜœBÌT B³ÜœBÌT BêÁBşóŸBêÁBşóŸB‡¤ Bï†ŸB‡¤ Bï†ŸB9„¢B±ŸB9„¢B±ŸB³`¤BXˆB³`¤BXˆB¥9¦BûöB¥9¦BûöBÂ¨B²YBÂ¨B²YB¿ß©B”°œB¿ß©B”°œBL¬«BÀû›BL¬«BÀû›B t­BR;›B t­BR;›Bï6¯BjošBï6¯BjošBqô°B)˜™Bqô°B)˜™B[¬²B³µ˜B[¬²B³µ˜Be^´B,È—Be^´B,È—BI
+¶B¼Ï–BI
+¶B¼Ï–B¿¯·BÌ•B¿¯·BÌ•BƒN¹BÇ¾”BƒN¹BÇ¾”BPæºB—¦“BPæºB—¦“Bæv¼B+„’Bæv¼B+„’B  ¾B´W‘B®JBpV•BÖdGB§Ÿ•BÖdGB§Ÿ•B9DB3Ş•B9DB3Ş•B¸È@B–B¸È@B–BÜv=B ;–BÜv=B ;–B2#:BrY–B2#:BrY–BCÎ6Bûl–BCÎ6Bûl–Bx3B¶u–Bx3B¶u–BÎ"0B¢s–BÎ"0B¢s–B^Í,BÁf–B^Í,BÁf–BÜx)BO–BÜx)BO–BÓ%&Bœ,–BÓ%&Bœ,–BÏÔ"Bdÿ•BÏÔ"Bdÿ•BX†BoÇ•BX†BoÇ•Bş:BÉ„•Bş:BÉ„•BIóB|7•BIóB|7•BÀ¯B”ß”BÀ¯B”ß”BòpB }”BòpB }”Bd7B1”Bd7B1”BB×˜“BB×˜“B"ÖB'“B"ÖB'“B}¯B6‹’B}¯B6‹’B0Bõ‘B0Bõ‘BwñşAîT‘BwñşAîT‘BMÓøAÊªBMÓøAÊªBİÆòAÊöBİÆòAÊöB&ÍìA9B&ÍìA9BçæA±qBçæA±qBÇáA× BÇáA× BZÛA¡ÆŒBZÛA¡ÆŒBä´ÕA3ã‹Bä´ÕA3ã‹B:'ĞA³öŠB:'ĞA³öŠB÷±ÊAHŠB÷±ÊAHŠBVÅA‰BVÅA‰B4ÀANü‡B4ÀANü‡BuíºAí†BuíºAí†B˜âµAœÕ…B˜âµAœÕ…Boô°A¶„Boô°A¶„BÎ#¬AšƒBÎ#¬AšƒB|q§Aq_‚B|q§Aq_‚B@Ş¢AÆ(B@Ş¢AÆ(BÕjA”ÕBÕjA”ÕBıšAeK}BıšAeK}Bkæ•Aj³zBkæ•Aj³zBÌÖ‘AxBÌÖ‘AxBÏéAÁ[uBÏéAÁ[uB ŠAõœrB ŠAõœrBEz†AÒoBEz†AÒoBíø‚A«ûlBíø‚A«ûlBO9AjB®JBpV•BÌêIBƒŞ”BÌêIBƒŞ”B·-IB&d”B·-IB&d”BävHBpç“BävHBpç“BqÆGBsh“BqÆGBsh“BzGBEç’BzGBEç’ByFBúc’ByFBúc’BnÜEB©Ş‘BnÜEB©Ş‘BFEBhW‘BFEBhW‘B”·DBLÎB”·DBLÎB—/DBlCB—/DBlCB­®CBŞ¶B­®CBŞ¶Bê4CB»(Bê4CB»(BdÂBB™BdÂBB™B-WBBB-WBBBWóAB¶uBWóAB¶uBñ–AB%âŒBñ–AB%âŒBBABuMŒBBABuMŒBµô@B¾·‹Bµô@B¾·‹Bø®@B!‹Bø®@B!‹Bâp@BŸ‰ŠBâp@BŸ‰ŠB|:@Bgñ‰B|:@Bgñ‰BÏ@BŒX‰BÏ@BŒX‰Bãä?B&¿ˆBãä?B&¿ˆB¾Å?BN%ˆB¾Å?BN%ˆBf®?B‹‡Bf®?B‹‡BŞ?B°ğ†BŞ?B°ğ†B)—?BV†B)—?BV†BH—?B{»…BH—?B{»…B;Ÿ?Bç …B;Ÿ?Bç …B¯?Bz†„B¯?Bz†„B—Æ?BMìƒB—Æ?BMìƒBùå?BxRƒBùå?BxRƒB"@B¹‚B"@B¹‚B<@B@ ‚B<@B@ ‚B°r@BˆB°r@BˆB±@B™ğ€B±@B™ğ€Büö@BûY€Büö@BûY€BDAB˜ˆBDAB˜ˆB°™ABJ_~B°™ABJ_~BQöAB;8}BQöAB;8}BbZBB|BbZBB|BÓÅBBŸñzBÓÅBBŸñzB’8CBqÒyB’8CBqÒyB²CBC¶xB²CBC¶xB°3DBBwB°3DBBwBå»DB‡vBå»DB‡vBKEBuuBKEBuuB,áEBgtB,áEBgtB~FBš\sB  ¾B´W‘B:½Bê‘B:½Bê‘B(¼Bş½‘B(¼Bş½‘Bó&»Bæç‘Bó&»Bæç‘BÂ1ºB’BÂ1ºB’B¿;¹B)’B¿;¹B)’BE¸B]@’BE¸B]@’BŞM·B_Q’BŞM·B_Q’BRV¶B\’BRV¶B\’B•^µB–`’B•^µB–`’BĞf´BÉ^’BĞf´BÉ^’B+o³B·V’B+o³B·V’BÎw²BaH’BÎw²BaH’Bâ€±BÉ3’Bâ€±BÉ3’BŠ°Bò’BŠ°Bò’B •¯Bâ÷‘B •¯Bâ÷‘B[ ®BĞ‘B[ ®BĞ‘BÈ¬­B)£‘BÈ¬­B)£‘Bpº¬Bo‘Bpº¬Bo‘BzÉ«B×5‘BzÉ«B×5‘BÚªB
+öBÚªB
+öBRì©B3°BRì©B3°Bo ©B]dBo ©B]dB‹¨B”B‹¨B”BÌ.§BçºBÌ.§BçºBXI¦Bc]BXI¦Bc]BUf¥BúBUf¥BúBç…¤B‘Bç…¤B‘B5¨£Bm"B5¨£Bm"BcÍ¢B2®BcÍ¢B2®B“õ¡Bv4B“õ¡Bv4Bê ¡BMµŒBê ¡BMµŒBŠO BÍ0ŒBŠO BÍ0ŒB–ŸB§‹B–ŸB§‹B0·B‹B0·B‹ByğB„ŠByğB„ŠB‘-Bë‰B‘-Bë‰B˜nœB?M‰B˜nœB?M‰B®³›B—ªˆB®³›B—ªˆBòüšBAˆBòüšBAˆBJšBYW‡BJšBYW‡Bxœ™Bú¦†Bxœ™Bú¦†Bõò˜BBò…Bõò˜BBò…BN˜BN9…BN˜BN9…Bì­—B=|„Bì­—B=|„B—B.»ƒB—B.»ƒB=|–B@ö‚B=|–B@ö‚Båê•B”-‚Båê•B”-‚B®^•BJaB®^•BJaB®×”B„‘€Bÿÿ½B³W‘Bl½B|‘Bl½B|‘Bï>½BÓ²Bï>½BÓ²B™á¼BÆ\B™á¼BÆ\Bw†¼BcBw†¼BcBš-¼B¹©Bš-¼B¹©B×»B×LB×»B×LBæ‚»BËíBæ‚»BËíB,1»B¦ŒB,1»B¦ŒBíáºBw)BíáºBw)B8•ºBNÄB8•ºBNÄBKºB=]BKºB=]BœºBTôŒBœºBTôŒBÌ¾¹B¥‰ŒBÌ¾¹B¥‰ŒB¶|¹B@ŒB¶|¹B@ŒBc=¹B8¯‹Bc=¹B8¯‹BŞ ¹B?‹BŞ ¹B?‹B2Ç¸B†ÎŠB2Ç¸B†ÎŠBh¸B\ŠBh¸B\ŠB‡\¸B"è‰B‡\¸B"è‰Bš+¸Bır‰Bš+¸Bır‰B©ı·B¤üˆB©ı·B¤üˆBºÒ·B+…ˆBºÒ·B+…ˆBÔª·B¦ˆBÔª·B¦ˆBÿ…·B(“‡Bÿ…·B(“‡B@d·BÅ‡B@d·BÅ‡BE·B’†BE·B’†B*·B¢!†B*·B¢!†B¿·B¥…B¿·B¥…B‹ü¶Bß'…B‹ü¶Bß'…B…ê¶B5ª„B…ê¶B5ª„B®Û¶B ,„B®Û¶B ,„B
+Ğ¶Bµ­ƒB
+Ğ¶Bµ­ƒBšÇ¶B	/ƒBšÇ¶B	/ƒB`Â¶B1°‚B`Â¶B1°‚B[À¶BA1‚B[À¶BA1‚BÁ¶BO²BÁ¶BO²B÷Å¶Bo3B÷Å¶Bo3B–Í¶B¶´€B–Í¶B¶´€BjØ¶B86€BjØ¶B86€Bpæ¶BpBpæ¶BpB§÷¶Bˆt~B§÷¶Bˆt~B·Bìy}B·Bìy}Bš#·Bn€|Bš#·Bn€|BP>·B5ˆ{BP>·B5ˆ{B'\·Bk‘zB'\·Bk‘zB}·B7œyB}·B7œyB(¡·BÃ¨xB(¡·BÃ¨xBGÈ·B7·wBGÈ·B7·wBpò·B¸ÇvB  ¾B´W‘B¬;½Bp‘B¬;½Bp‘BÓx¼B9âBÓx¼B9âB˜·»B B˜·»B BøºBYBøºBYBv:ºBEBv:ºBEBÎ~¹B«¼BÎ~¹B«¼B?Å¸BXgB?Å¸BXgBé¸BZBé¸BZBéX·B¿®BéX·B¿®B]¦¶B–KB]¦¶B–KBböµBñãBböµBñãBIµBàwBIµBàwB’´BuB’´BuBöö³BÂ’ŒBöö³BÂ’ŒB]R³BÚŒB]R³BÚŒBß°²BÑœ‹Bß°²BÑœ‹Bš²B½‹Bš²B½‹B¦w±B±–ŠB¦w±B±–ŠBà°BÅŠBà°BÅŠBL°B‰BL°B‰B¯»¯B¡ğˆB¯»¯B¡ğˆBù.¯Bš\ˆBù.¯Bš\ˆB¦®BÅ‡B¦®BÅ‡B!®B*‡B!®B*‡BóŸ­BÒ‹†BóŸ­BÒ‹†Bí"­BTê…Bí"­BTê…Bª¬B¸E…Bª¬B¸E…BV5¬B„BV5¬B„BîÄ«B–óƒBîÄ«B–óƒBßX«BHFƒBßX«BHFƒB<ñªBK–‚B<ñªBK–‚BªB¾ãBªB¾ãB~/ªB¼.B~/ªB¼.B‚Õ©Bew€B‚Õ©Bew€B1€©Bª{B1€©Bª{Bš/©BW~Bš/©BW~BÊã¨B‰|BÊã¨B‰|BÍœ¨B
+{BÍœ¨B
+{B¯Z¨B—‡yB¯Z¨B—‡yBz¨BåxBz¨BåxB9å§B:yvB9å§B:yvBõ±§BÖítBõ±§BÖítB·ƒ§Bú_sB·ƒ§Bú_sB…Z§BçÏqB…Z§BçÏqBg6§Bà=pBg6§Bà=pBb§B%ªnBb§B%ªnB|ı¦BùmB|ı¦BùmBºè¦BŸ~kBºè¦BŸ~kBÙ¦BYçiB4ÀMBù)”B®JBpV•B4ÀMBù)”B_áPB“B_áPB“BûTB]ï‘BûTB]ï‘B‚NWB—áB‚NWB—áBo™ZBhŞBo™ZBhŞB7ñ]BøåB7ñ]BøåBKUaBqøBKUaBqøBÅdBûBÅdBûB"@hBº>ŒB"@hBº>ŒBÁÅkBÒr‹BÁÅkBÒr‹BhUoBd²ŠBhUoBd²ŠBƒîrBı‰BƒîrBı‰B|vBrT‰B|vBrT‰B¶:zB)·ˆB¶:zB)·ˆBšì}BÌ%ˆBšì}BÌ%ˆBÇÒ€Bs ‡BÇÒ€Bs ‡By²‚B5'‡By²‚B5'‡B•„B&º†B•„B&º†BMz†BXY†BMz†BXY†BÒaˆBÙ†BÒaˆBÙ†BQKŠB¹¼…BQKŠB¹¼…Bz6ŒB…Bz6ŒB…B #BÀQ…B #BÀQ…BBù.…BBù.…BÖş‘B³…BÖş‘B³…B…í“Bó…B…í“Bó…BLÜ•B¸…BLÜ•B¸…B×Ê—B!…B×Ê—B!…B×¸™BÓ<…B×¸™BÓ<…Bû¥›B!e…Bû¥›B!e…Bğ‘Bè™…Bğ‘Bè™…Bg|ŸBÛ…Bg|ŸBÛ…Be¡Bº(†Be¡Bº(†B™K£B­‚†B™K£B­‚†B³/¥Bêè†B³/¥Bêè†B§B`[‡B§B`[‡B_ï¨BüÙ‡B_ï¨BüÙ‡BQÊªB©dˆBQÊªB©dˆB›¡¬BPûˆB›¡¬BPûˆBít®BÙ‰Bít®BÙ‰BıC°B*LŠBıC°B*LŠB|²B$‹B|²B$‹B!Ô³B«Ë‹B!Ô³B«Ë‹B¡”µBœŒB¡”µBœŒB±O·BØxB±O·BØxB
+¹B9`B
+¹B9`Bd´ºB˜RBd´ºB˜RBx]¼BĞOBx]¼BĞOB  ¾B´W‘B  ¾B´W‘BK¼B>’BK¼B>’B+&ºBM´’B+&ºBM´’Bô2¸BÆO“Bô2¸BÆO“Bö;¶BŞ“Bö;¶BŞ“B…A´B‘`”B…A´B‘`”BñC²B¶Õ”BñC²B¶Õ”B‘C°Bì=•B‘C°Bì=•B¸@®B ™•B¸@®B ™•B¸;¬BEç•B¸;¬BEç•Bê4ªBM(–Bê4ªBM(–B¢,¨B.\–B¢,¨B.\–B3#¦Bß‚–B3#¦Bß‚–Bô¤BYœ–Bô¤BYœ–B;¢Bš¨–B;¢Bš¨–B^ B§–B^ B§–B±øBe™–B±øBe™–BŒî›Bó}–BŒî›Bó}–BDå™BKU–BDå™BKU–B.İ—Bu–B.İ—Bu–BÖ•ByÜ•BÖ•ByÜ•BíÑ“BaŒ•BíÑ“BaŒ•BlÏ‘B=/•BlÏ‘B=/•BqÏBÅ”BqÏBÅ”BPÒB	N”BPÒB	N”B\Ø‹BÊ“B\Ø‹BÊ“Béá‰Bq9“Béá‰Bq9“BHï‡Bœ’BHï‡Bœ’BÌ †B*ò‘BÌ †B*ò‘BÆ„BÈ;‘BÆ„BÈ;‘B…1‚ByB…1‚ByB[Q€BªB[Q€BªB+í|BÏB+í|BÏBCyBèBCyBèBÚ¤uBFõŒBÚ¤uBFõŒBIrB×ö‹BIrB×ö‹BånBíìŠBånBíìŠB>kB³×‰B>kB³×‰Bë¯gBW·ˆBë¯gBW·ˆBzVdBŒ‡BzVdBŒ‡BuaBøU†BuaBøU†BgÒ]BX…BgÒ]BX…BÚ¨ZB_ÊƒBÚ¨ZB_ÊƒBPWBAu‚BPWBAu‚BK‰TB7BK‰TB7BM”QBøZBM”QBøZBĞ±NB’v|BĞ±NB’v|BNâKB¸yBNâKB¸yB;&IBävvB;&IBävvB~FB˜\sBS9AjBuà…AG€kBuà…AG€kBã5ŒA	ÒlBã5ŒA	ÒlBâ›’A)nBâ›’A)nBh™As7oBh™As7oBg•ŸA¸JpBg•ŸA¸JpBÑ&¦AÊHqBÑ&¦AÊHqB‰Ä¬A~1rB‰Ä¬A~1rBm³A°sBm³A°sB ºA<ÂsB ºA<ÂsBÅÜÀAjtBÅÜÀAjtBİ ÇAëûtBİ ÇAëûtBÊkÎAÙwuBÊkÎAÙwuBr<ÕA¼İuBr<ÕA¼İuB°ÜA-vB°ÜA-vBhêâAgvBhêâAgvBÅéAƒŠvBÅéAƒŠvBÍ¡ğA°—vBÍ¡ğA°—vB6~÷A¢vB6~÷A¢vB™YşAYovB™YşAYovBm™BÛ9vBm™BÛ9vBjB1îuBjB1îuB4m	BgŒuB4m	BgŒuB?ÓBŒuB?ÓBŒuB÷5B¶†tB÷5B¶†tBÒ”BûâsBÒ”BûâsBAïBu)sBAïBu)sB¹DBDZrB¹DBDZrBª”B‰uqBª”B‰uqBŒŞ Bj{pBŒŞ Bj{pBÖ!$BloBÖ!$BloBû]'B§GnBû]'B§GnBu’*B`mBu’*B`mB½¾-BnÀkB½¾-BnÀkBQâ0B^jBQâ0B^jB¨ü3BeçhB¨ü3BeçhBB7BÇ\gBB7BÇ\gB¡:Bl¾eB¡:Bl¾eBA=BšdBA=BšdB¨ÿ?B—GbB¨ÿ?B—GbBXäBB­o`BXäBB­o`BÜ¼EB)…^BÜ¼EB)…^B¸ˆHB^ˆ\B¸ˆHB^ˆ\BxGKByZBxGKByZBªøMB<YXBªøMB<YXBÚ›PB—'VBÚ›PB—'VBœ0SB	åSBœ0SB	åSB¶UBğ‘QB¶UBğ‘QB$-XB­.OB$-XB­.OB”ZB§»LBR9AjBA¹rjBA¹rjBÂ‡ƒAüÄjBÂ‡ƒAüÄjBxƒ…AØkBxƒ…AØkBÜ‚‡AAVkBÜ‚‡AAVkBš…‰A+•kBš…‰A+•kB^‹‹AŒÍkB^‹‹AŒÍkBÑ“AZÿkBÑ“AZÿkBA*lBA*lBr«‘A"OlBr«‘A"OlBô¹“AmlBô¹“AmlBÏÉ•AL„lBÏÉ•AL„lB«Ú—AÚ”lB«Ú—AÚ”lB4ì™A¶lB4ì™A¶lBş›Aİ¡lBş›Aİ¡lBéAOlBéAOlBj! A”lBj! A”lB92¢AƒlB92¢AƒlBB¤ArklBB¤ArklBlP¦A!MlBlP¦A!MlB#]¨A((lB#]¨A((lBĞgªAükBĞgªAükBp¬A[ÊkBp¬A[ÊkB´u®A–‘kB´u®A–‘kB@x°AHRkB@x°AHRkBnw²A|kBnw²A|kBêr´A>ÀjBêr´A>ÀjB`j¶A™mjB`j¶A™mjB~]¸AœjB~]¸AœjBñKºAUµiBñKºAUµiBi5¼AÔOiBi5¼AÔOiB•¾A)ähB•¾A)ähB&ø¿AgrhB&ø¿AgrhBÍĞÁAŸúgBÍĞÁAŸúgB>£ÃAå|gB>£ÃAå|gB*oÅANùfB*oÅANùfBG4ÇAğofBG4ÇAğofBKòÈAáàeBKòÈAáàeBì¨ÊA9LeBì¨ÊA9LeBâWÌA²dBâWÌA²dBçşÍAdBçşÍAdBµÏA mcBµÏA mcB4ÑAÃbB4ÑAÃbBÁÒAgbBÁÒAgbB6FÔAE`aB6FÔAE`aBÁÕAG§`BÁÕAG§`Bj3×A‹é_Bj3×A‹é_BŒ›ØA1'_BŒ›ØA1'_B»ùÙAW`^B»ùÙAW`^BºMÛA•]BàÿHB¨å“B®JBoV•BàÿHB¨å“B4?GBoz’B4?GBoz’BJlEB‘BJlEB‘Bn‡CBµBn‡CBµBğABw\BğABw\B!‰?BÈ	B!‰?BÈ	BWp=BË½‹BWp=BË½‹BëF;B´xŠBëF;B´xŠB69B¸:‰B69B¸:‰B˜Ã6BˆB˜Ã6BˆBoj4BäÔ†Boj4BäÔ†B2Bp­…B2Bp­…B
+‹/Bá„B
+‹/Bá„B›-BgvƒB›-BgvƒB<r*B/g‚B<r*B/g‚BVÑ'Be`BVÑ'Be`BZ#%B6b€BZ#%B6b€B¹h"B”Ù~B¹h"B”Ù~Bä¡B” }Bä¡B” }BOÏB¸9{BOÏB¸9{BsñBM…yBsñBM…yBÇB™ãwBÇB™ãwBÃBáTvBÃBáTvBçBfÙtBçBfÙtB°BhqsB°BhqsBšB rBšB rB&ìBÅÜpB&ìBÅÜpBÙÌB°oBÙÌB°oB4¦B­˜nB4¦B­˜nBrñüAL•mBrñüAL•mBå‰öA™¦lBå‰öA™¦lBÈğAºÌkBÈğAºÌkB+™éAÓkB+™éAÓkBãAXjBãAXjB°‚ÜAi½iB°‚ÜAi½iBüëÕA8iBüëÕA8iBOÏA4ÈhBOÏA4ÈhB­ÈAÂmhB­ÈAÂmhBôÂAÖ(hBôÂAÖ(hBñ]»AzùgBñ]»AzùgB³´A¶ßgB³´A¶ßgBp®AÛgBp®AÛgB'\§AígB'\§AígBH² AhBH² AhBô
+šA»PhBô
+šA»PhB=g“Aê¢hB=g“Aê¢hB;ÈŒA–
+iB;ÈŒA–
+iBÿ.†A­‡iBÿ.†A­‡iBO9AjB	3DB…qB~FB›\sB	3DB…qBHÜAB‚½oBHÜAB‚½oB-z?BÅnB-z?BÅnB=B[lB=B[lB{•:BRÂjB{•:BRÂjB±8B%9iB±8B%9iB(ˆ5BWÀgB(ˆ5BWÀgBKó2B&XfBKó2B&XfB…U0BÍ eB…U0BÍ eBF¯-B…ºcBF¯-B…ºcBü +B‚…bBü +B‚…bBK(BùaaBK(BùaaB
+%BP`B
+%BP`BIÊ"BP_BIÊ"BP_BF  B b^BF  B b^Bv0B†]Bv0B†]BQ[B¼\BQ[B¼\BNBP\BNBP\Bã¢Bª`[Bã¢Bª`[BˆÀB©ÎZBˆÀB©ÎZB¹ÚBeOZB¹ÚBeOZBîñBóâYBîñBóâYBŸ	Bc‰YBŸ	Bc‰YBLBÆBYBLBÆBYBl*B'YBl*B'YB{: BîXB{: BîXBæ“úAÿàXBæ“úAÿàXB¥²ôAæXB¥²ôAæXB'ÒîAÿXB'ÒîAÿXB_óèA¡*YB_óèA¡*YBKãA8iYBKãA8iYBİ>İAÇºYBİ>İAÇºYB
+k×A?ZB
+k×A?ZBÅœÑA‘–ZBÅœÑA‘–ZBÕËA¨ [BÕËA¨ [BÁÆAo½[BÁÆAo½[Bà\ÀAÌl\Bà\ÀAÌl\B[®ºA¡.]B[®ºA¡.]B
+µAÏ^B
+µAÏ^Bq¯A3é^Bq¯A3é^B)ä©A¨á_B)ä©A¨á_BHd¤Aì`BHd¤Aì`BWòAbBWòAbB7™AÂ5cB7™AÂ5cBÒ;”AÃtdBÒ;”AÃtdBùAìÄeBùAìÄeB¦Ç‰A&gB¦Ç‰A&gB”¨„AÔ—hB”¨„AÔ—hBR9AjB~FBš\sBïTGB¸ërBïTGB¸ërBä(HBourBä(HBourBÉùHBÒùqBÉùHBÒùqB{ÇIBõxqB{ÇIBõxqBÚ‘JBîòpBÚ‘JBîòpBÄXKBÒgpBÄXKBÒgpBLB¹×oBLB¹×oBµÛLBºBoBµÛLBºBoB~—MBí¨nB~—MBí¨nBSONBl
+nBSONBl
+nBOBQgmBOBQgmB¨²OB¶¿lB¨²OB¶¿lBî]PB·lBî]PB·lBÌQBqckBÌQBqckB%§QB ¯jB%§QB ¯jBáDRBöiBáDRBöiBãİRB:iBãİRB:iBrSBÕyhBrSBÕyhBZTBçµgBZTBçµgB ‹TBhîfB ‹TBhîfBÍUBz#fBÍUBz#fBÌUB=UeBÌUB=UeB‰VBÓƒdB‰VBÓƒdBî€VB`¯cBî€VB`¯cBéğVBØbBéğVBØbBg[WBçıaBg[WBçıaBWÀWB(!aBWÀWB(!aB¨XBìA`B¨XBìA`BKyXBZ`_BKyXBZ`_B0ÍXB•|^B0ÍXB•|^BKYBÃ–]BKYBÃ–]BcYB¯\BcYB¯\Bí¥YBÅ[Bí¥YBÅ[B^âYB{ÚZB^âYB{ÚZB×ZBñíYB×ZBñíYBNIZB YBNIZB YB¼sZBXB¼sZBXB˜ZB!WB˜ZB!WBb¶ZBJ0VBb¶ZBJ0VBÎZBÄ>UBÎZBÄ>UBœàZB¶LTBœàZB¶LTB‡ìZBFZSB‡ìZBFZSBNòZBgRBNòZBgRBññZBãtQBññZBãtQBnëZB?‚PBnëZB?‚PBÈŞZBÙOBÈŞZBÙOBÿËZBØNBÿËZBØNB³ZBf¬MB³ZBf¬MB”ZB¨»LB~FBš\sB¢DBªtB¢DBªtB¦ÁBB ¾tB¦ÁBB ¾tB	İ@B^]uB	İ@B^]uBô>BËïuBô>BËïuBˆ=BÎuvBˆ=BÎuvBD;BRïvBD;BRïvB'9BC\wB'9BC\wBP27B¼wBP27B¼wBA;5B$xBA;5B$xB?B3B÷VxB?B3B÷VxB›G1BüxB›G1BüxB©K/B(¾xB©K/B(¾xB»N-BvŞxB»N-BvŞxB&Q+BßñxB&Q+BßñxB=S)B`øxB=S)B`øxBSU'BøñxBSU'BøñxB¾W%B¨ŞxB¾W%B¨ŞxBÏZ#Bt¾xBÏZ#Bt¾xBÛ^!B`‘xBÛ^!B`‘xB3dBuWxB3dBuWxB-kBºxB-kBºxBtB=½wBtB=½wBOB]wBOB]wBB3ğvBB3ğvBÓBÈvvBÓBÈvvBÆ±BİğuBÆ±BİğuBCÉBˆ^uBCÉBˆ^uBäBâ¿tBäBâ¿tB%BtB%BtB&(B^sB&(B^sBğP
+B›rBğP
+B›rBÑ~B?ÌqBÑ~B?ÌqB²B¯ñpB²B¯ñpBëB‡pBëB‡pBî)BíoBî)BíoBoB	nBoB	nB¢uÿAmB¢uÿAmB·üAlB·üAlBşÍøAEäjBşÍøAEäjBõAè»iBõAè»iBIaòA!‰hBIaòA!‰hB]BïA%LgB]BïA%LgB¿3ìA&fB¿3ìA&fBí5éAY´dBí5éAY´dBiIæAøYcBiIæAøYcB«nãA9öaB«nãA9öaB-¦àAX‰`B-¦àAX‰`B`ğİA_B`ğİA_BºMÛA•]B–
+”BJ¨B®×”B†‘€B–
+”BJ¨BÄ8“B
+8~BÄ8“B
+8~BZb’BˆÒ|BZb’BˆÒ|B|‡‘Bşw{B|‡‘Bşw{BM¨B¦(zBM¨B¦(zBğÄB´äxBğÄB´äxBİBa¬wBİBa¬wBJòBŞvBJòBŞvBLB\_uBLB\_uB»ŒBKtB»ŒBKtB¾‹BCsB¾‹BCsB~!ŠB´GrB~!ŠB´GrB$%‰BÿXqB$%‰BÿXqBÚ%ˆB$wpBÚ%ˆB$wpBÈ#‡BI¢oBÈ#‡BI¢oB†BÚnB†BÚnBú…B nBú…B nB”„BsmB”„BsmBƒBnÓlBƒBnÓlB¢õBoAlB¢õBoAlBoæ€B!½kBoæ€B!½kBJ«B˜FkBJ«B˜FkBâ†}BéİjBâ†}BéİjB`{B$ƒjB`{B$ƒjB7yBX6jB7yBX6jB?wB’÷iB?wB’÷iBàtBÜÆiBàtBÜÆiBÖ²rB>¤iBÖ²rB>¤iBé„pB¾iBé„pB¾iB£VnB`‰iB£VnB`‰iBc(lB$‘iBc(lB$‘iBƒúiB§iBƒúiB§iB_ÍgB
+ËiB_ÍgB
+ËiBP¡eB$ıiBP¡eB$ıiBµvcBM=jBµvcBM=jBèMaBz‹jBèMaBz‹jBA'_B çjBA'_B çjB]B®QkB]B®QkBÖáZB”ÉkBÖáZB”ÉkBÅÃXB=OlBÅÃXB=OlBA©VB•âlBA©VB•âlB¥’TB‚ƒmB¥’TB‚ƒmBH€RBê1nBH€RBê1nBrPB±ínBrPB±ínB£iNB·¶oB£iNB·¶oB	fLBÜŒpB	fLBÜŒpBhJBıoqBhJBıoqBêoHBõ_rBêoHBõ_rB~FB›\sB~FBš\sB$†EBGesB$†EBGesBDB­gsBDB­gsB–CBËcsB–CBËcsB0BB¡YsB0BB¡YsBª¦AB3IsBª¦AB3IsB£¯@B‚2sB£¯@B‚2sBD¹?B’sBD¹?B’sB´Ã>BgòrB´Ã>BgòrBÏ=B	ÉrBÏ=B	ÉrB¤Û<B|™rB¤Û<B|™rBué;BÊcrBué;BÊcrBµø:Bû'rBµø:Bû'rBŒ	:BæqBŒ	:BæqB"9B-qB"9B-qB08BFPqB08BFPqB&G7BoüpB&G7BoüpBà_6Bµ¢pBà_6Bµ¢pBóz5B)CpBóz5B)CpB„˜4BØİoB„˜4BØİoB·¸3BÕroB·¸3BÕroB³Û2B0oB³Û2B0oB›2Bü‹nB›2Bü‹nB’*1BLnB’*1BLnB½V0B5mB½V0B5mB>†/BÌmB>†/BÌmB7¹.B'}lB7¹.B'}lBÉï-B]ìkBÉï-B]ìkB*-B…VkB*-B…VkB?h,B¹»jB?h,B¹»jBbª+BjBbª+BjB ğ*B§wiB ğ*B§wiB;*B˜ÎhB;*B˜ÎhBä‰)Bş hBä‰)Bş hB$İ(BõngB$İ(BõngBô4(Bœ¸fBô4(Bœ¸fBp‘'BşeBp‘'BşeB²ò&Bp?eB²ò&Bp?eBÕX&BÛ|dBÕX&BÛ|dBñÃ%Bp¶cBñÃ%Bp¶cB4%BQìbB4%BQìbBv©$BbBv©$BbB$$BzMaB$$BzMaBı£#By`Bı£#By`BV)#Bg¡_BV)#Bg¡_B/´"B¾Æ^B/´"B¾Æ^BšD"B/é]BšD"B/é]B«Ú!Bà]B«Ú!Bà]Bqv!Bõ%\Bqv!Bõ%\Bş!B’@[B~FBš\sBºHB`¿sBºHB`¿sBÈ‰IBHtBÈ‰IBHtBöKBCgtBöKBCgtBLBC¬tBLBC¬tB¯*NB=çtB¯*NB=çtBº¸OB(uBº¸OB(uBßGQBû>uBßGQBû>uBà×RB±[uBà×RB±[uB{hTBDnuB{hTBDnuBlùUB²vuBlùUB²vuBtŠWBùtuBtŠWBùtuBOYBiuBOYBiuB½«ZBSuB½«ZBSuB{;\Bï2uB{;\Bï2uBGÊ]B­uBGÊ]B­uBãW_BWÔtBãW_BWÔtB	ä`Bô•tB	ä`Bô•tBznbBMtBznbBMtB÷öcB5ûsB÷öcB5ûsB>}eBñsB>}eBñsBgBÔ8sBgBÔ8sB)‚hBïÈrB)‚hBïÈrBP jBROrBP jBROrBB{kBÌqBB{kBÌqBÃòlBH?qBÃòlBH?qB•fnB©pB•fnB©pB|ÖoBh	pB|ÖoBh	pB9BqB†`oB9BqB†`oB’©rB~®nB’©rB~®nBLtBjómBLtBjómB,juBl/mB,juBl/mBúÂvB£blBúÂvB£blB|xB0kB|xB0kB|dyB5¯jB|dyB5¯jBÁ¬zBÚÈiBÁ¬zBÚÈiBï{BAÚhBï{BAÚhBH+}B“ãgBH+}B“ãgB!a~BùäfB!a~BùäfBnBœŞeBnBœŞeB\€B§ĞdB\€B§ĞdBPí€BE»cBPí€BE»cB“zB¦bB“zB¦bB0‚BøzaB0‚BøzaBŠ‚BiP`BŠ‚BiP`BƒB,_BƒB,_BEŠƒBsç]BEŠƒBsç]Bo„Bp©\Bo„Bp©\Bˆz„BXe[Bˆz„BXe[B~ì„B`ZB~FBš\sBIB ßtBIB ßtB™KBRvB™KBRvBF5NBÈ³wBF5NBÈ³wB¹ÙPBsyB¹ÙPBsyB{†SBãCzB{†SBãCzB;VBäq{B;VBäq{B)÷XBB|B)÷XBB|B.º[BÑ˜}B.º[BÑ˜}B»ƒ^Bf‘~B»ƒ^Bf‘~BVSaBÕwBVSaBÕwB‹(dBı%€B‹(dBı%€BägBÙ†€BägBÙ†€BêáiBoŞ€BêáiBoŞ€B!ÅlB°,B!ÅlB°,B¬oBqB¬oBqBC–rB­BC–rB­B9ƒuBıŞB9ƒuBıŞBxrxBz‚BxrxBz‚B‡c{Br&‚B‡c{Br&‚BìU~Bß;‚BìU~Bß;‚B“¤€B½G‚B“¤€B½G‚B^‚BJ‚B^‚BJ‚B˜ƒBËB‚B˜ƒBËB‚B‡…Bú1‚B‡…Bú1‚BhŠ†B‚BhŠ†B‚B€ˆB·óB€ˆB·óBy‰BPÆBy‰BPÆB[ïŠBmB[ïŠBmB¤cŒBOB¤cŒBOB.ÖB^B.ÖB^B»FBG²€B»FBG²€BµBãU€BµBãU€Bï ’B‚àBï ’B‚àBŠ“BâBŠ“BâBbğ”B~Bbğ”B~BS–B$}BS–B$}B<³—BXı{B<³—BXı{B]™BÔ×zB]™BÔ×zB«gšBÈ yB«gšBÈ yBí»›BgXxBí»›BgXxBìBçşvBìBçşvBoWB”uBoWB”uBAŸBptBAŸBptB,à BòrB,à BòrBû¢BHòpBû¢BHòpByT£B·FoByT£B·FoBu†¤Bƒ‹mBu†¤Bƒ‹mB½²¥BõÀkB½²¥BõÀkBÙ¦BZçiBäJKB.Ñ”B®JBoV•BäJKB.Ñ”BúàKBûI”BúàKBûI”B+pLBîÀ“B+pLBîÀ“B`øLB6“B`øLB6“BƒyMB›©’BƒyMB›©’B~óMB„’B~óMB„’B=fNBí‹‘B=fNBí‹‘B®ÑNBîúB®ÑNBîúB¿5OBŸhB¿5OBŸhB`’OBÕB`’OBÕBçOBp@BçOBp@B5PBÁªB5PBÁªB{PB#B{PB#B`¹PB®|B`¹PB®|BğPB|äŒBğPB|äŒBîQB¦KŒBîQB¦KŒBFQBD²‹BFQBD²‹ByeQBo‹ByeQBo‹B}QBB~ŠB}QBB~ŠBÕŒQBÕã‰BÕŒQBÕã‰BÈ”QBAI‰BÈ”QBAI‰Bç”QB ®ˆBç”QB ®ˆB2QBˆB2QBˆBª}QBy‡Bª}QBy‡BRfQBnß†BRfQBnß†B-GQB–E†B-GQB–E†BA QB0¬…BA QB0¬…B”ñPBU…B”ñPBU…B.»PB{„B.»PB{„B}PB£ãƒB}PB£ãƒB[7PBşLƒB[7PBşLƒBêOBG·‚BêOBG·‚B•OB—"‚B•OB—"‚B¹8OBB¹8OBBãÔNB­ü€BãÔNB­ü€B¬iNB¤k€B¬iNB¤k€B&÷MB¸B&÷MB¸Bc}MB»›~Bc}MB»›~ByüLB¡‚}ByüLB¡‚}B|tLBál|B|tLBál|BåKB¨Z{BåKB¨Z{B¢OKB%LzB¢OKB%LzBö²JB„AyBö²JB„AyB–JBï:xB–JBï:xBŸeIB’8wBŸeIB’8wB,µHB™:vB,µHB™:vBYşGB,AuBYşGB,AuBDAGBsLtBDAGBsLtB~FB˜\sBé«¼BÊB  ¾B´W‘Bé«¼BÊBßM»B$FBßM»B$FBæ¹B·ÊŒBæ¹B·ÊŒBàt¸B„X‹Bàt¸B„X‹Baú¶BÉï‰Baú¶BÉï‰BŞvµB¿ˆBŞvµB¿ˆB™ê³B¡;‡B™ê³B¡;‡BÓU²B¨ğ…BÓU²B¨ğ…BË¸°B°„BË¸°B°„BÉ¯BøyƒBÉ¯BøyƒBg­B©N‚Bg­B©N‚Bç²«BM.Bç²«BM.B”÷©B€B”÷©B€Ba5¨BR~Ba5¨BR~B™l¦Bt!|B™l¦Bt!|B„¤Bß;zB„¤Bß;zBqÈ¢BåmxBqÈ¢BåmxB«í BĞ·vB«í BĞ·vBŸBèuBŸBèuB@(Bq”sB@(Bq”sB:>›B«'rB:>›B«'rB¾O™BÓÓpB¾O™BÓÓpB]—B™oB]—B™oBªf•BÃwnBªf•BÃwnB¶l“BïomB¶l“BïomB•o‘BÎlB•o‘BÎlBšoB‡­kBšoB‡­kBmB=ójBmB=ójBhh‹BSjBhh‹BSjBØa‰BÍiBØa‰BÍiBÂY‡BiaiBÂY‡BiaiBzP…BiBzP…BiBUFƒB6ÙhBUFƒB6ÙhB¨;BÅ¼hB¨;BÅ¼hB–a~BÍºhB–a~BÍºhB%LzBMÓhB%LzBMÓhB¦7vBCiB¦7vBCiBÉ$rB¥SiBÉ$rB¥SiB7nBf»iB7nBf»iB›jBv=jB›jBv=jBüeBÀÙjBüeBÀÙjBêöaB)kBêöaB)kB*ö]B”`lB*ö]B”`lBûYBßJmBûYBßJmBVBâNnBVBâNnB$RBtloB$RBtloB¶1NBf£pB¶1NBf£pBvSJB…óqBvSJB…óqB~FB™\sB~FB›\sBøCBäŞtBøCBäŞtBhAB³PvBhAB³PvBáÏ>BÌ±wBáÏ>BÌ±wBy.<BõyBy.<BõyBÆ„9Bö@zBÆ„9Bö@zB6Ó6Bœn{B6Ó6Bœn{B>4B³Š|B>4B³Š|BNZ1B•}BNZ1B•}B×“.B…~B×“.B…~BSÇ+BésBSÇ+BésB4õ(B$€B4õ(B$€Bò&Bö„€Bò&Bö„€BB#B¤Ü€BB#B¤Ü€BŞa B+BŞa B+B ~BpB ~BpBİ–B½«Bİ–B½«Bô¬BùİBô¬BùİB½ÀBÀ‚B½ÀBÀ‚B³ÒB&‚B³ÒB&‚BOãBÖ;‚BOãBÖ;‚BóBH‚BóBH‚Bo	BÜJ‚Bo	BÜJ‚BçBD‚BçBD‚Bö!BÉ3‚Bö!BÉ3‚B3 Bù‚B3 Bù‚B†‹úAªöB†‹úAªöBé´ôAãÉBé´ôAãÉBSãîA©“BSãîA©“BµéATBµéATBşRãABşRãAB)–İA´¸€B)–İA´¸€B"â×A]€B"â×A]€BØ7ÒAğBØ7ÒAğB7˜ÌA¸B7˜ÌA¸B2ÇA¬&~B2ÇA¬&~B¯|ÁA¡&}B¯|ÁA¡&}B”¼A¿|B”¼A¿|BÌ–¶A6ñzBÌ–¶A6ñzB9:±A3¼yB9:±A3¼yB»í«AëuxB»í«AëuxB.²¦A’wB.²¦A’wBtˆ¡Aa¶uBtˆ¡Aa¶uBcqœA“=tBcqœA“=tBÍm—Af´rBÍm—Af´rB‹~’AqB‹~’AqBj¤AóqoBj¤AóqoB5àˆA6¹mB5àˆA6¹mB±2„A*ñkB±2„A*ñkBR9AjB
+<EndSersetData>
+<EndSerset>
+<EndItem>
+<BeginItem> serset K608001a767c0 
+<BeginSerset>
+<BeginSeries>
+.name = `"sy"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  5.017397403717041
+.max =  95.08234405517578
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"sx"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  28.04498100280762
+.max =  116.9386520385742
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"ey"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  4.999998569488525
+.max =  95
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"ex"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  27.5
+.max =  117.5
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+.weight_id = (.)
+<BeginSersetData>
+sersetreadwrite    z   şşşşsy 00005                                                                                                                                              sx 00006                                                                                                                                              ey bel                                                                                                                                                ex                                                                                                                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                    %9.0g                                                        Ğ@   àƒ<@    ÿÿ@     €;@    EÅW@   à<]@     ÀW@     `]@ÑY”Bİ?ÀBş”BjÊ¿B@Bu„ÀBÃj?Bğ¼ÀBWşBfÃ»B|?‚BËu»BJBä>–B®JBpV•B… @®"B   @–àB¤mYAÀ®BÁïYAÖÃ®BR"HBå®–B®JBpV•B¡ÇŞAQí[B¹MÛA•]Bv”Bf7B®×”B…‘€Bæğ!B(GZBı!B’@[B™•„B·GYB~ì„B`ZB:´BŠåBr/µBL+B¡ß¶B
+,tBqò·BºÇvB ¦BrógBÙ¦BZçiBÒÿ2B\àA[z3B  ÜAÉËIB$f”B®JBpV•B‘j„A§gBS9AjB_FBÜkrB~FBš\sB#×XBwcNB”ZB©»LBó3 Böî[Bş!B’@[BŒƒBi\B~ì„B`ZB‘ùIB÷”B®JBqV•B©ğ€AäNiBS9AjBº,EB*ŞqB~FB›\sB\A²p¦BT£AÊ²¦Ba&YA©?®BÁïYAÖÃ®B5 GB< –B®JBpV•BdW[BL§NB”ZB¨»LB #Bµ ]Bş!B’@[B?÷„BZ3[B~ì„B`ZB>b·B—ÖwBqò·BºÇvB¬«¦BOÄjBÙ¦BZçiB©ÜKB/`”B®JBoV•B y½Bï‡B  ¾B´W‘B;HB[×tB~FBš\sB™³bBgÂ¿B"jaBÚ7ÀB‡LABÀBÂj?Bñ¼ÀB¢0±B—àéB(±B  ëB‚‡‚BGÅ»B|?‚BËu»BTKBn°–B®JBqV•Bp%Aàô¦BS£AÊ²¦B¿’¡@ÃdBÿÿŸ@–àB‹©HB¨¶–B®JBpV•BÓÑ`BUpÀB!jaBÚ7ÀBª”BYxÀBş”BkÊ¿B1²Bâû»B|?‚BËu»B¹KB/–B®JBpV•B.»YBµMB”ZB¨»LBÒİA»æ\B¼MÛA•]B]Û“BçÂ~B®×”B…‘€B“şƒBn[B~ì„B`ZBqìJB}^”B®JBpV•B›FB8wrB~FB›\sBãA[BQMB”ZB¨»LB~ÍàA”[B¼MÛA•]BíÌ”Bˆ€B®×”B…‘€BÓó"BííYBş!B’@[By»´BQŒBr/µBL+Bˆ6·B³ÿtBrò·BºÇvBúV¦BÇhBÙ¦B[çiB¶ÎJB‡9”B®JBqV•B÷aGB¡rB~FB™\sBö~\BjJB”ZB©»LBw`…B[ºWB~ì„B`ZB^|¸BuBsò·B»ÇvB«˜¦BøhBÙ¦BZçiBîõ”BÕéÀBŒş”BlÊ¿BjìaB>ê¿B jaBÙ7ÀB†¶”Bïz¿BŒş”BkÊ¿B[…@BÚ6ÀBÃj?Bñ¼ÀBúÃJBñ`–B®JBqV•B·¹\BWWOB”ZB¨»LBâg•B
+€B¯×”B…‘€Bh¨…Bgã[B~ì„B`ZB†¥´BîíBq/µBK+Bã§B"jBÙ¦BZçiBıLBÁØ“B®JBpV•B)*¾BõßB  ¾B´W‘B)F\B¯NB”ZB¨»LB •B
+#€B¯×”B…‘€B¢n…BŸ;[B~ì„B`ZBåoµB®üBs/µBL+B«¸·BòvBqò·BºÇvB‹7LBµñ“B®JBpV•Bbğ½BŒBÿÿ½B³W‘BÎÊHBÿ‚qB~FBš\sB [B™JB”ZB¨»LBbBfO¿B"jaBÚ7ÀBÒAUZ¥BR£AÊ²¦BOv[BAœNB”ZB¨»LB¶ÜA`BºMÛA•]Bkn¸@Ë–œBıÿŸ@—àB[@”BÅ‡B®×”B…‘€B‹«”Bnp¾Bş”BkÊ¿BbAc­BÀïYAÖÃ®BŠ>B]ä¿BÂj?Bğ¼ÀBÙ Bv0]Bş!B‘@[B#Ü„B3U\B~ì„B`ZB€4‚BKkºB|?‚BËu»BêÊ¶BÃyBqò·B¹ÇvBX¦BÏ°lBÙ¦BYçiBæv¼B+„’B  ¾B´W‘Bíø‚A«ûlBO9AjB,áEBgtB~FBš\sB®^•BJaB®×”B„‘€BGÈ·B7·wBpò·B¸ÇvBºè¦BŸ~kBÙ¦BYçiB4ÀMBù)”B®JBpV•B;&IBävvB~FB˜\sB$-XB­.OB”ZB§»LB»ùÙAW`^BºMÛA•]BàÿHB¨å“B®JBoV•B	3DB…qB~FB›\sB³ZBf¬MB”ZB¨»LB`ğİA_BºMÛA•]B–
+”BJ¨B®×”B†‘€Bqv!Bõ%\Bş!B’@[Bˆz„BXe[B~ì„B`ZB½²¥BõÀkBÙ¦BZçiBäJKB.Ñ”B®JBoV•Bé«¼BÊB  ¾B´W‘B±2„A*ñkBR9AjB
+<EndSersetData>
+<EndSerset>
+<EndItem>
+<BeginItem> serset K608001a72800 
+<BeginSerset>
+<BeginSeries>
+.name = `"ny"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  88.57814788818359
+.max =  88.57814788818359
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nx"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  117.5
+.max =  117.5
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nlabel"'
+.label = `""'
+.format = `"%20s"'
+.type.set string
+.min = (.)
+.max = (.)
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+.weight_id = (.)
+<BeginSersetData>
+sersetreadwrite       şşny 00005                                                                                                                                              nx 00006                                                                                                                                              nlabel                                                                                                                                                %9.0g                                                    %9.0g                                                    %20s                                                        ` %V@     `]@      à   ` %V@     `]@      à(±B  ëB                 
+<EndSersetData>
+<EndSerset>
+<EndItem>
+<BeginItem> serset K60800167ed80 
+<BeginSerset>
+<BeginSeries>
+.name = `"ny"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  44.86948776245117
+.max =  44.86948776245117
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nx"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  27.5
+.max =  27.5
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nlabel"'
+.label = `""'
+.format = `"%20s"'
+.type.set string
+.min = (.)
+.max = (.)
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+.weight_id = (.)
+<BeginSersetData>
+sersetreadwrite       şşny 00005                                                                                                                                              nx 00006                                                                                                                                              nlabel                                                                                                                                                %9.0g                                                    %9.0g                                                    %20s                                                        `KoF@     €;@      à   `KoF@     €;@      à[z3B  ÜA                 
+<EndSersetData>
+<EndSerset>
+<EndItem>
+<BeginItem> serset K608001675940 
+<BeginSerset>
+<BeginSeries>
+.name = `"ny"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  5
+.max =  13.62103366851807
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nx"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  78.93864440917969
+.max =  87.38249206542969
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nlabel"'
+.label = `""'
+.format = `"%20s"'
+.type.set string
+.min = (.)
+.max = (.)
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+.weight_id = (.)
+<BeginSersetData>
+sersetreadwrite       şşny 00005                                                                                                                                              nx 00006                                                                                                                                              nlabel                                                                                                                                                %9.0g                                                    %9.0g                                                    %20s                                                           @   À¼S@      à    ø=+@   ÀzØU@      àT£AÊ²¦B                    @–àB                 ÁïYAÖÃ®B                 
+<EndSersetData>
+<EndSerset>
+<EndItem>
+<BeginItem> serset K60800166d700 
+<BeginSerset>
+<BeginSeries>
+.name = `"ny"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  47.8542594909668
+.max =  65.12399291992188
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nx"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  93.73006439208984
+.max =  96.3690185546875
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nlabel"'
+.label = `""'
+.format = `"%20s"'
+.type.set string
+.min = (.)
+.max = (.)
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+.weight_id = (.)
+<BeginSersetData>
+sersetreadwrite       şşny 00005                                                                                                                                              nx 00006                                                                                                                                              nlabel                                                                                                                                                %9.0g                                                    %9.0g                                                    %20s                                                        `XíG@   `¹nW@      à   €ïGP@    X@      à!jaBÚ7ÀB                 Ãj?Bğ¼ÀB                 |?‚BËu»B                 
+<EndSersetData>
+<EndSerset>
+<EndItem>
+<BeginItem> serset K608001675380 
+<BeginSerset>
+<BeginSeries>
+.name = `"ny"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  74.49716949462891
+.max =  74.49716949462891
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nx"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  95.89534759521484
+.max =  95.89534759521484
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nlabel"'
+.label = `""'
+.format = `"%20s"'
+.type.set string
+.min = (.)
+.max = (.)
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+.weight_id = (.)
+<BeginSersetData>
+sersetreadwrite       şşny 00005                                                                                                                                              nx 00006                                                                                                                                              nlabel                                                                                                                                                %9.0g                                                    %9.0g                                                    %20s                                                         ÑŸR@   `MùW@      à    ÑŸR@   `MùW@      àş”BkÊ¿B                 
+<EndSersetData>
+<EndSerset>
+<EndItem>
+<BeginItem> serset K608000c63b40 
+<BeginSerset>
+<BeginSeries>
+.name = `"ny"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  90.59266662597656
+.max =  90.59266662597656
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nx"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  38.04228210449219
+.max =  38.04228210449219
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nlabel"'
+.label = `""'
+.format = `"%20s"'
+.type.set string
+.min = (.)
+.max = (.)
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+.weight_id = (.)
+<BeginSersetData>
+sersetreadwrite       şşny 00005                                                                                                                                              nx 00006                                                                                                                                              nlabel                                                                                                                                                %9.0g                                                    %9.0g                                                    %20s                                                        @î¥V@   €iC@      à   @î¥V@   €iC@      àr/µBL+B                 
+<EndSersetData>
+<EndSerset>
+<EndItem>
+<BeginItem> serset K608000a76c00 
+<BeginSerset>
+<BeginSeries>
+.name = `"ny"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  15.95149517059326
+.max =  15.95149517059326
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nx"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  58.5255012512207
+.max =  58.5255012512207
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nlabel"'
+.label = `""'
+.format = `"%20s"'
+.type.set string
+.min = (.)
+.max = (.)
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+.weight_id = (.)
+<BeginSersetData>
+sersetreadwrite       şşny 00005                                                                                                                                              nx 00006                                                                                                                                              nlabel                                                                                                                                                %9.0g                                                    %9.0g                                                    %20s                                                        `*ç/@    CCM@      à   `*ç/@    CCM@      àS9AjB                 
+<EndSersetData>
+<EndSerset>
+<EndItem>
+<BeginItem> serset K608001479b80 
+<BeginSerset>
+<BeginSeries>
+.name = `"ny"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  95
+.max =  95
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nx"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  72.67129516601563
+.max =  72.67129516601563
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nlabel"'
+.label = `""'
+.format = `"%20s"'
+.type.set string
+.min = (.)
+.max = (.)
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+.weight_id = (.)
+<BeginSersetData>
+sersetreadwrite       şşny 00005                                                                                                                                              nx 00006                                                                                                                                              nlabel                                                                                                                                                %9.0g                                                    %9.0g                                                    %20s                                                          ÀW@   €ö*R@      à     ÀW@   €ö*R@      à  ¾B´W‘B                 
+<EndSersetData>
+<EndSerset>
+<EndItem>
+<BeginItem> serset K608001a605c0 
+<BeginSerset>
+<BeginSeries>
+.name = `"ny"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  27.41295433044434
+.max =  27.41295433044434
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nx"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  55.39562606811523
+.max =  55.39562606811523
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nlabel"'
+.label = `""'
+.format = `"%20s"'
+.type.set string
+.min = (.)
+.max = (.)
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+.weight_id = (.)
+<BeginSersetData>
+sersetreadwrite       şşny 00005                                                                                                                                              nx 00006                                                                                                                                              nlabel                                                                                                                                                %9.0g                                                    %9.0g                                                    %20s                                                        `·i;@   à£²K@      à   `·i;@   à£²K@      à»MÛA•]B                 
+<EndSersetData>
+<EndSerset>
+<EndItem>
+<BeginItem> serset K60800187f580 
+<BeginSerset>
+<BeginSeries>
+.name = `"ny"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  40.27342987060547
+.max =  40.27342987060547
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nx"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  54.81305694580078
+.max =  54.81305694580078
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nlabel"'
+.label = `""'
+.format = `"%20s"'
+.type.set string
+.min = (.)
+.max = (.)
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+.weight_id = (.)
+<BeginSersetData>
+sersetreadwrite       şşny 00005                                                                                                                                              nx 00006                                                                                                                                              nlabel                                                                                                                                                %9.0g                                                    %9.0g                                                    %20s                                                        Àÿ"D@   @hK@      à   Àÿ"D@   @hK@      àş!B’@[B                 
+<EndSersetData>
+<EndSerset>
+<EndItem>
+<BeginItem> serset K600001866800 
+<BeginSerset>
+<BeginSeries>
+.name = `"ny"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  91.97351837158203
+.max =  91.97351837158203
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nx"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  61.69504547119141
+.max =  61.69504547119141
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nlabel"'
+.label = `""'
+.format = `"%20s"'
+.type.set string
+.min = (.)
+.max = (.)
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+.weight_id = (.)
+<BeginSersetData>
+sersetreadwrite       şşny 00005                                                                                                                                              nx 00006                                                                                                                                              nlabel                                                                                                                                                %9.0g                                                    %9.0g                                                    %20s                                                         NşV@   @÷ØN@      à    NşV@   @÷ØN@      àqò·BºÇvB                 
+<EndSersetData>
+<EndSerset>
+<EndItem>
+<BeginItem> serset K60000167b600 
+<BeginSerset>
+<BeginSeries>
+.name = `"ny"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  83.42404937744141
+.max =  83.42404937744141
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nx"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  58.47592926025391
+.max =  58.47592926025391
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nlabel"'
+.label = `""'
+.format = `"%20s"'
+.type.set string
+.min = (.)
+.max = (.)
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+.weight_id = (.)
+<BeginSersetData>
+sersetreadwrite       şşny 00005                                                                                                                                              nx 00006                                                                                                                                              nlabel                                                                                                                                                %9.0g                                                    %9.0g                                                    %20s                                                         #ÛT@   @ë<M@      à    #ÛT@   @ë<M@      àÙ¦BZçiBRalph Alvarado    
+<EndSersetData>
+<EndSerset>
+<EndItem>
+<BeginItem> serset K600000677140 
+<BeginSerset>
+<BeginSeries>
+.name = `"ny"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  74.42124938964844
+.max =  74.42124938964844
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nx"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  64.28421783447266
+.max =  64.28421783447266
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nlabel"'
+.label = `""'
+.format = `"%20s"'
+.type.set string
+.min = (.)
+.max = (.)
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+.weight_id = (.)
+<BeginSersetData>
+sersetreadwrite       şşny 00005                                                                                                                                              nx 00006                                                                                                                                              nlabel                                                                                                                                                %9.0g                                                    %9.0g                                                    %20s                                                        ÀõšR@    0P@      à   ÀõšR@    0P@      à®×”B…‘€BDavid Givens      
+<EndSersetData>
+<EndSerset>
+<EndItem>
+<BeginItem> serset K60000106ff40 
+<BeginSerset>
+<BeginSeries>
+.name = `"ny"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  49.62309646606445
+.max =  49.62309646606445
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nx"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  60.84043121337891
+.max =  60.84043121337891
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nlabel"'
+.label = `""'
+.format = `"%20s"'
+.type.set string
+.min = (.)
+.max = (.)
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+.weight_id = (.)
+<BeginSersetData>
+sersetreadwrite       şşny 00005                                                                                                                                              nx 00006                                                                                                                                              nlabel                                                                                                                                                %9.0g                                                    %9.0g                                                    %20s                                                         ÁÏH@   @“kN@      à    ÁÏH@   @“kN@      à~FBš\sBStephen Meredith  
+<EndSersetData>
+<EndSerset>
+<EndItem>
+<BeginItem> serset K600000e71100 
+<BeginSerset>
+<BeginSeries>
+.name = `"ny"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  66.46189880371094
+.max =  66.46189880371094
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nx"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  54.5267333984375
+.max =  54.5267333984375
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nlabel"'
+.label = `""'
+.format = `"%20s"'
+.type.set string
+.min = (.)
+.max = (.)
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+.weight_id = (.)
+<BeginSersetData>
+sersetreadwrite       şşny 00005                                                                                                                                              nx 00006                                                                                                                                              nlabel                                                                                                                                                %9.0g                                                    %9.0g                                                    %20s                                                        ÀP@    lCK@      à   ÀP@    lCK@      à~ì„B`ZBDan Seum          
+<EndSersetData>
+<EndSerset>
+<EndItem>
+<BeginItem> serset K600001467d40 
+<BeginSerset>
+<BeginSeries>
+.name = `"ny"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  54.64461898803711
+.max =  54.64461898803711
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nx"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  51.18325805664063
+.max =  51.18325805664063
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nlabel"'
+.label = `""'
+.format = `"%20s"'
+.type.set string
+.min = (.)
+.max = (.)
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+.weight_id = (.)
+<BeginSersetData>
+sersetreadwrite       şşny 00005                                                                                                                                              nx 00006                                                                                                                                              nlabel                                                                                                                                                %9.0g                                                    %9.0g                                                    %20s                                                        à‚RK@    u—I@      à   à‚RK@    u—I@      à”ZB¨»LBMike Wilson       
+<EndSersetData>
+<EndSerset>
+<EndItem>
+<BeginItem> serset K60000107e1c0 
+<BeginSerset>
+<BeginSeries>
+.name = `"ny"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  50.66992950439453
+.max =  50.66992950439453
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nx"'
+.label = `""'
+.format = `"%9.0g"'
+.type.set numeric
+.min =  74.6688232421875
+.max =  74.6688232421875
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+<BeginSeries>
+.name = `"nlabel"'
+.label = `""'
+.format = `"%20s"'
+.type.set string
+.min = (.)
+.max = (.)
+.median = (.)
+.pct25 = (.)
+.pct75 = (.)
+.categories = (.)
+<EndSeries>
+.weight_id = (.)
+<BeginSersetData>
+sersetreadwrite       şşny 00005                                                                                                                                              nx 00006                                                                                                                                              nlabel                                                                                                                                                %9.0g                                                    %9.0g                                                    %20s                                                        @ÀUI@    ÎªR@      à   @ÀUI@    ÎªR@      à®JBpV•BDanny Carroll     
+<EndSersetData>
+<EndSerset>
+<EndItem>
+<BeginItem> scheme K60c00047dc40 
+.setscheme , scheme(s2color) naturallywhite(1)
+<EndItem>
+<BeginItem> twowaygraph_g K604000c70180 <UseScheme> K60c00047dc40
+.style.editstyle aspect_ratio(.67) editcopy
+.style.editstyle boxstyle( linestyle( color(scheme plotregion)) shadestyle( color(scheme plotregion))) editcopy
+.style.editstyle boxstyle( linestyle( color(black) width(vthin))) editcopy
+.style.editstyle inner_boxstyle( linestyle( color(ltbluishgray)) shadestyle( color(ltbluishgray))) editcopy
+.style.editstyle margin(zero) editcopy
+.sersets[1] = .__Map.K60800107f340.ref
+.sersets[2] = .__Map.K608001473140.ref
+.sersets[3] = .__Map.K608001a767c0.ref
+.sersets[4] = .__Map.K608001a72800.ref
+.sersets[5] = .__Map.K60800167ed80.ref
+.sersets[6] = .__Map.K608001675940.ref
+.sersets[7] = .__Map.K60800166d700.ref
+.sersets[8] = .__Map.K608001675380.ref
+.sersets[9] = .__Map.K608000c63b40.ref
+.sersets[10] = .__Map.K608000a76c00.ref
+.sersets[11] = .__Map.K608001479b80.ref
+.sersets[12] = .__Map.K608001a605c0.ref
+.sersets[13] = .__Map.K60800187f580.ref
+.sersets[14] = .__Map.K600001866800.ref
+.sersets[15] = .__Map.K60000167b600.ref
+.sersets[16] = .__Map.K600000677140.ref
+.sersets[17] = .__Map.K60000106ff40.ref
+.sersets[18] = .__Map.K600000e71100.ref
+.sersets[19] = .__Map.K600001467d40.ref
+.sersets[20] = .__Map.K60000107e1c0.ref
+.insert (plotregion1 = .plotregion.new , style(scheme twoway) graph(`.objkey')) at 1 1
+.plotregion1.style.editstyle boxstyle( linestyle( color(scheme plotregion)) shadestyle( color(scheme plotregion))) editcopy
+.plotregion1.style.editstyle margin(.00225 .00225 .00225 .00225) editcopy
+.plotregion1.style.editstyle inner_boxstyle( linestyle( color(ltbluishgray)) shadestyle( color(ltbluishgray))) editcopy
+.plotregion1.style.editstyle margin(zero) editcopy
+.plotregion1.Declare plot1 = .yxview.new , type(scatter) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof __000005') xvariable(`.sersets[1].seriesof __000006')    plotregion(`.plotregion1.objkey') style(scheme p1) 
+.plotregion1.plot1.style.editstyle marker(symbol(`"scheme p0"')) marker(fillcolor(`"red%50"')) marker(size(2)) marker(linestyle(color(`"red%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot2 = .yxview.new , type(scatter) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof __000005') xvariable(`.sersets[1].seriesof __000006')    plotregion(`.plotregion1.objkey') style(scheme p2) 
+.plotregion1.plot2.style.editstyle marker(symbol(`"scheme p0"')) marker(fillcolor(`"blue%50"')) marker(size(2)) marker(linestyle(color(`"blue%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot3 = .yxyxview_g.new , type(pcspike) serset(`.sersets[2].objkey') yvariable(`.sersets[2].seriesof sy') xvariable(`.sersets[2].seriesof sx')    plotregion(`.plotregion1.objkey') style(scheme p3) ybvar(`.sersets[2].seriesof ey') xbvar(`.sersets[2].seriesof ex')
+.plotregion1.plot3.style.editstyle line(color(`"orange%15"')) area(linestyle(color(`"orange%15"'))) line(width(.1875)) area(linestyle(width(.1875))) line(pattern(scheme)) area(linestyle(pattern(scheme))) marker(fillcolor(`"orange%15"') linestyle(color(`"orange%15"'))) marker(fillcolor(`"orange%15"')) marker(size(2)) marker(backsize(1.4)) editcopy
+.plotregion1.plot3.bar_drop_to.setstyle , style(x)
+.plotregion1.Declare plot4 = .yxyxview_g.new , type(pcspike) serset(`.sersets[3].objkey') yvariable(`.sersets[3].seriesof sy') xvariable(`.sersets[3].seriesof sx')    plotregion(`.plotregion1.objkey') style(scheme p4) ybvar(`.sersets[3].seriesof ey') xbvar(`.sersets[3].seriesof ex')
+.plotregion1.plot4.style.editstyle line(color(`"orange%15"')) area(linestyle(color(`"orange%15"'))) line(width(.1875)) area(linestyle(width(.1875))) line(pattern(scheme)) area(linestyle(pattern(scheme))) marker(fillcolor(`"orange%15"') linestyle(color(`"orange%15"'))) marker(fillcolor(`"orange%15"')) marker(size(2)) marker(backsize(1.4)) editcopy
+.plotregion1.plot4.bar_drop_to.setstyle , style(x)
+.plotregion1.Declare plot5 = .yxview.new , type(scatter) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof ny') xvariable(`.sersets[1].seriesof nx')  lvariable(`.sersets[1].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p5) 
+.plotregion1.plot5.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"red%50"')) marker(size(1.62)) marker(linestyle(color(`"red%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot6 = .yxview.new , type(scatter) serset(`.sersets[4].objkey') yvariable(`.sersets[4].seriesof ny') xvariable(`.sersets[4].seriesof nx')  lvariable(`.sersets[4].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p6) 
+.plotregion1.plot6.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"blue%50"')) marker(size(1.62)) marker(linestyle(color(`"blue%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot7 = .yxview.new , type(scatter) serset(`.sersets[5].objkey') yvariable(`.sersets[5].seriesof ny') xvariable(`.sersets[5].seriesof nx')  lvariable(`.sersets[5].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p7) 
+.plotregion1.plot7.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"red%50"')) marker(size(1.995)) marker(linestyle(color(`"red%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot8 = .yxview.new , type(scatter) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof ny') xvariable(`.sersets[1].seriesof nx')  lvariable(`.sersets[1].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p8) 
+.plotregion1.plot8.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"blue%50"')) marker(size(1.995)) marker(linestyle(color(`"blue%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot9 = .yxview.new , type(scatter) serset(`.sersets[6].objkey') yvariable(`.sersets[6].seriesof ny') xvariable(`.sersets[6].seriesof nx')  lvariable(`.sersets[6].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p9) 
+.plotregion1.plot9.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"red%50"')) marker(size(2.265)) marker(linestyle(color(`"red%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot10 = .yxview.new , type(scatter) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof ny') xvariable(`.sersets[1].seriesof nx')  lvariable(`.sersets[1].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p10) 
+.plotregion1.plot10.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"blue%50"')) marker(size(2.265)) marker(linestyle(color(`"blue%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot11 = .yxview.new , type(scatter) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof ny') xvariable(`.sersets[1].seriesof nx')  lvariable(`.sersets[1].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p11) 
+.plotregion1.plot11.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"red%50"')) marker(size(2.43)) marker(linestyle(color(`"red%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot12 = .yxview.new , type(scatter) serset(`.sersets[7].objkey') yvariable(`.sersets[7].seriesof ny') xvariable(`.sersets[7].seriesof nx')  lvariable(`.sersets[7].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p12) 
+.plotregion1.plot12.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"blue%50"')) marker(size(2.43)) marker(linestyle(color(`"blue%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot13 = .yxview.new , type(scatter) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof ny') xvariable(`.sersets[1].seriesof nx')  lvariable(`.sersets[1].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p13) 
+.plotregion1.plot13.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"red%50"')) marker(size(2.445)) marker(linestyle(color(`"red%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot14 = .yxview.new , type(scatter) serset(`.sersets[8].objkey') yvariable(`.sersets[8].seriesof ny') xvariable(`.sersets[8].seriesof nx')  lvariable(`.sersets[8].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p14) 
+.plotregion1.plot14.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"blue%50"')) marker(size(2.445)) marker(linestyle(color(`"blue%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot15 = .yxview.new , type(scatter) serset(`.sersets[9].objkey') yvariable(`.sersets[9].seriesof ny') xvariable(`.sersets[9].seriesof nx')  lvariable(`.sersets[9].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p15) 
+.plotregion1.plot15.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"red%50"')) marker(size(3.21)) marker(linestyle(color(`"red%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot16 = .yxview.new , type(scatter) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof ny') xvariable(`.sersets[1].seriesof nx')  lvariable(`.sersets[1].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p1) 
+.plotregion1.plot16.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"blue%50"')) marker(size(3.21)) marker(linestyle(color(`"blue%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot17 = .yxview.new , type(scatter) serset(`.sersets[10].objkey') yvariable(`.sersets[10].seriesof ny') xvariable(`.sersets[10].seriesof nx')  lvariable(`.sersets[10].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p2) 
+.plotregion1.plot17.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"red%50"')) marker(size(3.33)) marker(linestyle(color(`"red%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot18 = .yxview.new , type(scatter) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof ny') xvariable(`.sersets[1].seriesof nx')  lvariable(`.sersets[1].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p3) 
+.plotregion1.plot18.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"blue%50"')) marker(size(3.33)) marker(linestyle(color(`"blue%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot19 = .yxview.new , type(scatter) serset(`.sersets[11].objkey') yvariable(`.sersets[11].seriesof ny') xvariable(`.sersets[11].seriesof nx')  lvariable(`.sersets[11].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p4) 
+.plotregion1.plot19.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"red%50"')) marker(size(3.705)) marker(linestyle(color(`"red%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot20 = .yxview.new , type(scatter) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof ny') xvariable(`.sersets[1].seriesof nx')  lvariable(`.sersets[1].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p5) 
+.plotregion1.plot20.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"blue%50"')) marker(size(3.705)) marker(linestyle(color(`"blue%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot21 = .yxview.new , type(scatter) serset(`.sersets[12].objkey') yvariable(`.sersets[12].seriesof ny') xvariable(`.sersets[12].seriesof nx')  lvariable(`.sersets[12].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p6) 
+.plotregion1.plot21.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"red%50"')) marker(size(4.035)) marker(linestyle(color(`"red%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot22 = .yxview.new , type(scatter) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof ny') xvariable(`.sersets[1].seriesof nx')  lvariable(`.sersets[1].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p7) 
+.plotregion1.plot22.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"blue%50"')) marker(size(4.035)) marker(linestyle(color(`"blue%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot23 = .yxview.new , type(scatter) serset(`.sersets[13].objkey') yvariable(`.sersets[13].seriesof ny') xvariable(`.sersets[13].seriesof nx')  lvariable(`.sersets[13].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p8) 
+.plotregion1.plot23.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"red%50"')) marker(size(4.2)) marker(linestyle(color(`"red%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot24 = .yxview.new , type(scatter) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof ny') xvariable(`.sersets[1].seriesof nx')  lvariable(`.sersets[1].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p9) 
+.plotregion1.plot24.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"blue%50"')) marker(size(4.2)) marker(linestyle(color(`"blue%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot25 = .yxview.new , type(scatter) serset(`.sersets[14].objkey') yvariable(`.sersets[14].seriesof ny') xvariable(`.sersets[14].seriesof nx')  lvariable(`.sersets[14].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p10) 
+.plotregion1.plot25.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"red%50"')) marker(size(4.335)) marker(linestyle(color(`"red%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot26 = .yxview.new , type(scatter) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof ny') xvariable(`.sersets[1].seriesof nx')  lvariable(`.sersets[1].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p11) 
+.plotregion1.plot26.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"blue%50"')) marker(size(4.335)) marker(linestyle(color(`"blue%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot27 = .yxview.new , type(scatter) serset(`.sersets[15].objkey') yvariable(`.sersets[15].seriesof ny') xvariable(`.sersets[15].seriesof nx')  lvariable(`.sersets[15].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p12) 
+.plotregion1.plot27.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"red%50"')) marker(size(4.74)) marker(linestyle(color(`"red%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot28 = .yxview.new , type(scatter) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof ny') xvariable(`.sersets[1].seriesof nx')  lvariable(`.sersets[1].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p13) 
+.plotregion1.plot28.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"blue%50"')) marker(size(4.74)) marker(linestyle(color(`"blue%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot29 = .yxview.new , type(scatter) serset(`.sersets[16].objkey') yvariable(`.sersets[16].seriesof ny') xvariable(`.sersets[16].seriesof nx')  lvariable(`.sersets[16].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p14) 
+.plotregion1.plot29.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"red%50"')) marker(size(4.845)) marker(linestyle(color(`"red%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot30 = .yxview.new , type(scatter) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof ny') xvariable(`.sersets[1].seriesof nx')  lvariable(`.sersets[1].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p15) 
+.plotregion1.plot30.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"blue%50"')) marker(size(4.845)) marker(linestyle(color(`"blue%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot31 = .yxview.new , type(scatter) serset(`.sersets[17].objkey') yvariable(`.sersets[17].seriesof ny') xvariable(`.sersets[17].seriesof nx')  lvariable(`.sersets[17].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p1) 
+.plotregion1.plot31.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"red%50"')) marker(size(5.01)) marker(linestyle(color(`"red%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot32 = .yxview.new , type(scatter) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof ny') xvariable(`.sersets[1].seriesof nx')  lvariable(`.sersets[1].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p2) 
+.plotregion1.plot32.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"blue%50"')) marker(size(5.01)) marker(linestyle(color(`"blue%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot33 = .yxview.new , type(scatter) serset(`.sersets[18].objkey') yvariable(`.sersets[18].seriesof ny') xvariable(`.sersets[18].seriesof nx')  lvariable(`.sersets[18].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p3) 
+.plotregion1.plot33.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"red%50"')) marker(size(5.07)) marker(linestyle(color(`"red%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot34 = .yxview.new , type(scatter) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof ny') xvariable(`.sersets[1].seriesof nx')  lvariable(`.sersets[1].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p4) 
+.plotregion1.plot34.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"blue%50"')) marker(size(5.07)) marker(linestyle(color(`"blue%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot35 = .yxview.new , type(scatter) serset(`.sersets[19].objkey') yvariable(`.sersets[19].seriesof ny') xvariable(`.sersets[19].seriesof nx')  lvariable(`.sersets[19].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p5) 
+.plotregion1.plot35.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"red%50"')) marker(size(5.325)) marker(linestyle(color(`"red%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot36 = .yxview.new , type(scatter) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof ny') xvariable(`.sersets[1].seriesof nx')  lvariable(`.sersets[1].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p6) 
+.plotregion1.plot36.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"blue%50"')) marker(size(5.325)) marker(linestyle(color(`"blue%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot37 = .yxview.new , type(scatter) serset(`.sersets[20].objkey') yvariable(`.sersets[20].seriesof ny') xvariable(`.sersets[20].seriesof nx')  lvariable(`.sersets[20].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p7) 
+.plotregion1.plot37.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"red%50"')) marker(size(6)) marker(linestyle(color(`"red%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.Declare plot38 = .yxview.new , type(scatter) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof ny') xvariable(`.sersets[1].seriesof nx')  lvariable(`.sersets[1].seriesof nlabel')  plotregion(`.plotregion1.objkey') style(scheme p8) 
+.plotregion1.plot38.style.editstyle marker(symbol(`"scheme p1"')) marker(fillcolor(`"blue%50"')) marker(size(6)) marker(linestyle(color(`"blue%50"'))) marker(linestyle(width(`"vthin"'))) label(position(12)) label(textgap(*1.5)) label(textstyle(size(vsmall))) label(textstyle(color(black))) editcopy
+.plotregion1.clear_scales
+.plotregion1.reset_scales , noclear
+.n_views = 38
+.n_plotregions = 1
+.last_style = 38
+.x_scales = `" "1""'
+.y_scales = `" "1""'
+.create_axes 1 1 "9" "" 9
+.style.editstyle legend_ring(6) editcopy
+.style.editstyle legend_position(12) editcopy
+.insert (legend = .legend_g.new, graphs(`.objkey') style(scheme)) above plotregion1 , ring(6) 
+.legend.style.editstyle box_alignment(N) editcopy
+.legend.style.editstyle boxstyle( linestyle( color(ltbluishgray)) shadestyle( color(ltbluishgray))) editcopy
+.legend.style.editstyle labelstyle( size(small)) editcopy
+.legend.holes = ""
+.legend.style.editstyle  cols(2) editcopy
+.legend.insert (note = .sized_textbox.new, mtextq(`""') style(scheme leg_note) ) below plotregion1 , ring(3) 
+.legend.note.style.editstyle box_alignment(SW) editcopy
+.legend.note.style.editstyle horizontal(left) editcopy
+.legend.insert (caption = .sized_textbox.new, mtextq(`""') style(scheme leg_caption) ) below plotregion1 , ring(5) 
+.legend.caption.style.editstyle box_alignment(SW) editcopy
+.legend.caption.style.editstyle horizontal(left) editcopy
+.legend.insert (subtitle = .sized_textbox.new, mtextq(`""') style(scheme leg_subtitle) ) above plotregion1 , ring(6) 
+.legend.subtitle.style.editstyle box_alignment(N) editcopy
+.legend.subtitle.style.editstyle horizontal(center) editcopy
+.legend.insert (title = .sized_textbox.new, mtextq(`""') style(scheme leg_title) ) above plotregion1 , ring(7) 
+.legend.title.style.editstyle box_alignment(N) editcopy
+.legend.title.style.editstyle horizontal(center) editcopy
+.legend.rebuild
+.legend.labels[1] = `" "Republican""'
+.legend.labels[2] = `" "Democrat""'
+.legend.parse_order 1 2 -  -
+.legend.repositionkeys
+.xaxis1.addmin 0
+.xaxis1.addmax 150
+.xaxis1.draw_view.set_off
+.yaxis1.addmin 0
+.yaxis1.addmax 100
+.yaxis1.draw_view.set_off
+.yaxis1.style.editstyle draw_major_grid(no) editcopy
+.insert (r1title = .sized_textbox.new, mtextq(`""') style(scheme r1title) orientation(vertical)) rightof plotregion1 , ring(1) 
+.insert (r2title = .sized_textbox.new, mtextq(`""') style(scheme r2title) orientation(vertical)) rightof plotregion1 , ring(2) 
+.insert (l1title = .sized_textbox.new, mtextq(`""') style(scheme l1title) orientation(vertical)) leftof plotregion1 , ring(1) 
+.insert (l2title = .sized_textbox.new, mtextq(`""') style(scheme l2title) orientation(vertical)) leftof plotregion1 , ring(2) 
+.insert (t1title = .sized_textbox.new, mtextq(`""') style(scheme t1title) ) above plotregion1 , ring(1) 
+.insert (t2title = .sized_textbox.new, mtextq(`""') style(scheme t2title) ) above plotregion1 , ring(2) 
+.insert (b1title = .sized_textbox.new, mtextq(`""') style(scheme b1title) ) below plotregion1 , ring(1) 
+.insert (b2title = .sized_textbox.new, mtextq(`""') style(scheme b1title) ) below plotregion1 , ring(2) 
+.style.editstyle note_position(7) editcopy
+.style.editstyle note_ring(7) editcopy
+.insert (note = .sized_textbox.new, mtextq(`"`"Names shown for top 25% of Eigenvector Centrality Distribution.  2018 Kentucky Legislative Data from LegiScan (http://www.legiscan.com)."'"') style(scheme note) ) below plotregion1 , ring(7) 
+.note.style.editstyle box_alignment(SW) editcopy
+.note.style.editstyle horizontal(left) editcopy
+.note.style.editstyle  size(vsmall) color(black) editcopy
+.insert (caption = .sized_textbox.new, mtextq(`""') style(scheme caption) ) below plotregion1 , ring(5) 
+.caption.style.editstyle box_alignment(SW) editcopy
+.caption.style.editstyle horizontal(left) editcopy
+.insert (subtitle = .sized_textbox.new, mtextq(`""') style(scheme subtitle) ) above plotregion1 , ring(6) 
+.subtitle.style.editstyle box_alignment(N) editcopy
+.subtitle.style.editstyle horizontal(center) editcopy
+.style.editstyle title_position(12) editcopy
+.style.editstyle title_ring(7) editcopy
+.style.editstyle title_span(yes) editcopy
+.insert (title = .sized_textbox.new, mtextq(`"`"Senate Weighted Network of Education Legislation"'"') style(scheme title) ) above plotregion1 , ring(7) spancols(all) spanfit(left right)
+.title.style.editstyle box_alignment(N) editcopy
+.title.style.editstyle horizontal(center) editcopy
+.title.style.editstyle  size(large) color(black) editcopy
+.insert (spacert = .spacer.new) above plotregion1 , ring(11)
+.insert (spacerb = .spacer.new) below plotregion1 , ring(11)
+.insert (spacerl = .spacer.new) leftof plotregion1 , ring(11)
+.insert (spacerr = .spacer.new) rightof plotregion1 , ring(11)
+.style.editstyle declared_xsize(11) editcopy
+.style.editstyle declared_ysize(8) editcopy
+.command = `"twoway || (scatter __000005 __000006 if __000005 !=.,  msymbol("scheme p0")  mfcolor("red%50") mlwidth("vthin") mlcolor("red%50")   msize(2)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12))  || (scatter __000005 __000006 if __000005 !=.,  msymbol("scheme p0")  mfcolor("blue%50") mlwidth("vthin") mlcolor("blue%50")   msize(2)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12))  || (pcspike sy sx ey ex if value != 0 & edgesize == 1 & edgecolor == 1, lpattern(scheme p1linepattern) lwidth(.1875) lcolor("orange%15") mfcolor("orange%15") mcolor("orange%15") msize(2) barbsize(1.4) ) || (pcspike sy sx ey ex if value != 0 & edgesize == 1  & edgecolor == 1 & arrow == 1,  lpattern(scheme p1linepattern) lwidth(.1875) lcolor("orange%15") mfcolor("orange%15") mcolor("orange%15") msize(2) barbsize(1.4) ) ||  (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 1080,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(1.62) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 1080,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(1.62) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 1330,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(1.995) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 1330,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(1.995) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 1510,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(2.265) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 1510,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(2.265) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 1620,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(2.43) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 1620,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(2.43) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 1630,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(2.445) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 1630,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(2.445) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 2140,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(3.21) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 2140,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(3.21) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 2220,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(3.33) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 2220,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(3.33) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 2470,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(3.705) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 2470,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(3.705) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 2690,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(4.035) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 2690,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(4.035) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 2800,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(4.2) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 2800,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(4.2) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 2890,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(4.335) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 2890,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(4.335) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 3160,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(4.74) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 3160,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(4.74) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 3230,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(4.845) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 3230,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(4.845) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 3340,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(5.01) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 3340,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(5.01) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 3380,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(5.07) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 3380,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(5.07) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 3550,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(5.325) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 3550,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(5.325) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 1 & nsymbol == 1 & nsize == 4000,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("red%50") mfcolor("red%50") msize(6) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) || (scatter ny nx if ncolor == 2 & nsymbol == 1 & nsize == 4000,  mlabcolor("scheme label") msymbol("scheme p1") mlwidth("vthin") mlcolor("blue%50") mfcolor("blue%50") msize(6) mlabel(nlabel)  mlabs(vsmall) mlabc(black) mlabgap(*1.5) mlabpos(12)) ||   , ylabel(, nogrid) yscale(off range(0 100)) xscale(off range(0 150)) graphregion(color("scheme plotregion")) plotregion(color("scheme plotregion") margin(.00225 .00225 .00225 .00225)) aspectratio(.67) legend(order( 1 2 -  -         )  label(1 "Republican") label(2 "Democrat")     pos(12) ring(6) size(small) region(lc(ltbluishgray) fc(ltbluishgray)) cols(2))  xsize(11) ysize(8) name(senateedwgt, replace) ti(`"Senate Weighted Network of Education Legislation"', span c(black) size(large) pos(12) ring(7)) note(`"Names shown for top 25% of Eigenvector Centrality Distribution.  2018 Kentucky Legislative Data from LegiScan (http://www.legiscan.com)."', c(black) size(vsmall) pos(7) ring(7)) plotr(margin(zero) ic(ltbluishgray)) graphr(margin(zero) ic(ltbluishgray) lc(black) lw(vthin))"'
+.date = "15 Jul 2018"
+.time = "10:36:06"
+.dta_file = ""
+.dta_date = ""
+<EndItem>

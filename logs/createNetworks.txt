@@ -1,0 +1,433 @@
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+      name:  building
+       log:  /Users/billy/Desktop/kyLegislation/logs/createNetworks.txt
+  log type:  text
+ opened on:  14 Jul 2018, 18:41:42
+
+. 
+. // Make sure any existing network data is cleared prior to creating new networks
+. cap nwclear
+
+. 
+. // Saves the file used for the analysis
+. use `"$analysis/kyHouseData.dta"', clear
+
+. 
+. // Indicate records that do not have any ties in the education subnetworks
+. bys sponsor_id (cosponsid): egen connections = total(nwwiyrwgted)
+
+. 
+. // Get the sponsor ids for individuals who do not have any connections in the network
+. levelsof sponsor_id if connections == 0, loc(unconnected)
+`"11085"' `"11086"' `"1123"' `"1125"' `"1138"' `"1141"' `"1146"' `"1159"' `"1163"' `"1166"' `"1168"' `"1182"' `"1186"' `"1188"' `"1194"' `"1196"' `"120
+> 2"' `"1206"' `"1207"' `"1209"' `"1215"' `"14421"' `"14422"' `"14425"' `"14426"' `"14429"' `"14430"' `"14433"' `"16049"' `"16110"' `"16616"' `"16670"'
+>  `"17926"' `"18249"' `"18250"' `"18254"' `"18339"' `"18488"' `"18489"' `"18491"' `"18492"' `"18494"' `"19375"'
+
+. 
+. // Preserves the current state of the data
+. preserve 
+
+. 
+.         // Creates non-education weighted network for the house
+.         nwfromedge sponsor_id cosponsid nwwiyrwgt, name(housenonedwgt) 
+
+Loading successful
+--------------------------------------------------
+   Network name:  housenonedwgt
+   Network id:  1
+   Directed: false
+   Nodes: 100
+   Edges: 3833
+   Minimum value:  0
+   Maximum value:  28
+   Density:  .7743434343434343
+
+.         
+. // Restores and preserves original data again   
+. restore, preserve
+
+. 
+.         // Creates non-education unweighted network for the house
+.         nwfromedge sponsor_id cosponsid nonedpair, name(housenonedunwgt) 
+
+Loading successful
+--------------------------------------------------
+   Network name:  housenonedunwgt
+   Network id:  2
+   Directed: false
+   Nodes: 100
+   Edges: 3833
+   Minimum value:  0
+   Maximum value:  1
+   Density:  .7743434343434343
+
+. 
+. // Restores and preserves original data again   
+. restore, preserve
+
+. 
+.         // Loop over sponsor ids for unconnected individuals
+.         foreach person of loc unconnected {
+  2.         
+.                 di `"`person'"'
+  3.         
+.                 // Remove the unconnected individuals from the file
+.                 drop if sponsor_id == `"`person'"' | cosponsid == `"`person'"'
+  4.                 
+.         } // End Loop to remove unconnected nodes       
+11085
+(198 observations deleted)
+11086
+(196 observations deleted)
+1123
+(194 observations deleted)
+1125
+(192 observations deleted)
+1138
+(190 observations deleted)
+1141
+(188 observations deleted)
+1146
+(186 observations deleted)
+1159
+(184 observations deleted)
+1163
+(182 observations deleted)
+1166
+(180 observations deleted)
+1168
+(178 observations deleted)
+1182
+(176 observations deleted)
+1186
+(174 observations deleted)
+1188
+(172 observations deleted)
+1194
+(170 observations deleted)
+1196
+(168 observations deleted)
+1202
+(166 observations deleted)
+1206
+(164 observations deleted)
+1207
+(162 observations deleted)
+1209
+(160 observations deleted)
+1215
+(158 observations deleted)
+14421
+(156 observations deleted)
+14422
+(154 observations deleted)
+14425
+(152 observations deleted)
+14426
+(150 observations deleted)
+14429
+(148 observations deleted)
+14430
+(146 observations deleted)
+14433
+(144 observations deleted)
+16049
+(142 observations deleted)
+16110
+(140 observations deleted)
+16616
+(138 observations deleted)
+16670
+(136 observations deleted)
+17926
+(134 observations deleted)
+18249
+(132 observations deleted)
+18250
+(130 observations deleted)
+18254
+(128 observations deleted)
+18339
+(126 observations deleted)
+18488
+(124 observations deleted)
+18489
+(122 observations deleted)
+18491
+(120 observations deleted)
+18492
+(118 observations deleted)
+18494
+(116 observations deleted)
+19375
+(114 observations deleted)
+
+. 
+.         // Creates education weighted network for the house
+.         nwfromedge sponsor_id cosponsid nwwiyrwgted, name(houseedwgt) 
+
+Loading successful
+--------------------------------------------------
+   Network name:  houseedwgt
+   Network id:  3
+   Directed: false
+   Nodes: 57
+   Edges: 389
+   Minimum value:  0
+   Maximum value:  4
+   Density:  .243734335839599
+
+.         
+. // Restores and preserves original data again   
+. restore, preserve
+
+. 
+.         // Loop over sponsor ids for unconnected individuals
+.         foreach person of loc unconnected {
+  2.         
+.                 // Remove the unconnected individuals from the file
+.                 drop if sponsor_id == `"`person'"' | cosponsid == `"`person'"'
+  3.                 
+.         } // End Loop to remove unconnected nodes       
+(198 observations deleted)
+(196 observations deleted)
+(194 observations deleted)
+(192 observations deleted)
+(190 observations deleted)
+(188 observations deleted)
+(186 observations deleted)
+(184 observations deleted)
+(182 observations deleted)
+(180 observations deleted)
+(178 observations deleted)
+(176 observations deleted)
+(174 observations deleted)
+(172 observations deleted)
+(170 observations deleted)
+(168 observations deleted)
+(166 observations deleted)
+(164 observations deleted)
+(162 observations deleted)
+(160 observations deleted)
+(158 observations deleted)
+(156 observations deleted)
+(154 observations deleted)
+(152 observations deleted)
+(150 observations deleted)
+(148 observations deleted)
+(146 observations deleted)
+(144 observations deleted)
+(142 observations deleted)
+(140 observations deleted)
+(138 observations deleted)
+(136 observations deleted)
+(134 observations deleted)
+(132 observations deleted)
+(130 observations deleted)
+(128 observations deleted)
+(126 observations deleted)
+(124 observations deleted)
+(122 observations deleted)
+(120 observations deleted)
+(118 observations deleted)
+(116 observations deleted)
+(114 observations deleted)
+
+. 
+.         // Creates education unweighted network for the house
+.         nwfromedge sponsor_id cosponsid isedpair, name(houseedunwgt) 
+
+Loading successful
+--------------------------------------------------
+   Network name:  houseedunwgt
+   Network id:  4
+   Directed: false
+   Nodes: 57
+   Edges: 389
+   Minimum value:  0
+   Maximum value:  1
+   Density:  .243734335839599
+
+.                 
+. // Restores the data to its original state      
+. restore
+
+. 
+. // Confirms that all of the networks above are accessible
+. nwds
+houseno~dwgt  houseno~nwgt  houseedwgt    houseedunwgt
+
+. 
+. // Saves the networks for the house
+. nwsave $analysis/houseNetworks, replace
+file ~/Desktop/kyLegislation/data/clean/analysis/houseNetworks.dta saved
+
+. 
+. // Makes sure that all network data is cleared from memory before constructing
+. // Senate networks
+. nwclear
+
+. 
+. // Loads the data for the Kentucky Senate Legislation
+. use `"$analysis/kySenateData.dta"', clear
+
+. 
+. // Indicate records that do not have any ties in the education subnetworks
+. bys sponsor_id (cosponsid): egen connections = total(nwwiyrwgted)
+
+. 
+. // Get the sponsor ids for individuals who do not have any connections in the network
+. levelsof sponsor_id if connections == 0, loc(unconnected)
+`"11083"' `"11093"' `"11096"' `"1219"' `"1220"' `"1226"' `"1228"' `"1229"' `"1232"' `"1241"' `"1244"' `"1248"' `"1249"' `"14434"' `"14435"' `"14645"' `
+> "14647"'
+
+. 
+. // Preserves the current state of the data
+. preserve
+
+. 
+.         // Creates non-education weighted network for the senate
+.         nwfromedge sponsor_id cosponsid nwwiyrwgt, name(senatenonedwgt) keeporiginal
+
+Loading successful
+--------------------------------------------------
+   Network name:  senatenonedwgt
+   Network id:  1
+   Directed: false
+   Nodes: 38
+   Edges: 479
+   Minimum value:  0
+   Maximum value:  12
+   Density:  .6813655761024182
+
+. 
+. // Restores and preserves original data again   
+. restore, preserve
+
+. 
+.         // Creates non-education unweighted network for the senate
+.         nwfromedge sponsor_id cosponsid nonedpair, name(senatenonedunwgt) keeporiginal
+
+Loading successful
+--------------------------------------------------
+   Network name:  senatenonedunwgt
+   Network id:  2
+   Directed: false
+   Nodes: 38
+   Edges: 479
+   Minimum value:  0
+   Maximum value:  1
+   Density:  .6813655761024182
+
+. 
+. // Restores and preserves original data again   
+. restore, preserve
+
+. 
+.         // Loop over sponsor ids for unconnected individuals
+.         foreach person of loc unconnected {
+  2.         
+.                 // Remove the unconnected individuals from the file
+.                 drop if sponsor_id == `"`person'"' | cosponsid == `"`person'"'
+  3.                 
+.         } // End Loop to remove unconnected nodes       
+(74 observations deleted)
+(72 observations deleted)
+(70 observations deleted)
+(68 observations deleted)
+(66 observations deleted)
+(64 observations deleted)
+(62 observations deleted)
+(60 observations deleted)
+(58 observations deleted)
+(56 observations deleted)
+(54 observations deleted)
+(52 observations deleted)
+(50 observations deleted)
+(48 observations deleted)
+(46 observations deleted)
+(44 observations deleted)
+(42 observations deleted)
+
+. 
+.         // Creates education weighted network for the senate
+.         nwfromedge sponsor_id cosponsid nwwiyrwgted, name(senateedwgt) keeporiginal
+
+Loading successful
+--------------------------------------------------
+   Network name:  senateedwgt
+   Network id:  3
+   Directed: false
+   Nodes: 21
+   Edges: 61
+   Minimum value:  0
+   Maximum value:  3
+   Density:  .2904761904761905
+
+.         
+. // Restores and preserves original data again   
+. restore, preserve
+
+. 
+.         // Loop over sponsor ids for unconnected individuals
+.         foreach person of loc unconnected {
+  2.         
+.                 // Remove the unconnected individuals from the file
+.                 drop if sponsor_id == `"`person'"' | cosponsid == `"`person'"'
+  3.                 
+.         } // End Loop to remove unconnected nodes       
+(74 observations deleted)
+(72 observations deleted)
+(70 observations deleted)
+(68 observations deleted)
+(66 observations deleted)
+(64 observations deleted)
+(62 observations deleted)
+(60 observations deleted)
+(58 observations deleted)
+(56 observations deleted)
+(54 observations deleted)
+(52 observations deleted)
+(50 observations deleted)
+(48 observations deleted)
+(46 observations deleted)
+(44 observations deleted)
+(42 observations deleted)
+
+. 
+.         // Creates education unweighted network for the senate
+.         nwfromedge sponsor_id cosponsid isedpair, name(senateedunwgt) keeporiginal
+
+Loading successful
+--------------------------------------------------
+   Network name:  senateedunwgt
+   Network id:  4
+   Directed: false
+   Nodes: 21
+   Edges: 61
+   Minimum value:  0
+   Maximum value:  1
+   Density:  .2904761904761905
+
+.         
+. // Restores the data to its original state      
+. restore
+
+. 
+. // Confirms that all of the networks above are accessible
+. nwds
+senaten~dwgt  senaten~nwgt  senateedwgt   senateedun~t
+
+. 
+. // Saves the networks
+. nwsave $analysis/senateNetworks, replace
+file ~/Desktop/kyLegislation/data/clean/analysis/senateNetworks.dta saved
+
+. 
+. // Close the log file
+. log c building
+      name:  building
+       log:  /Users/billy/Desktop/kyLegislation/logs/createNetworks.txt
+  log type:  text
+ closed on:  14 Jul 2018, 18:41:45
+-------------------------------------------------------------------------------------------------------------------------------------------------------
